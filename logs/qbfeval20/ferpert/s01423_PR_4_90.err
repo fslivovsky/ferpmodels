@@ -1,0 +1,26 @@
+[runlim] version:		1.21
+[runlim] host:			c3n13
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-97-s01423_PR_4_90.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:53:45 2021
+[runlim] child:			3204
+solving-time: 0.03
+proof-gen-satsolver: 0.00
+tracecheck-time: 0.00
+toferp-time: 0.01
+ferpcheck-time: 0.02
+ferpcert-time: 0.01
+merging-time 0.01
+final-check-time: 0.02
+[runlim] end:			Tue Feb 16 22:53:45 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		3
+[runlim] real:			0.20 seconds
+[runlim] time:			0.01 seconds
+[runlim] space:			8 MB
+[runlim] samples:		1

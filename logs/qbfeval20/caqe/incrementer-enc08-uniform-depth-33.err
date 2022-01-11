@@ -1,0 +1,38 @@
+[runlim] version:		1.21
+[runlim] host:			c3n23
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		7000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18816929-366-incrementer-enc08-uniform-depth-33.cnf
+[runlim] start:			Fri Feb 12 12:53:11 2021
+[runlim] child:			3916
+[runlim] sample:		0.00 time, 10.01 real, 3 MB
+[runlim] sample:		0.00 time, 20.01 real, 3 MB
+[runlim] sample:		0.00 time, 30.01 real, 3 MB
+[runlim] sample:		0.00 time, 40.01 real, 3 MB
+[runlim] sample:		0.00 time, 50.01 real, 3 MB
+[runlim] sample:		0.00 time, 60.01 real, 3 MB
+[runlim] sample:		0.00 time, 70.01 real, 3 MB
+[runlim] sample:		0.00 time, 80.01 real, 3 MB
+[runlim] sample:		0.00 time, 90.01 real, 3 MB
+[runlim] sample:		0.00 time, 100.01 real, 3 MB
+[runlim] sample:		0.00 time, 110.01 real, 3 MB
+[runlim] sample:		0.00 time, 120.01 real, 3 MB
+[runlim] sample:		0.00 time, 130.01 real, 3 MB
+[runlim] sample:		0.00 time, 140.01 real, 3 MB
+[runlim] sample:		0.00 time, 150.01 real, 3 MB
+[runlim] sample:		0.00 time, 160.01 real, 3 MB
+[runlim] sample:		0.00 time, 170.01 real, 3 MB
+[runlim] sample:		0.00 time, 180.01 real, 3 MB
+[runlim] sample:		0.00 time, 190.01 real, 3 MB
+[runlim] sample:		0.00 time, 200.01 real, 3 MB
+[runlim] sample:		0.00 time, 210.01 real, 3 MB
+[runlim] end:			Fri Feb 12 12:56:48 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] real:			217.13 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			3 MB
+[runlim] samples:		2171

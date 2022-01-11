@@ -1,0 +1,114 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/incrementer-enc09-nonuniform-depth-15.qdimacs
+c array.sh: name:     incrementer-enc09-nonuniform-depth-15
+c array.sh: task:     75
+c array.sh: host:     c3n24
+c array.sh: uname:    Linux c3n24 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Thu Feb 18 09:53:11 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18838260-75-incrementer-enc09-nonuniform-depth-15.cnf
+*** qbfcert: using tmp directory:
+*** qbfcert:   /tmp
+trace-size: 15865919
+solving-res 20
+proof-size: 13198146
+cert-size: 85565
+cert-header: aag 15267 15126 0 2 20
+merged-header: p cnf 119485 266966
+merged-size: 4594347
+c ---- [ banner ] ------------------------------------------------------------
+c
+c KISSAT SAT Solver
+c Copyright (c) 2019-2020 Armin Biere JKU Linz
+c 
+c Version 1.0.3 59813addcacc4d6fb880ebdd63685600475aa940
+c gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0 -W -Wall -O3 -DNEMBEDDED -DNDEBUG -DNMETRICS -DNSTATISTICS
+c Sun Feb 14 23:58:54 CET 2021 Linux cluster3 4.15.0-135-generic x86_64
+c
+c ---- [ parsing ] -----------------------------------------------------------
+c
+c opened and reading DIMACS file:
+c 
+c   /tmp/qbfcert_merged_cnf11467.cnf
+c 
+c parsed 'p cnf 119485 266966' header
+c closing input after reading 4594347 bytes (4 MB)
+c finished parsing after 0.08 seconds
+c
+c ---- [ solving ] -----------------------------------------------------------
+c
+c  seconds reductions redundant irredundant
+c         MB   restarts    trail       variables
+c          level  conflicts   glue          remaining
+c
+c *  0.08 17 0  0  0   0   0 0% 0 266964 25677 21%
+c {  0.08 17 0  0  0   0   0 0% 0 266964 25677 21%
+c i  0.09 17 99  0  0 103  99 27% 2 266964 25629 21%
+c i  0.09 17 98  0  0 104  99 26% 2 266964 25627 21%
+c i  0.09 17 96  0  0 105  99 26% 2 266964 25619 21%
+c i  0.09 17 95  0  0 106  99 26% 2 266964 25600 21%
+c i  0.09 17 93  0  0 107  99 25% 2 266964 25598 21%
+c i  0.09 17 92  0  0 108  99 25% 2 266964 25571 21%
+c i  0.09 17 58  0  8 162 151 18% 2 266964 25555 21%
+c i  0.09 17 57  0  8 163 151 18% 2 266964 25546 21%
+c i  0.10 17 48  0 11 195 182 16% 2 266964 25535 21%
+c i  0.10 18 41  0 34 226 212 13% 3 266964 25477 21%
+c i  0.10 18 40  0 35 230 213 13% 3 266964 25442 21%
+c i  0.10 18 39  0 39 235 217 13% 3 266964 25426 21%
+c i  0.10 18 37  0 48 247 228 12% 3 266964 25425 21%
+c i  0.10 18 35  0 49 257 237 12% 3 266964 25407 21%
+c -  0.12 12 32  1 65 301 259 11% 3 68975 25407 21%
+c i  0.13  8 22  1 82 444 391 8% 3 68975 25398 21%
+c i  0.13  8 22  1 82 445 391 8% 3 68975 25387 21%
+c i  0.13  8 21  1 82 463 408 8% 3 68975 25381 21%
+c
+c  seconds  reductions redundant irredundant
+c         MB    restarts    trail      variables
+c          level   conflicts   glue         remaining
+c
+c i  0.14  8 20  1 84 537 479 8% 3 68975 25363 21%
+c i  0.14  8 20  1 104 606 546 8% 3 68975 25306 21%
+c i  0.14  8 19  1 114 635 568 7% 3 68975 25287 21%
+c i  0.14  8 19  1 114 638 570 7% 3 68975 25285 21%
+c i  0.14  8 19  1 120 670 601 7% 3 68975 25242 21%
+c i  0.15  8 19  1 121 680 610 7% 3 68975 25237 21%
+c i  0.15  8 19  1 126 697 623 7% 3 68975 25219 21%
+c i  0.15  8 18  1 135 735 658 7% 3 68975 25217 21%
+c i  0.15  8 18  1 135 736 658 7% 3 68975 25212 21%
+c i  0.15  8 17  1 135 750 670 7% 3 68975 25068 21%
+c }  0.15  8 17  1 135 765 683 7% 3 68975 24862 21%
+c 0  0.15  8 17  1 135 765 683 7% 3 68975 24862 21%
+c
+c ---- [ result ] ------------------------------------------------------------
+c
+s UNSATISFIABLE
+c
+c ---- [ profiling ] ---------------------------------------------------------
+c
+c           0.08   53.73 %  parse
+c           0.07   46.18 %  search
+c           0.07   46.12 %  focused
+c           0.02   10.64 %  reduce
+c           0.00    0.00 %  simplify
+c =============================================
+c           0.15  100.00 %  total
+c
+c ---- [ statistics ] --------------------------------------------------------
+c
+c conflicts:                              765             5104.42 per second
+c decisions:                             3626                4.74 per conflict
+c propagations:                        507533          3386488    per second
+c reductions:                               1              765    interval
+c restarts:                               135                5.67 interval
+c
+c ---- [ resources ] ---------------------------------------------------------
+c
+c maximum-resident-set-size:         18993152 bytes         18 MB
+c process-time:                             0s               0.15 seconds
+c
+c ---- [ shutting down ] -----------------------------------------------------
+c
+c exit 20
+*** qbfcert: VALID
+c array.sh: end:      Thu Feb 18 09:53:13 CET 2021

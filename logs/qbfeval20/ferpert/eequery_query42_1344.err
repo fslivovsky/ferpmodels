@@ -1,0 +1,44 @@
+[runlim] version:		1.21
+[runlim] host:			c3n22
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-43-eequery_query42_1344.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:43:57 2021
+[runlim] child:			2788
+solving-time: 1.21
+proof-gen-satsolver: 3.11
+[runlim] sample:		8.22 time, 10.02 real, 16 MB
+tracecheck-time: 6.42
+[runlim] sample:		18.12 time, 20.02 real, 212 MB
+[runlim] sample:		28.12 time, 30.01 real, 387 MB
+[runlim] sample:		38.12 time, 40.01 real, 387 MB
+[runlim] sample:		48.12 time, 50.01 real, 387 MB
+[runlim] sample:		58.11 time, 60.01 real, 387 MB
+[runlim] sample:		67.44 time, 70.01 real, 387 MB
+toferp-time: 60.64
+[runlim] sample:		77.39 time, 80.02 real, 68 MB
+[runlim] sample:		87.39 time, 90.01 real, 139 MB
+[runlim] sample:		97.39 time, 100.01 real, 211 MB
+[runlim] sample:		107.39 time, 110.01 real, 285 MB
+[runlim] sample:		117.39 time, 120.01 real, 357 MB
+[runlim] sample:		127.39 time, 130.01 real, 433 MB
+ferpcheck-time: 65.66
+[runlim] sample:		137.36 time, 140.01 real, 1695 MB
+[runlim] sample:		147.37 time, 150.01 real, 8316 MB
+[runlim] sample:		157.37 time, 160.01 real, 15049 MB
+[runlim] sample:		167.37 time, 170.01 real, 22228 MB
+[runlim] sample:		177.37 time, 180.01 real, 29735 MB
+[runlim] sample:		187.36 time, 190.01 real, 37046 MB
+[runlim] sample:		197.37 time, 200.01 real, 43895 MB
+Terminated
+[runlim] end:			Tue Feb 16 22:47:27 2021
+[runlim] status:		out of memory
+[runlim] result:		3
+[runlim] children:		14
+[runlim] real:			209.59 seconds
+[runlim] time:			206.87 seconds
+[runlim] space:			50043 MB
+[runlim] samples:		2095

@@ -1,0 +1,26 @@
+[runlim] version:		1.21
+[runlim] host:			c3n12
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		60000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18838260-24-c1_BMC_p2_k2048.cnf
+[runlim] start:			Thu Feb 18 09:53:05 2021
+[runlim] child:			14109
+[runlim] sample:		9.02 time, 10.02 real, 2257 MB
+solving-time: 14.74
+OK
+qrpcheck-time: 1.68
+qrpcert-time: 0.78
+[runlim] sample:		18.83 time, 20.01 real, 193 MB
+certcheck-time: 9.28
+[runlim] sample:		28.67 time, 30.01 real, 618 MB
+final-check-time: 11.45
+[runlim] end:			Thu Feb 18 09:53:43 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		13
+[runlim] real:			38.46 seconds
+[runlim] time:			36.98 seconds
+[runlim] space:			2811 MB
+[runlim] samples:		384

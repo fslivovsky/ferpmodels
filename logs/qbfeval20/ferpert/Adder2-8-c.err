@@ -1,0 +1,32 @@
+[runlim] version:		1.21
+[runlim] host:			c3n01
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-2-Adder2-8-c.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:43:50 2021
+[runlim] child:			3416
+solving-time: 0.18
+proof-gen-satsolver: 0.17
+tracecheck-time: 0.12
+toferp-time: 0.40
+ferpcheck-time: 0.69
+[runlim] sample:		8.00 time, 10.01 real, 1923 MB
+ferpcert-time: 15.05
+[runlim] sample:		17.83 time, 20.02 real, 557 MB
+[runlim] sample:		27.82 time, 30.02 real, 206 MB
+merging-time 13.81
+[runlim] sample:		37.47 time, 40.02 real, 1186 MB
+[runlim] sample:		47.47 time, 50.02 real, 2770 MB
+[runlim] sample:		57.47 time, 60.02 real, 2800 MB
+final-check-time: 35.16
+[runlim] end:			Tue Feb 16 22:44:58 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		32
+[runlim] real:			67.42 seconds
+[runlim] time:			64.64 seconds
+[runlim] space:			2808 MB
+[runlim] samples:		674

@@ -1,0 +1,136 @@
+c array.sh: path:     /home/seidl/data/parity/parity10.qdimacs
+c array.sh: name:     parity10
+c array.sh: task:     3
+c array.sh: host:     c3n10
+c array.sh: uname:    Linux c3n10 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Tue Feb 16 23:34:27 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18834963-3-parity10.cnf
+using tmp directory:
+  /tmp
+running QBF solver...
+
+/home/seidl/cert_tests/bin//caqe -c /tmp/local-unzipped-18834963-3-parity10.cnf
+solving done with exit code 20
+certificiate-size: 184008
+certificate-header:  aag 12338 19 0 2 12319
+
+QBF solver OK
+
+merging  AIG into QBF ...
+
+CERTCHECK OK
+
+merged-cnf-header: aag 12489 19 0 1 12470
+merged-cnf-size: 189534
+transforming aig to cnf
+cnf-header: p cnf 12490 37150
+cnf-size: 537954
+running SAT solver...
+
+c ---- [ banner ] ------------------------------------------------------------
+c
+c KISSAT SAT Solver
+c Copyright (c) 2019-2020 Armin Biere JKU Linz
+c 
+c Version 1.0.3 59813addcacc4d6fb880ebdd63685600475aa940
+c gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0 -W -Wall -O3 -DNEMBEDDED -DNDEBUG -DNMETRICS -DNSTATISTICS
+c Sun Feb 14 23:58:54 CET 2021 Linux cluster3 4.15.0-135-generic x86_64
+c
+c ---- [ parsing ] -----------------------------------------------------------
+c
+c opened and reading DIMACS file:
+c 
+c   /tmp/caqe4040.cnf
+c 
+c parsed 'p cnf 12490 37150' header
+c closing input after reading 537954 bytes (525 KB)
+c finished parsing after 0.01 seconds
+c
+c ---- [ solving ] -----------------------------------------------------------
+c
+c  seconds reductions redundant irredundant
+c         MB   restarts    trail      variables
+c          level  conflicts   glue         remaining
+c
+c *  0.01  4 0  0  0   0   0 0% 0 35068 12375 99%
+c {  0.01  4 0  0  0   0   0 0% 0 35068 12375 99%
+c -  0.08  5 35  1 28 300 268 86% 6 34955 12375 99%
+c -  0.29  6 29  2 199 901 681 86% 8 34955 12375 99%
+c }  0.32  6 26  2 199 1001 752 86% 8 34955 12375 99%
+c [  0.32  6 0  2 199 1001 752 0% 0 34955 12375 99%
+c O  0.32  6 3  2 199 1002 753 42% 1 34955 12375 99%
+c i  0.42  6 13  2 199 1308 1015 87% 6 34955 12372 99%
+c i  0.45  6 12  2 199 1425 1121 86% 6 34955 12297 98%
+c i  0.45  6 12  2 199 1427 1122 86% 6 34955 12292 98%
+c i  0.45  6 12  2 199 1428 1122 86% 6 34955 12287 98%
+c i  0.45  6 12  2 199 1429 1122 86% 6 34955 12282 98%
+c i  0.45  6 12  2 199 1430 1122 86% 6 34955 12277 98%
+c i  0.45  6 12  2 199 1434 1125 85% 6 34955 12272 98%
+c i  0.45  6 12  2 199 1435 1125 85% 6 34955 12267 98%
+c i  0.45  6 12  2 199 1437 1126 85% 6 34955 12262 98%
+c i  0.45  6 12  2 199 1438 1126 85% 6 34955 12257 98%
+c i  0.45  6 12  2 199 1439 1126 85% 6 34955 12252 98%
+c i  0.45  6 12  2 199 1440 1126 85% 6 34955 12247 98%
+c i  0.46  6 12  2 199 1444 1128 85% 6 34955 12242 98%
+c
+c  seconds  reductions   redundant  irredundant
+c         MB    restarts        trail      variables
+c          level    conflicts      glue         remaining
+c
+c i  0.47  6 12  2 199 1494 1155 84% 6 34955 12236 98%
+c i  0.47  6 12  2 199 1495 1155 84% 6 34955 12234 98%
+c i  0.47  6 12  2 199 1496 1155 84% 6 34955 12228 98%
+c i  0.47  6 12  2 199 1497 1155 84% 6 34955 10172 81%
+c i  0.47  6 12  2 199 1498 1155 84% 6 34955 10170 81%
+c i  0.47  6 12  2 199 1499 1155 83% 6 34955 10164 81%
+c i  0.48  6 12  2 199 1500 1155 83% 6 34955 10158 81%
+c i  0.48  6 12  2 199 1501 1155 83% 6 34955 10152 81%
+c i  0.48  6 12  2 199 1502 1155 83% 6 34955 10146 81%
+c i  0.48  6 12  2 199 1503 1155 83% 6 34955 10140 81%
+c i  0.48  6 11  2 199 1509 1160 82% 6 34955 8644 69%
+c i  0.48  6 11  2 199 1517 1167 83% 5 34955 6704 54%
+c i  0.48  6 11  2 199 1521 1169 82% 5 34955 1689 14%
+c ]  0.48  6 11  2 199 1523 1169 82% 5 34955 1125 9%
+c 0  0.48  6 26  2 199 1523 1169 86% 8 34955 1125 9%
+c
+c ---- [ result ] ------------------------------------------------------------
+c
+s UNSATISFIABLE
+c
+c ---- [ profiling ] ---------------------------------------------------------
+c
+c           0.47   97.63 %  search
+c           0.31   64.60 %  focused
+c           0.16   33.01 %  stable
+c           0.01    1.83 %  parse
+c           0.00    0.75 %  reduce
+c           0.00    0.52 %  autarky
+c           0.00    0.52 %  simplify
+c =============================================
+c           0.48  100.00 %  total
+c
+c ---- [ statistics ] --------------------------------------------------------
+c
+c conflicts:                             1523             3152.32 per second
+c decisions:                            11018                7.23 per conflict
+c propagations:                       5245385         10856953    per second
+c reductions:                               2              762    interval
+c rephased:                                 1             1523    interval
+c restarts:                               199                7.65 interval
+c
+c ---- [ resources ] ---------------------------------------------------------
+c
+c maximum-resident-set-size:          6475776 bytes          6 MB
+c process-time:                             0s               0.48 seconds
+c
+c ---- [ shutting down ] -----------------------------------------------------
+c
+c exit 20
+
+SAT solver OK
+
+VALID
+c array.sh: end:      Tue Feb 16 23:34:28 CET 2021

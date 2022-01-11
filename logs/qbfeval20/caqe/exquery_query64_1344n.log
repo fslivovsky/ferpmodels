@@ -1,0 +1,12 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/exquery_query64_1344n.qdimacs
+c array.sh: name:     exquery_query64_1344n
+c array.sh: task:     378
+c array.sh: host:     c3n24
+c array.sh: uname:    Linux c3n24 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Fri Feb 12 12:52:56 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18816929-378-exquery_query64_1344n.cnf
+solving-result: 20
+c array.sh: end:      Fri Feb 12 12:53:07 CET 2021

@@ -1,0 +1,5 @@
+This directory contains supplementary material to our NFM paper
+
+log ... logs of the experiments
+benchmarks ... used formulas 
+scripts ... bash scripts used to call the tools as described in the paper

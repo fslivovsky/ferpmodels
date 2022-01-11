@@ -1,0 +1,51 @@
+[runlim] version:		1.21
+[runlim] host:			c3n29
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-57-fpu-10Xh-error01-uniform-depth-25.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:43:56 2021
+[runlim] child:			2776
+[runlim] sample:		9.56 time, 10.01 real, 698 MB
+solving-time: 12.78
+proof-gen-satsolver: 2.02
+tracecheck-time: 0.30
+[runlim] sample:		19.28 time, 20.01 real, 149 MB
+toferp-time: 6.24
+[runlim] sample:		29.21 time, 30.01 real, 85 MB
+ferpcheck-time: 13.97
+[runlim] sample:		39.17 time, 40.01 real, 1994 MB
+[runlim] sample:		49.17 time, 50.01 real, 1994 MB
+[runlim] sample:		59.17 time, 60.01 real, 1994 MB
+[runlim] sample:		69.16 time, 70.01 real, 1994 MB
+[runlim] sample:		79.16 time, 80.01 real, 1994 MB
+[runlim] sample:		89.17 time, 90.01 real, 1994 MB
+[runlim] sample:		99.16 time, 100.01 real, 1994 MB
+[runlim] sample:		109.17 time, 110.01 real, 1994 MB
+[runlim] sample:		119.17 time, 120.01 real, 1994 MB
+[runlim] sample:		129.16 time, 130.01 real, 1994 MB
+[runlim] sample:		139.16 time, 140.01 real, 1994 MB
+[runlim] sample:		149.16 time, 150.01 real, 1994 MB
+[runlim] sample:		159.17 time, 160.01 real, 1994 MB
+[runlim] sample:		169.16 time, 170.01 real, 1994 MB
+[runlim] sample:		179.16 time, 180.01 real, 1994 MB
+[runlim] sample:		189.16 time, 190.01 real, 1994 MB
+[runlim] sample:		199.16 time, 200.01 real, 1994 MB
+[runlim] sample:		209.16 time, 210.01 real, 1994 MB
+[runlim] sample:		219.16 time, 220.01 real, 1994 MB
+[runlim] sample:		229.16 time, 230.01 real, 1994 MB
+[runlim] sample:		239.16 time, 240.01 real, 1994 MB
+ferpcert-time: 210.33
+merging-time 2.89
+[runlim] sample:		248.99 time, 250.02 real, 230 MB
+final-check-time: 4.30
+[runlim] end:			Tue Feb 16 22:48:09 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		18
+[runlim] real:			253.16 seconds
+[runlim] time:			252.00 seconds
+[runlim] space:			1994 MB
+[runlim] samples:		2531

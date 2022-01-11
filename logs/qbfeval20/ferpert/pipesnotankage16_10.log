@@ -1,0 +1,76 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/pipesnotankage16_10.qdimacs
+c array.sh: name:     pipesnotankage16_10
+c array.sh: task:     88
+c array.sh: host:     c3n01
+c array.sh: uname:    Linux c3n01 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Tue Feb 16 22:48:46 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18834727-88-pipesnotankage16_10.cnf
+using tmp directory:
+  /tmp
+running QBF solver...
+
+/home/seidl/cert_tests/bin/ferp-models/ijtihad/ijtihad --dependencies=0 --wit_per_call=-1 --cex_per_call=-1 --log_phi=/tmp/ferpcert3871expanded.cnf /tmp/local-unzipped-18834727-88-pipesnotankage16_10.cnf
+c Options after parsing: 
+c cex_per_call = 18446744073709551615
+c wit_per_call = 18446744073709551615
+c warmup = 1
+c warmup_randoms = 0
+c trimming_phi = 0
+c trimming_ksi = 2
+c trimming_interval = 200
+c memory_limit = 3000000
+c MySolverv970-glucose
+-1 2 -3 
+-1 -2 -3 
+-1 2 3 
+1 2 3 
+-1 -2 3 
+1 -2 3 
+1 2 -3 
+1 -2 -3 
+c Number of calls is: 0
+c Layers in PHI: 0
+c Layers in KSI: 0
+c Running Ijtihad loop
+c sat_solver_phi calld 0 times, running for 0.116013 seconds.
+c number of layers in PHI is 8
+c sat_solver_ksi was running for 0 seconds.
+c number of layers in KSI is 0
+c mysolver was running for 3.98032 seconds.
+s cnf 0
+solving done with exit code 20
+
+QBF solver OK
+
+running SAT Solver...
+
+/tmp/ferpcert3871expanded.cnf
+s UNSATISFIABLE
+
+PROOF GENERATION OK
+
+checking unsat proof
+
+resolved 1 root and 1 empty clause
+trace-size2: 20566507
+
+TRACE CHECK OK
+
+running toferp...
+
+ferp-size: 18736986
+TOFERP OK
+
+checking FERP PROOF...
+
+FERP CHECK OK
+
+extracting AIG ...
+
+clean up and exit
+clean up and exit
+clean up and exit
+c array.sh: end:      Tue Feb 16 23:03:46 CET 2021

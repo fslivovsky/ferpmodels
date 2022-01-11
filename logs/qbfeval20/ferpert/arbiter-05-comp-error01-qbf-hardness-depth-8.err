@@ -1,0 +1,58 @@
+[runlim] version:		1.21
+[runlim] host:			c3n02
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-3-arbiter-05-comp-error01-qbf-hardness-depth-8.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:43:50 2021
+[runlim] child:			3444
+[runlim] sample:		9.95 time, 10.02 real, 146 MB
+[runlim] sample:		19.95 time, 20.01 real, 234 MB
+[runlim] sample:		29.95 time, 30.02 real, 316 MB
+[runlim] sample:		39.83 time, 40.02 real, 395 MB
+[runlim] sample:		49.82 time, 50.02 real, 473 MB
+[runlim] sample:		59.82 time, 60.01 real, 551 MB
+[runlim] sample:		69.83 time, 70.02 real, 629 MB
+[runlim] sample:		79.83 time, 80.02 real, 707 MB
+[runlim] sample:		89.82 time, 90.02 real, 782 MB
+[runlim] sample:		99.82 time, 100.01 real, 856 MB
+[runlim] sample:		109.83 time, 110.02 real, 932 MB
+[runlim] sample:		119.82 time, 120.02 real, 1007 MB
+[runlim] sample:		129.82 time, 130.01 real, 1079 MB
+[runlim] sample:		139.82 time, 140.02 real, 1153 MB
+solving-time: 142.26
+[runlim] sample:		149.75 time, 150.02 real, 321 MB
+[runlim] sample:		159.75 time, 160.02 real, 323 MB
+[runlim] sample:		169.75 time, 170.02 real, 324 MB
+[runlim] sample:		179.74 time, 180.02 real, 325 MB
+[runlim] sample:		189.74 time, 190.02 real, 326 MB
+[runlim] sample:		199.74 time, 200.02 real, 326 MB
+[runlim] sample:		209.74 time, 210.01 real, 327 MB
+[runlim] sample:		219.75 time, 220.01 real, 328 MB
+[runlim] sample:		229.75 time, 230.01 real, 329 MB
+[runlim] sample:		239.75 time, 240.01 real, 330 MB
+[runlim] sample:		249.75 time, 250.02 real, 331 MB
+[runlim] sample:		259.75 time, 260.02 real, 331 MB
+[runlim] sample:		269.74 time, 270.02 real, 332 MB
+[runlim] sample:		279.74 time, 280.01 real, 333 MB
+[runlim] sample:		289.74 time, 290.02 real, 333 MB
+[runlim] sample:		299.75 time, 300.01 real, 334 MB
+[runlim] sample:		309.75 time, 310.01 real, 334 MB
+proof-gen-satsolver: 176.50
+tracecheck-time: 0.18
+[runlim] sample:		319.57 time, 320.02 real, 44 MB
+toferp-time: 2.53
+ferpcheck-time: 0.05
+ferpcert-time: 0.77
+merging-time 0.50
+final-check-time: 0.72
+[runlim] end:			Tue Feb 16 22:49:14 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		15
+[runlim] real:			323.67 seconds
+[runlim] time:			322.91 seconds
+[runlim] space:			1167 MB
+[runlim] samples:		3236

@@ -1,0 +1,36 @@
+[runlim] version:		1.21
+[runlim] host:			c3n28
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-55-fpu-10Xh-correct04-uniform-depth-18.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:43:57 2021
+[runlim] child:			2799
+[runlim] sample:		8.53 time, 10.01 real, 582 MB
+solving-time: 10.09
+proof-gen-satsolver: 1.52
+tracecheck-time: 0.24
+toferp-time: 4.41
+[runlim] sample:		18.18 time, 20.01 real, 64 MB
+ferpcheck-time: 7.30
+[runlim] sample:		28.16 time, 30.01 real, 386 MB
+[runlim] sample:		38.16 time, 40.01 real, 386 MB
+[runlim] sample:		48.16 time, 50.01 real, 386 MB
+[runlim] sample:		58.16 time, 60.01 real, 386 MB
+[runlim] sample:		68.16 time, 70.01 real, 386 MB
+[runlim] sample:		78.16 time, 80.01 real, 386 MB
+[runlim] sample:		88.16 time, 90.01 real, 386 MB
+ferpcert-time: 70.49
+merging-time 2.10
+[runlim] sample:		98.07 time, 100.01 real, 449 MB
+final-check-time: 3.21
+[runlim] end:			Tue Feb 16 22:45:38 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		19
+[runlim] real:			100.62 seconds
+[runlim] time:			98.59 seconds
+[runlim] space:			589 MB
+[runlim] samples:		1006

@@ -1,0 +1,25 @@
+[runlim] version:		1.21
+[runlim] host:			c3n15
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		7000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18816929-225-fpu-10Xh-error01-uniform-depth-20.cnf
+[runlim] start:			Fri Feb 12 12:52:51 2021
+[runlim] child:			3316
+[runlim] sample:		0.00 time, 10.01 real, 3 MB
+[runlim] sample:		0.00 time, 20.01 real, 3 MB
+[runlim] sample:		0.00 time, 30.01 real, 3 MB
+[runlim] sample:		0.00 time, 40.01 real, 3 MB
+[runlim] sample:		0.00 time, 50.01 real, 3 MB
+[runlim] sample:		0.00 time, 60.01 real, 3 MB
+[runlim] sample:		0.00 time, 70.01 real, 3 MB
+[runlim] sample:		0.00 time, 80.01 real, 3 MB
+[runlim] end:			Fri Feb 12 12:54:17 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] real:			85.37 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			3 MB
+[runlim] samples:		853

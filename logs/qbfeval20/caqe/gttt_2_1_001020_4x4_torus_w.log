@@ -1,0 +1,12 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/gttt_2_1_001020_4x4_torus_w.qdimacs
+c array.sh: name:     gttt_2_1_001020_4x4_torus_w
+c array.sh: task:     484
+c array.sh: host:     c3n31
+c array.sh: uname:    Linux c3n31 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Fri Feb 12 12:52:52 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18816929-484-gttt_2_1_001020_4x4_torus_w.cnf
+solving-result: 20
+c array.sh: end:      Fri Feb 12 12:55:10 CET 2021

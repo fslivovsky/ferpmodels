@@ -1,0 +1,2345 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/eequery_query64_1344.qdimacs
+c array.sh: name:     eequery_query64_1344
+c array.sh: task:     44
+c array.sh: host:     c3n22
+c array.sh: uname:    Linux c3n22 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Tue Feb 16 22:43:51 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18834727-44-eequery_query64_1344.cnf
+using tmp directory:
+  /tmp
+running QBF solver...
+
+/home/seidl/cert_tests/bin/ferp-models/ijtihad/ijtihad --dependencies=0 --wit_per_call=-1 --cex_per_call=-1 --log_phi=/tmp/ferpcert2787expanded.cnf /tmp/local-unzipped-18834727-44-eequery_query64_1344.cnf
+c Options after parsing: 
+c cex_per_call = 18446744073709551615
+c wit_per_call = 18446744073709551615
+c warmup = 1
+c warmup_randoms = 0
+c trimming_phi = 0
+c trimming_ksi = 2
+c trimming_interval = 200
+c memory_limit = 3000000
+c MySolverv970-glucose
+-1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 
+c Number of calls is: 0
+c Layers in PHI: 0
+c Layers in KSI: 0
+c Running Ijtihad loop
+c last restart ## conflicts  :  0 376 
+c [glucose 4]
+c [glucose 4]        calls            0         0.0 per second
+c [glucose 4]     restarts            0         0.0 per second
+c [glucose 4]    conflicts            0         0.0 per second
+c [glucose 4]    decisions            0         0.0 per second
+c [glucose 4] propagations            0         0.0 per second
+c [glucose 4]
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 0
+c Layers in PHI: 2
+c Layers in KSI: 2
+c last restart ## conflicts  :  16 901 
+c [glucose 4]
+c [glucose 4]        calls            1        45.4 per second
+c [glucose 4]     restarts            1        45.4 per second
+c [glucose 4]    conflicts            1        45.4 per second
+c [glucose 4]    decisions           18       816.5 per second
+c [glucose 4] propagations           20       907.3 per second
+c [glucose 4]
+c last restart ## conflicts  :  2 15 
+c Number of calls is: 1
+c Layers in PHI: 3
+c Layers in KSI: 3
+c last restart ## conflicts  :  0 1221 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 2
+c Layers in PHI: 4
+c Layers in KSI: 4
+c last restart ## conflicts  :  0 1514 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 3
+c Layers in PHI: 5
+c Layers in KSI: 5
+c last restart ## conflicts  :  0 1696 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 4
+c Layers in PHI: 6
+c Layers in KSI: 6
+c last restart ## conflicts  :  0 2043 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 5
+c Layers in PHI: 7
+c Layers in KSI: 7
+c last restart ## conflicts  :  0 2347 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 6
+c Layers in PHI: 8
+c Layers in KSI: 8
+c last restart ## conflicts  :  0 2661 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 7
+c Layers in PHI: 9
+c Layers in KSI: 9
+c last restart ## conflicts  :  0 2917 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 8
+c Layers in PHI: 10
+c Layers in KSI: 10
+c last restart ## conflicts  :  0 2956 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 9
+c Layers in PHI: 11
+c Layers in KSI: 11
+c last restart ## conflicts  :  0 3313 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 10
+c Layers in PHI: 12
+c Layers in KSI: 12
+c last restart ## conflicts  :  0 3693 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 11
+c Layers in PHI: 13
+c Layers in KSI: 13
+c last restart ## conflicts  :  0 4008 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 12
+c Layers in PHI: 14
+c Layers in KSI: 14
+c last restart ## conflicts  :  0 4333 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 13
+c Layers in PHI: 15
+c Layers in KSI: 15
+c last restart ## conflicts  :  0 4224 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 14
+c Layers in PHI: 16
+c Layers in KSI: 16
+c last restart ## conflicts  :  0 4587 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 15
+c Layers in PHI: 17
+c Layers in KSI: 17
+c last restart ## conflicts  :  0 4910 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 16
+c Layers in PHI: 18
+c Layers in KSI: 18
+c last restart ## conflicts  :  0 5237 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 17
+c Layers in PHI: 19
+c Layers in KSI: 19
+c last restart ## conflicts  :  0 5551 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 18
+c Layers in PHI: 20
+c Layers in KSI: 20
+c last restart ## conflicts  :  0 5847 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 19
+c Layers in PHI: 21
+c Layers in KSI: 21
+c last restart ## conflicts  :  0 5695 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 20
+c Layers in PHI: 22
+c Layers in KSI: 22
+c last restart ## conflicts  :  0 6090 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 21
+c Layers in PHI: 23
+c Layers in KSI: 23
+c last restart ## conflicts  :  0 6440 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 22
+c Layers in PHI: 24
+c Layers in KSI: 24
+c last restart ## conflicts  :  0 6791 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 23
+c Layers in PHI: 25
+c Layers in KSI: 25
+c last restart ## conflicts  :  0 7106 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 24
+c Layers in PHI: 26
+c Layers in KSI: 26
+c last restart ## conflicts  :  0 7444 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 25
+c Layers in PHI: 27
+c Layers in KSI: 27
+c last restart ## conflicts  :  0 7138 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 26
+c Layers in PHI: 28
+c Layers in KSI: 28
+c last restart ## conflicts  :  0 7537 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 27
+c Layers in PHI: 29
+c Layers in KSI: 29
+c last restart ## conflicts  :  0 7913 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 28
+c Layers in PHI: 30
+c Layers in KSI: 30
+c last restart ## conflicts  :  0 8262 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 29
+c Layers in PHI: 31
+c Layers in KSI: 31
+c last restart ## conflicts  :  0 8609 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 30
+c Layers in PHI: 32
+c Layers in KSI: 32
+c last restart ## conflicts  :  0 8965 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 31
+c Layers in PHI: 33
+c Layers in KSI: 33
+c last restart ## conflicts  :  0 8581 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 32
+c Layers in PHI: 34
+c Layers in KSI: 34
+c last restart ## conflicts  :  0 9007 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 33
+c Layers in PHI: 35
+c Layers in KSI: 35
+c last restart ## conflicts  :  0 9394 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 34
+c Layers in PHI: 36
+c Layers in KSI: 36
+c last restart ## conflicts  :  0 9746 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 35
+c Layers in PHI: 37
+c Layers in KSI: 37
+c last restart ## conflicts  :  0 10101 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 36
+c Layers in PHI: 38
+c Layers in KSI: 38
+c last restart ## conflicts  :  0 10444 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 37
+c Layers in PHI: 39
+c Layers in KSI: 39
+c last restart ## conflicts  :  0 10058 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 38
+c Layers in PHI: 40
+c Layers in KSI: 40
+c last restart ## conflicts  :  0 10473 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 39
+c Layers in PHI: 41
+c Layers in KSI: 41
+c last restart ## conflicts  :  0 10846 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 40
+c Layers in PHI: 42
+c Layers in KSI: 42
+c last restart ## conflicts  :  0 11223 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 41
+c Layers in PHI: 43
+c Layers in KSI: 43
+c last restart ## conflicts  :  0 11600 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 42
+c Layers in PHI: 44
+c Layers in KSI: 44
+c last restart ## conflicts  :  0 11973 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 43
+c Layers in PHI: 45
+c Layers in KSI: 45
+c last restart ## conflicts  :  0 11583 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 44
+c Layers in PHI: 46
+c Layers in KSI: 46
+c last restart ## conflicts  :  0 12010 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 45
+c Layers in PHI: 47
+c Layers in KSI: 47
+c last restart ## conflicts  :  0 12410 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 46
+c Layers in PHI: 48
+c Layers in KSI: 48
+c last restart ## conflicts  :  0 12774 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 47
+c Layers in PHI: 49
+c Layers in KSI: 49
+c last restart ## conflicts  :  0 13104 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 48
+c Layers in PHI: 50
+c Layers in KSI: 50
+c last restart ## conflicts  :  0 13481 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 49
+c Layers in PHI: 51
+c Layers in KSI: 51
+c last restart ## conflicts  :  0 13071 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 50
+c Layers in PHI: 52
+c Layers in KSI: 52
+c last restart ## conflicts  :  0 13437 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 51
+c Layers in PHI: 53
+c Layers in KSI: 53
+c last restart ## conflicts  :  0 13854 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 52
+c Layers in PHI: 54
+c Layers in KSI: 54
+c last restart ## conflicts  :  0 14232 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 53
+c Layers in PHI: 55
+c Layers in KSI: 55
+c last restart ## conflicts  :  0 14612 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 54
+c Layers in PHI: 56
+c Layers in KSI: 56
+c last restart ## conflicts  :  0 14990 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 55
+c Layers in PHI: 57
+c Layers in KSI: 57
+c last restart ## conflicts  :  0 14522 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 56
+c Layers in PHI: 58
+c Layers in KSI: 58
+c last restart ## conflicts  :  0 14990 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 57
+c Layers in PHI: 59
+c Layers in KSI: 59
+c last restart ## conflicts  :  0 15374 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 58
+c Layers in PHI: 60
+c Layers in KSI: 60
+c last restart ## conflicts  :  0 15770 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 59
+c Layers in PHI: 61
+c Layers in KSI: 61
+c last restart ## conflicts  :  0 16143 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 60
+c Layers in PHI: 62
+c Layers in KSI: 62
+c last restart ## conflicts  :  0 16521 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 61
+c Layers in PHI: 63
+c Layers in KSI: 63
+c last restart ## conflicts  :  0 15974 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 62
+c Layers in PHI: 64
+c Layers in KSI: 64
+c last restart ## conflicts  :  0 16424 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 63
+c Layers in PHI: 65
+c Layers in KSI: 65
+c last restart ## conflicts  :  0 16845 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 64
+c Layers in PHI: 66
+c Layers in KSI: 66
+c last restart ## conflicts  :  0 17227 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 65
+c Layers in PHI: 67
+c Layers in KSI: 67
+c last restart ## conflicts  :  0 17616 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 66
+c Layers in PHI: 68
+c Layers in KSI: 68
+c last restart ## conflicts  :  0 17973 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 67
+c Layers in PHI: 69
+c Layers in KSI: 69
+c last restart ## conflicts  :  0 17439 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 68
+c Layers in PHI: 70
+c Layers in KSI: 70
+c last restart ## conflicts  :  0 17920 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 69
+c Layers in PHI: 71
+c Layers in KSI: 71
+c last restart ## conflicts  :  0 18304 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 70
+c Layers in PHI: 72
+c Layers in KSI: 72
+c last restart ## conflicts  :  0 18736 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 71
+c Layers in PHI: 73
+c Layers in KSI: 73
+c last restart ## conflicts  :  0 19147 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 72
+c Layers in PHI: 74
+c Layers in KSI: 74
+c last restart ## conflicts  :  0 19502 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 73
+c Layers in PHI: 75
+c Layers in KSI: 75
+c last restart ## conflicts  :  0 18934 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 74
+c Layers in PHI: 76
+c Layers in KSI: 76
+c last restart ## conflicts  :  0 19387 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 75
+c Layers in PHI: 77
+c Layers in KSI: 77
+c last restart ## conflicts  :  0 19809 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 76
+c Layers in PHI: 78
+c Layers in KSI: 78
+c last restart ## conflicts  :  0 20226 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 77
+c Layers in PHI: 79
+c Layers in KSI: 79
+c last restart ## conflicts  :  0 20638 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 78
+c Layers in PHI: 80
+c Layers in KSI: 80
+c last restart ## conflicts  :  0 21007 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 79
+c Layers in PHI: 81
+c Layers in KSI: 81
+c last restart ## conflicts  :  0 20419 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 80
+c Layers in PHI: 82
+c Layers in KSI: 82
+c last restart ## conflicts  :  0 20834 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 81
+c Layers in PHI: 83
+c Layers in KSI: 83
+c last restart ## conflicts  :  0 21209 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 82
+c Layers in PHI: 84
+c Layers in KSI: 84
+c last restart ## conflicts  :  0 21588 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 83
+c Layers in PHI: 85
+c Layers in KSI: 85
+c last restart ## conflicts  :  0 21995 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 84
+c Layers in PHI: 86
+c Layers in KSI: 86
+c last restart ## conflicts  :  0 22371 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 85
+c Layers in PHI: 87
+c Layers in KSI: 87
+c last restart ## conflicts  :  0 21877 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 86
+c Layers in PHI: 88
+c Layers in KSI: 88
+c last restart ## conflicts  :  0 22300 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 87
+c Layers in PHI: 89
+c Layers in KSI: 89
+c last restart ## conflicts  :  0 22735 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 88
+c Layers in PHI: 90
+c Layers in KSI: 90
+c last restart ## conflicts  :  0 23147 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 89
+c Layers in PHI: 91
+c Layers in KSI: 91
+c last restart ## conflicts  :  0 23526 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 90
+c Layers in PHI: 92
+c Layers in KSI: 92
+c last restart ## conflicts  :  0 23909 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 91
+c Layers in PHI: 93
+c Layers in KSI: 93
+c last restart ## conflicts  :  0 23342 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 92
+c Layers in PHI: 94
+c Layers in KSI: 94
+c last restart ## conflicts  :  0 23788 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 93
+c Layers in PHI: 95
+c Layers in KSI: 95
+c last restart ## conflicts  :  0 24207 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 94
+c Layers in PHI: 96
+c Layers in KSI: 96
+c last restart ## conflicts  :  0 24647 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 95
+c Layers in PHI: 97
+c Layers in KSI: 97
+c last restart ## conflicts  :  0 25032 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 96
+c Layers in PHI: 98
+c Layers in KSI: 98
+c last restart ## conflicts  :  0 25401 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 97
+c Layers in PHI: 99
+c Layers in KSI: 99
+c last restart ## conflicts  :  0 24807 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 98
+c Layers in PHI: 100
+c Layers in KSI: 100
+c last restart ## conflicts  :  0 25318 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 99
+c Layers in PHI: 101
+c Layers in KSI: 101
+c last restart ## conflicts  :  0 25736 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 100
+c Layers in PHI: 102
+c Layers in KSI: 102
+c last restart ## conflicts  :  0 26169 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 101
+c Layers in PHI: 103
+c Layers in KSI: 103
+c last restart ## conflicts  :  0 26572 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 102
+c Layers in PHI: 104
+c Layers in KSI: 104
+c last restart ## conflicts  :  0 26975 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 103
+c Layers in PHI: 105
+c Layers in KSI: 105
+c last restart ## conflicts  :  0 26267 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 104
+c Layers in PHI: 106
+c Layers in KSI: 106
+c last restart ## conflicts  :  0 26734 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 105
+c Layers in PHI: 107
+c Layers in KSI: 107
+c last restart ## conflicts  :  0 27206 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 106
+c Layers in PHI: 108
+c Layers in KSI: 108
+c last restart ## conflicts  :  0 27623 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 107
+c Layers in PHI: 109
+c Layers in KSI: 109
+c last restart ## conflicts  :  0 28007 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 108
+c Layers in PHI: 110
+c Layers in KSI: 110
+c last restart ## conflicts  :  0 28405 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 109
+c Layers in PHI: 111
+c Layers in KSI: 111
+c last restart ## conflicts  :  0 27738 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 110
+c Layers in PHI: 112
+c Layers in KSI: 112
+c last restart ## conflicts  :  0 28209 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 111
+c Layers in PHI: 113
+c Layers in KSI: 113
+c last restart ## conflicts  :  0 28645 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 112
+c Layers in PHI: 114
+c Layers in KSI: 114
+c last restart ## conflicts  :  0 29072 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 113
+c Layers in PHI: 115
+c Layers in KSI: 115
+c last restart ## conflicts  :  0 29471 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 114
+c Layers in PHI: 116
+c Layers in KSI: 116
+c last restart ## conflicts  :  0 29858 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 115
+c Layers in PHI: 117
+c Layers in KSI: 117
+c last restart ## conflicts  :  0 29203 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 116
+c Layers in PHI: 118
+c Layers in KSI: 118
+c last restart ## conflicts  :  0 29657 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 117
+c Layers in PHI: 119
+c Layers in KSI: 119
+c last restart ## conflicts  :  0 30055 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 118
+c Layers in PHI: 120
+c Layers in KSI: 120
+c last restart ## conflicts  :  0 30484 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 119
+c Layers in PHI: 121
+c Layers in KSI: 121
+c last restart ## conflicts  :  0 30893 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 120
+c Layers in PHI: 122
+c Layers in KSI: 122
+c last restart ## conflicts  :  0 31284 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 121
+c Layers in PHI: 123
+c Layers in KSI: 123
+c last restart ## conflicts  :  0 30671 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 122
+c Layers in PHI: 124
+c Layers in KSI: 124
+c last restart ## conflicts  :  0 31176 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 123
+c Layers in PHI: 125
+c Layers in KSI: 125
+c last restart ## conflicts  :  0 31614 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 124
+c Layers in PHI: 126
+c Layers in KSI: 126
+c last restart ## conflicts  :  0 32047 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 125
+c Layers in PHI: 127
+c Layers in KSI: 127
+c last restart ## conflicts  :  0 32449 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 126
+c Layers in PHI: 128
+c Layers in KSI: 128
+c last restart ## conflicts  :  0 32845 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 127
+c Layers in PHI: 129
+c Layers in KSI: 129
+c last restart ## conflicts  :  0 32135 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 128
+c Layers in PHI: 130
+c Layers in KSI: 130
+c last restart ## conflicts  :  0 32618 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 129
+c Layers in PHI: 131
+c Layers in KSI: 131
+c last restart ## conflicts  :  0 33065 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 130
+c Layers in PHI: 132
+c Layers in KSI: 132
+c last restart ## conflicts  :  0 33469 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 131
+c Layers in PHI: 133
+c Layers in KSI: 133
+c last restart ## conflicts  :  0 33852 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 132
+c Layers in PHI: 134
+c Layers in KSI: 134
+c last restart ## conflicts  :  0 34248 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 133
+c Layers in PHI: 135
+c Layers in KSI: 135
+c last restart ## conflicts  :  0 33578 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 134
+c Layers in PHI: 136
+c Layers in KSI: 136
+c last restart ## conflicts  :  0 34077 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 135
+c Layers in PHI: 137
+c Layers in KSI: 137
+c last restart ## conflicts  :  0 34518 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 136
+c Layers in PHI: 138
+c Layers in KSI: 138
+c last restart ## conflicts  :  0 35002 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 137
+c Layers in PHI: 139
+c Layers in KSI: 139
+c last restart ## conflicts  :  0 35410 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 138
+c Layers in PHI: 140
+c Layers in KSI: 140
+c last restart ## conflicts  :  0 35793 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 139
+c Layers in PHI: 141
+c Layers in KSI: 141
+c last restart ## conflicts  :  0 35043 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 140
+c Layers in PHI: 142
+c Layers in KSI: 142
+c last restart ## conflicts  :  0 35525 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 141
+c Layers in PHI: 143
+c Layers in KSI: 143
+c last restart ## conflicts  :  0 35987 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 142
+c Layers in PHI: 144
+c Layers in KSI: 144
+c last restart ## conflicts  :  0 36448 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 143
+c Layers in PHI: 145
+c Layers in KSI: 145
+c last restart ## conflicts  :  0 36871 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 144
+c Layers in PHI: 146
+c Layers in KSI: 146
+c last restart ## conflicts  :  0 37302 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 145
+c Layers in PHI: 147
+c Layers in KSI: 147
+c last restart ## conflicts  :  0 36505 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 146
+c Layers in PHI: 148
+c Layers in KSI: 148
+c last restart ## conflicts  :  0 36983 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 147
+c Layers in PHI: 149
+c Layers in KSI: 149
+c last restart ## conflicts  :  0 37453 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 148
+c Layers in PHI: 150
+c Layers in KSI: 150
+c last restart ## conflicts  :  0 37901 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 149
+c Layers in PHI: 151
+c Layers in KSI: 151
+c last restart ## conflicts  :  0 38291 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 150
+c Layers in PHI: 152
+c Layers in KSI: 152
+c last restart ## conflicts  :  0 38727 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 151
+c Layers in PHI: 153
+c Layers in KSI: 153
+c last restart ## conflicts  :  0 37985 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 152
+c Layers in PHI: 154
+c Layers in KSI: 154
+c last restart ## conflicts  :  0 38450 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 153
+c Layers in PHI: 155
+c Layers in KSI: 155
+c last restart ## conflicts  :  0 38856 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 154
+c Layers in PHI: 156
+c Layers in KSI: 156
+c last restart ## conflicts  :  0 39331 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 155
+c Layers in PHI: 157
+c Layers in KSI: 157
+c last restart ## conflicts  :  0 39760 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 156
+c Layers in PHI: 158
+c Layers in KSI: 158
+c last restart ## conflicts  :  0 40140 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 157
+c Layers in PHI: 159
+c Layers in KSI: 159
+c last restart ## conflicts  :  0 39453 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 158
+c Layers in PHI: 160
+c Layers in KSI: 160
+c last restart ## conflicts  :  0 39950 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 159
+c Layers in PHI: 161
+c Layers in KSI: 161
+c last restart ## conflicts  :  0 40387 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 160
+c Layers in PHI: 162
+c Layers in KSI: 162
+c last restart ## conflicts  :  0 40843 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 161
+c Layers in PHI: 163
+c Layers in KSI: 163
+c last restart ## conflicts  :  0 41264 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 162
+c Layers in PHI: 164
+c Layers in KSI: 164
+c last restart ## conflicts  :  0 41690 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 163
+c Layers in PHI: 165
+c Layers in KSI: 165
+c last restart ## conflicts  :  0 40919 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 164
+c Layers in PHI: 166
+c Layers in KSI: 166
+c last restart ## conflicts  :  0 41407 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 165
+c Layers in PHI: 167
+c Layers in KSI: 167
+c last restart ## conflicts  :  0 41876 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 166
+c Layers in PHI: 168
+c Layers in KSI: 168
+c last restart ## conflicts  :  0 42330 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 167
+c Layers in PHI: 169
+c Layers in KSI: 169
+c last restart ## conflicts  :  0 42741 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 168
+c Layers in PHI: 170
+c Layers in KSI: 170
+c last restart ## conflicts  :  0 43170 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 169
+c Layers in PHI: 171
+c Layers in KSI: 171
+c last restart ## conflicts  :  0 42390 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 170
+c Layers in PHI: 172
+c Layers in KSI: 172
+c last restart ## conflicts  :  0 42891 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 171
+c Layers in PHI: 173
+c Layers in KSI: 173
+c last restart ## conflicts  :  0 43362 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 172
+c Layers in PHI: 174
+c Layers in KSI: 174
+c last restart ## conflicts  :  0 43818 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 173
+c Layers in PHI: 175
+c Layers in KSI: 175
+c last restart ## conflicts  :  0 44235 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 174
+c Layers in PHI: 176
+c Layers in KSI: 176
+c last restart ## conflicts  :  0 44680 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 175
+c Layers in PHI: 177
+c Layers in KSI: 177
+c last restart ## conflicts  :  0 43839 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 176
+c Layers in PHI: 178
+c Layers in KSI: 178
+c last restart ## conflicts  :  0 44334 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 177
+c Layers in PHI: 179
+c Layers in KSI: 179
+c last restart ## conflicts  :  0 44806 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 178
+c Layers in PHI: 180
+c Layers in KSI: 180
+c last restart ## conflicts  :  0 45254 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 179
+c Layers in PHI: 181
+c Layers in KSI: 181
+c last restart ## conflicts  :  0 45671 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 180
+c Layers in PHI: 182
+c Layers in KSI: 182
+c last restart ## conflicts  :  0 46112 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 181
+c Layers in PHI: 183
+c Layers in KSI: 183
+c last restart ## conflicts  :  0 45295 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 182
+c Layers in PHI: 184
+c Layers in KSI: 184
+c last restart ## conflicts  :  0 45796 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 183
+c Layers in PHI: 185
+c Layers in KSI: 185
+c last restart ## conflicts  :  0 46272 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 184
+c Layers in PHI: 186
+c Layers in KSI: 186
+c last restart ## conflicts  :  0 46710 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 185
+c Layers in PHI: 187
+c Layers in KSI: 187
+c last restart ## conflicts  :  0 47125 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 186
+c Layers in PHI: 188
+c Layers in KSI: 188
+c last restart ## conflicts  :  0 47543 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 187
+c Layers in PHI: 189
+c Layers in KSI: 189
+c last restart ## conflicts  :  0 46764 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 188
+c Layers in PHI: 190
+c Layers in KSI: 190
+c last restart ## conflicts  :  0 47254 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 189
+c Layers in PHI: 191
+c Layers in KSI: 191
+c last restart ## conflicts  :  0 47719 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 190
+c Layers in PHI: 192
+c Layers in KSI: 192
+c last restart ## conflicts  :  0 48166 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 191
+c Layers in PHI: 193
+c Layers in KSI: 193
+c last restart ## conflicts  :  0 48572 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 192
+c Layers in PHI: 194
+c Layers in KSI: 194
+c last restart ## conflicts  :  0 48993 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 193
+c Layers in PHI: 195
+c Layers in KSI: 195
+c last restart ## conflicts  :  0 48248 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 194
+c Layers in PHI: 196
+c Layers in KSI: 196
+c last restart ## conflicts  :  0 48739 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 195
+c Layers in PHI: 197
+c Layers in KSI: 197
+c last restart ## conflicts  :  0 49207 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 196
+c Layers in PHI: 198
+c Layers in KSI: 198
+c last restart ## conflicts  :  0 49668 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 197
+c Layers in PHI: 199
+c Layers in KSI: 199
+c last restart ## conflicts  :  0 50097 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 198
+c Layers in PHI: 200
+c Layers in KSI: 200
+c last restart ## conflicts  :  0 50524 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 199
+c Layers in PHI: 201
+c Layers in KSI: 201
+c last restart ## conflicts  :  0 49716 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 200
+c Layers in PHI: 202
+c Layers in KSI: 202
+c last restart ## conflicts  :  0 50198 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 201
+c Layers in PHI: 203
+c Layers in KSI: 203
+c last restart ## conflicts  :  0 50670 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 202
+c Layers in PHI: 204
+c Layers in KSI: 204
+c last restart ## conflicts  :  0 51111 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 203
+c Layers in PHI: 205
+c Layers in KSI: 205
+c last restart ## conflicts  :  0 51579 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 204
+c Layers in PHI: 206
+c Layers in KSI: 206
+c last restart ## conflicts  :  0 52008 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 205
+c Layers in PHI: 207
+c Layers in KSI: 207
+c last restart ## conflicts  :  0 51145 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 206
+c Layers in PHI: 208
+c Layers in KSI: 208
+c last restart ## conflicts  :  0 51622 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 207
+c Layers in PHI: 209
+c Layers in KSI: 209
+c last restart ## conflicts  :  0 52069 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 208
+c Layers in PHI: 210
+c Layers in KSI: 210
+c last restart ## conflicts  :  0 52504 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 209
+c Layers in PHI: 211
+c Layers in KSI: 211
+c last restart ## conflicts  :  0 52947 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 210
+c Layers in PHI: 212
+c Layers in KSI: 212
+c last restart ## conflicts  :  0 53353 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 211
+c Layers in PHI: 213
+c Layers in KSI: 213
+c last restart ## conflicts  :  0 52568 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 212
+c Layers in PHI: 214
+c Layers in KSI: 214
+c last restart ## conflicts  :  2 52440 
+c [glucose 4]
+c [glucose 4]        calls          212        66.4 per second
+c [glucose 4]     restarts          212        66.4 per second
+c [glucose 4]    conflicts          182        57.0 per second
+c [glucose 4]    decisions         3552      1112.1 per second
+c [glucose 4] propagations         3577      1119.9 per second
+c [glucose 4]
+c last restart ## conflicts  :  2 14 
+c Number of calls is: 213
+c Layers in PHI: 215
+c Layers in KSI: 215
+c last restart ## conflicts  :  96 56231 
+c [glucose 4]
+c [glucose 4]        calls            1         0.3 per second
+c [glucose 4]     restarts            1         0.3 per second
+c [glucose 4]    conflicts            2         0.6 per second
+c [glucose 4]    decisions           18         5.3 per second
+c [glucose 4] propagations           21         6.2 per second
+c [glucose 4]
+c last restart ## conflicts  :  3 15 
+c Number of calls is: 214
+c Layers in PHI: 216
+c Layers in KSI: 216
+c last restart ## conflicts  :  0 72664 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 215
+c Layers in PHI: 217
+c Layers in KSI: 217
+c last restart ## conflicts  :  0 71883 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 216
+c Layers in PHI: 218
+c Layers in KSI: 218
+c last restart ## conflicts  :  0 71372 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 217
+c Layers in PHI: 219
+c Layers in KSI: 219
+c last restart ## conflicts  :  0 70986 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 218
+c Layers in PHI: 220
+c Layers in KSI: 220
+c last restart ## conflicts  :  0 70256 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 219
+c Layers in PHI: 221
+c Layers in KSI: 221
+c last restart ## conflicts  :  0 69849 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 220
+c Layers in PHI: 222
+c Layers in KSI: 222
+c last restart ## conflicts  :  0 74364 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 221
+c Layers in PHI: 223
+c Layers in KSI: 223
+c last restart ## conflicts  :  0 73646 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 222
+c Layers in PHI: 224
+c Layers in KSI: 224
+c last restart ## conflicts  :  0 73091 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 223
+c Layers in PHI: 225
+c Layers in KSI: 225
+c last restart ## conflicts  :  0 72607 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 224
+c Layers in PHI: 226
+c Layers in KSI: 226
+c last restart ## conflicts  :  0 72313 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 225
+c Layers in PHI: 227
+c Layers in KSI: 227
+c last restart ## conflicts  :  0 71780 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 226
+c Layers in PHI: 228
+c Layers in KSI: 228
+c last restart ## conflicts  :  0 75868 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 227
+c Layers in PHI: 229
+c Layers in KSI: 229
+c last restart ## conflicts  :  0 74917 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 228
+c Layers in PHI: 230
+c Layers in KSI: 230
+c last restart ## conflicts  :  0 74526 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 229
+c Layers in PHI: 231
+c Layers in KSI: 231
+c last restart ## conflicts  :  0 73945 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 230
+c Layers in PHI: 232
+c Layers in KSI: 232
+c last restart ## conflicts  :  0 73466 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 231
+c Layers in PHI: 233
+c Layers in KSI: 233
+c last restart ## conflicts  :  0 72724 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 232
+c Layers in PHI: 234
+c Layers in KSI: 234
+c last restart ## conflicts  :  0 77304 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 233
+c Layers in PHI: 235
+c Layers in KSI: 235
+c last restart ## conflicts  :  0 76728 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 234
+c Layers in PHI: 236
+c Layers in KSI: 236
+c last restart ## conflicts  :  0 75885 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 235
+c Layers in PHI: 237
+c Layers in KSI: 237
+c last restart ## conflicts  :  0 75303 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 236
+c Layers in PHI: 238
+c Layers in KSI: 238
+c last restart ## conflicts  :  0 74816 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 237
+c Layers in PHI: 239
+c Layers in KSI: 239
+c last restart ## conflicts  :  0 74296 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 238
+c Layers in PHI: 240
+c Layers in KSI: 240
+c last restart ## conflicts  :  0 78752 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 239
+c Layers in PHI: 241
+c Layers in KSI: 241
+c last restart ## conflicts  :  0 78031 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 240
+c Layers in PHI: 242
+c Layers in KSI: 242
+c last restart ## conflicts  :  0 77483 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 241
+c Layers in PHI: 243
+c Layers in KSI: 243
+c last restart ## conflicts  :  0 77015 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 242
+c Layers in PHI: 244
+c Layers in KSI: 244
+c last restart ## conflicts  :  0 76397 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 243
+c Layers in PHI: 245
+c Layers in KSI: 245
+c last restart ## conflicts  :  0 75872 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 244
+c Layers in PHI: 246
+c Layers in KSI: 246
+c last restart ## conflicts  :  0 80195 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 245
+c Layers in PHI: 247
+c Layers in KSI: 247
+c last restart ## conflicts  :  0 79538 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 246
+c Layers in PHI: 248
+c Layers in KSI: 248
+c last restart ## conflicts  :  0 79182 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 247
+c Layers in PHI: 249
+c Layers in KSI: 249
+c last restart ## conflicts  :  0 78673 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 248
+c Layers in PHI: 250
+c Layers in KSI: 250
+c last restart ## conflicts  :  0 78269 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 249
+c Layers in PHI: 251
+c Layers in KSI: 251
+c last restart ## conflicts  :  0 77683 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 250
+c Layers in PHI: 252
+c Layers in KSI: 252
+c last restart ## conflicts  :  0 81676 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 251
+c Layers in PHI: 253
+c Layers in KSI: 253
+c last restart ## conflicts  :  0 81156 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 252
+c Layers in PHI: 254
+c Layers in KSI: 254
+c last restart ## conflicts  :  0 80624 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 253
+c Layers in PHI: 255
+c Layers in KSI: 255
+c last restart ## conflicts  :  0 79745 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 254
+c Layers in PHI: 256
+c Layers in KSI: 256
+c last restart ## conflicts  :  0 79196 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 255
+c Layers in PHI: 257
+c Layers in KSI: 257
+c last restart ## conflicts  :  0 78665 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 256
+c Layers in PHI: 258
+c Layers in KSI: 258
+c last restart ## conflicts  :  0 83070 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 257
+c Layers in PHI: 259
+c Layers in KSI: 259
+c last restart ## conflicts  :  0 82508 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 258
+c Layers in PHI: 260
+c Layers in KSI: 260
+c last restart ## conflicts  :  0 82071 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 259
+c Layers in PHI: 261
+c Layers in KSI: 261
+c last restart ## conflicts  :  0 81386 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 260
+c Layers in PHI: 262
+c Layers in KSI: 262
+c last restart ## conflicts  :  0 80634 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 261
+c Layers in PHI: 263
+c Layers in KSI: 263
+c last restart ## conflicts  :  0 80292 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 262
+c Layers in PHI: 264
+c Layers in KSI: 264
+c last restart ## conflicts  :  0 84470 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 263
+c Layers in PHI: 265
+c Layers in KSI: 265
+c last restart ## conflicts  :  0 83788 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 264
+c Layers in PHI: 266
+c Layers in KSI: 266
+c last restart ## conflicts  :  0 83338 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 265
+c Layers in PHI: 267
+c Layers in KSI: 267
+c last restart ## conflicts  :  0 82863 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 266
+c Layers in PHI: 268
+c Layers in KSI: 268
+c last restart ## conflicts  :  0 82528 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 267
+c Layers in PHI: 269
+c Layers in KSI: 269
+c last restart ## conflicts  :  0 82235 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 268
+c Layers in PHI: 270
+c Layers in KSI: 270
+c last restart ## conflicts  :  0 85906 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 269
+c Layers in PHI: 271
+c Layers in KSI: 271
+c last restart ## conflicts  :  0 85232 
+c last restart ## conflicts  :  0 12 
+c Number of calls is: 270
+c Layers in PHI: 272
+c Layers in KSI: 272
+c last restart ## conflicts  :  0 84590 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 271
+c Layers in PHI: 273
+c Layers in KSI: 273
+c last restart ## conflicts  :  0 84171 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 272
+c Layers in PHI: 274
+c Layers in KSI: 274
+c last restart ## conflicts  :  0 83733 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 273
+c Layers in PHI: 275
+c Layers in KSI: 275
+c last restart ## conflicts  :  0 83479 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 274
+c Layers in PHI: 276
+c Layers in KSI: 276
+c last restart ## conflicts  :  0 87366 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 275
+c Layers in PHI: 277
+c Layers in KSI: 277
+c last restart ## conflicts  :  0 86972 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 276
+c Layers in PHI: 278
+c Layers in KSI: 278
+c last restart ## conflicts  :  0 86306 
+c last restart ## conflicts  :  1 12 
+c Number of calls is: 277
+c Layers in PHI: 279
+c Layers in KSI: 279
+c last restart ## conflicts  :  0 85961 
+c last restart ## conflicts  :  0 12 
+c Number of calls is: 278
+c Layers in PHI: 280
+c Layers in KSI: 280
+c last restart ## conflicts  :  0 85623 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 279
+c Layers in PHI: 281
+c Layers in KSI: 281
+c last restart ## conflicts  :  0 85376 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 280
+c Layers in PHI: 282
+c Layers in KSI: 282
+c last restart ## conflicts  :  0 88819 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 281
+c Layers in PHI: 283
+c Layers in KSI: 283
+c last restart ## conflicts  :  0 88060 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 282
+c Layers in PHI: 284
+c Layers in KSI: 284
+c last restart ## conflicts  :  0 87617 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 283
+c Layers in PHI: 285
+c Layers in KSI: 285
+c last restart ## conflicts  :  0 87223 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 284
+c Layers in PHI: 286
+c Layers in KSI: 286
+c last restart ## conflicts  :  0 86833 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 285
+c Layers in PHI: 287
+c Layers in KSI: 287
+c last restart ## conflicts  :  0 86832 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 286
+c Layers in PHI: 288
+c Layers in KSI: 288
+c last restart ## conflicts  :  0 90281 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 287
+c Layers in PHI: 289
+c Layers in KSI: 289
+c last restart ## conflicts  :  0 89558 
+c last restart ## conflicts  :  0 12 
+c Number of calls is: 288
+c Layers in PHI: 290
+c Layers in KSI: 290
+c last restart ## conflicts  :  0 89241 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 289
+c Layers in PHI: 291
+c Layers in KSI: 291
+c last restart ## conflicts  :  0 89003 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 290
+c Layers in PHI: 292
+c Layers in KSI: 292
+c last restart ## conflicts  :  0 88780 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 291
+c Layers in PHI: 293
+c Layers in KSI: 293
+c last restart ## conflicts  :  0 88319 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 292
+c Layers in PHI: 294
+c Layers in KSI: 294
+c last restart ## conflicts  :  0 91795 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 293
+c Layers in PHI: 295
+c Layers in KSI: 295
+c last restart ## conflicts  :  0 91092 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 294
+c Layers in PHI: 296
+c Layers in KSI: 296
+c last restart ## conflicts  :  0 90634 
+c last restart ## conflicts  :  1 12 
+c Number of calls is: 295
+c Layers in PHI: 297
+c Layers in KSI: 297
+c last restart ## conflicts  :  0 90222 
+c last restart ## conflicts  :  0 12 
+c Number of calls is: 296
+c Layers in PHI: 298
+c Layers in KSI: 298
+c last restart ## conflicts  :  0 89740 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 297
+c Layers in PHI: 299
+c Layers in KSI: 299
+c last restart ## conflicts  :  0 89369 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 298
+c Layers in PHI: 300
+c Layers in KSI: 300
+c last restart ## conflicts  :  0 93313 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 299
+c Layers in PHI: 301
+c Layers in KSI: 301
+c last restart ## conflicts  :  0 92515 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 300
+c Layers in PHI: 302
+c Layers in KSI: 302
+c last restart ## conflicts  :  0 92162 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 301
+c Layers in PHI: 303
+c Layers in KSI: 303
+c last restart ## conflicts  :  0 91902 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 302
+c Layers in PHI: 304
+c Layers in KSI: 304
+c last restart ## conflicts  :  0 91761 
+c last restart ## conflicts  :  1 12 
+c Number of calls is: 303
+c Layers in PHI: 305
+c Layers in KSI: 305
+c last restart ## conflicts  :  0 91554 
+c last restart ## conflicts  :  0 12 
+c Number of calls is: 304
+c Layers in PHI: 306
+c Layers in KSI: 306
+c last restart ## conflicts  :  0 94762 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 305
+c Layers in PHI: 307
+c Layers in KSI: 307
+c last restart ## conflicts  :  0 93908 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 306
+c Layers in PHI: 308
+c Layers in KSI: 308
+c last restart ## conflicts  :  0 93484 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 307
+c Layers in PHI: 309
+c Layers in KSI: 309
+c last restart ## conflicts  :  0 93233 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 308
+c Layers in PHI: 310
+c Layers in KSI: 310
+c last restart ## conflicts  :  0 92904 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 309
+c Layers in PHI: 311
+c Layers in KSI: 311
+c last restart ## conflicts  :  0 92670 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 310
+c Layers in PHI: 312
+c Layers in KSI: 312
+c last restart ## conflicts  :  0 96211 
+c last restart ## conflicts  :  1 12 
+c Number of calls is: 311
+c Layers in PHI: 313
+c Layers in KSI: 313
+c last restart ## conflicts  :  0 95796 
+c last restart ## conflicts  :  0 12 
+c Number of calls is: 312
+c Layers in PHI: 314
+c Layers in KSI: 314
+c last restart ## conflicts  :  0 95432 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 313
+c Layers in PHI: 315
+c Layers in KSI: 315
+c last restart ## conflicts  :  0 95289 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 314
+c Layers in PHI: 316
+c Layers in KSI: 316
+c last restart ## conflicts  :  0 95068 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 315
+c Layers in PHI: 317
+c Layers in KSI: 317
+c last restart ## conflicts  :  0 94907 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 316
+c Layers in PHI: 318
+c Layers in KSI: 318
+c last restart ## conflicts  :  0 97626 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 317
+c Layers in PHI: 319
+c Layers in KSI: 319
+c last restart ## conflicts  :  0 97300 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 318
+c Layers in PHI: 320
+c Layers in KSI: 320
+c last restart ## conflicts  :  0 96863 
+c last restart ## conflicts  :  1 12 
+c Number of calls is: 319
+c Layers in PHI: 321
+c Layers in KSI: 321
+c last restart ## conflicts  :  0 96554 
+c last restart ## conflicts  :  0 12 
+c Number of calls is: 320
+c Layers in PHI: 322
+c Layers in KSI: 322
+c last restart ## conflicts  :  0 96401 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 321
+c Layers in PHI: 323
+c Layers in KSI: 323
+c last restart ## conflicts  :  0 96249 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 322
+c Layers in PHI: 324
+c Layers in KSI: 324
+c last restart ## conflicts  :  0 99015 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 323
+c Layers in PHI: 325
+c Layers in KSI: 325
+c last restart ## conflicts  :  0 98597 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 324
+c Layers in PHI: 326
+c Layers in KSI: 326
+c last restart ## conflicts  :  0 98372 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 325
+c Layers in PHI: 327
+c Layers in KSI: 327
+c last restart ## conflicts  :  0 97934 
+c last restart ## conflicts  :  0 12 
+c Number of calls is: 326
+c Layers in PHI: 328
+c Layers in KSI: 328
+c last restart ## conflicts  :  0 97590 
+c last restart ## conflicts  :  1 12 
+c Number of calls is: 327
+c Layers in PHI: 329
+c Layers in KSI: 329
+c last restart ## conflicts  :  0 97103 
+c last restart ## conflicts  :  0 12 
+c Number of calls is: 328
+c Layers in PHI: 330
+c Layers in KSI: 330
+c last restart ## conflicts  :  0 100485 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 329
+c Layers in PHI: 331
+c Layers in KSI: 331
+c last restart ## conflicts  :  0 99923 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 330
+c Layers in PHI: 332
+c Layers in KSI: 332
+c last restart ## conflicts  :  0 99682 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 331
+c Layers in PHI: 333
+c Layers in KSI: 333
+c last restart ## conflicts  :  0 99299 
+c last restart ## conflicts  :  0 12 
+c Number of calls is: 332
+c Layers in PHI: 334
+c Layers in KSI: 334
+c last restart ## conflicts  :  0 98940 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 333
+c Layers in PHI: 335
+c Layers in KSI: 335
+c last restart ## conflicts  :  0 98559 
+c last restart ## conflicts  :  0 12 
+c Number of calls is: 334
+c Layers in PHI: 336
+c Layers in KSI: 336
+c last restart ## conflicts  :  0 101895 
+c last restart ## conflicts  :  1 11 
+c Number of calls is: 335
+c Layers in PHI: 337
+c Layers in KSI: 337
+c last restart ## conflicts  :  0 101538 
+c last restart ## conflicts  :  0 11 
+c Number of calls is: 336
+c Layers in PHI: 338
+c Layers in KSI: 338
+c last restart ## conflicts  :  0 101126 
+c last restart ## conflicts  :  2 12 
+c Number of calls is: 337
+c Layers in PHI: 339
+c Layers in KSI: 339
+c last restart ## conflicts  :  0 100886 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 338
+c Layers in PHI: 340
+c Layers in KSI: 340
+c last restart ## conflicts  :  0 100638 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 339
+c Layers in PHI: 341
+c Layers in KSI: 341
+c last restart ## conflicts  :  0 100255 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 340
+c Layers in PHI: 342
+c Layers in KSI: 342
+c last restart ## conflicts  :  0 103331 
+c last restart ## conflicts  :  2 14 
+c Number of calls is: 341
+c Layers in PHI: 343
+c Layers in KSI: 343
+c last restart ## conflicts  :  0 103070 
+c last restart ## conflicts  :  0 12 
+c Number of calls is: 342
+c Layers in PHI: 344
+c Layers in KSI: 344
+c last restart ## conflicts  :  0 102835 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 343
+c Layers in PHI: 345
+c Layers in KSI: 345
+c last restart ## conflicts  :  0 102362 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 344
+c Layers in PHI: 346
+c Layers in KSI: 346
+c last restart ## conflicts  :  0 102233 
+c last restart ## conflicts  :  2 15 
+c Number of calls is: 345
+c Layers in PHI: 347
+c Layers in KSI: 347
+c last restart ## conflicts  :  0 102022 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 346
+c Layers in PHI: 348
+c Layers in KSI: 348
+c last restart ## conflicts  :  0 104826 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 347
+c Layers in PHI: 349
+c Layers in KSI: 349
+c last restart ## conflicts  :  0 104689 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 348
+c Layers in PHI: 350
+c Layers in KSI: 350
+c last restart ## conflicts  :  0 104327 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 349
+c Layers in PHI: 351
+c Layers in KSI: 351
+c last restart ## conflicts  :  0 103981 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 350
+c Layers in PHI: 352
+c Layers in KSI: 352
+c last restart ## conflicts  :  0 103347 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 351
+c Layers in PHI: 353
+c Layers in KSI: 353
+c last restart ## conflicts  :  0 103138 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 352
+c Layers in PHI: 354
+c Layers in KSI: 354
+c last restart ## conflicts  :  0 106310 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 353
+c Layers in PHI: 355
+c Layers in KSI: 355
+c last restart ## conflicts  :  0 106309 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 354
+c Layers in PHI: 356
+c Layers in KSI: 356
+c last restart ## conflicts  :  0 106047 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 355
+c Layers in PHI: 357
+c Layers in KSI: 357
+c last restart ## conflicts  :  0 105603 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 356
+c Layers in PHI: 358
+c Layers in KSI: 358
+c last restart ## conflicts  :  0 105481 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 357
+c Layers in PHI: 359
+c Layers in KSI: 359
+c last restart ## conflicts  :  0 105018 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 358
+c Layers in PHI: 360
+c Layers in KSI: 360
+c last restart ## conflicts  :  0 107784 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 359
+c Layers in PHI: 361
+c Layers in KSI: 361
+c last restart ## conflicts  :  0 107448 
+c last restart ## conflicts  :  0 11 
+c Number of calls is: 360
+c Layers in PHI: 362
+c Layers in KSI: 362
+c last restart ## conflicts  :  0 107132 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 361
+c Layers in PHI: 363
+c Layers in KSI: 363
+c last restart ## conflicts  :  0 106784 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 362
+c Layers in PHI: 364
+c Layers in KSI: 364
+c last restart ## conflicts  :  0 106284 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 363
+c Layers in PHI: 365
+c Layers in KSI: 365
+c last restart ## conflicts  :  0 105817 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 364
+c Layers in PHI: 366
+c Layers in KSI: 366
+c last restart ## conflicts  :  0 109277 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 365
+c Layers in PHI: 367
+c Layers in KSI: 367
+c last restart ## conflicts  :  0 108930 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 366
+c Layers in PHI: 368
+c Layers in KSI: 368
+c last restart ## conflicts  :  0 108445 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 367
+c Layers in PHI: 369
+c Layers in KSI: 369
+c last restart ## conflicts  :  0 107832 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 368
+c Layers in PHI: 370
+c Layers in KSI: 370
+c last restart ## conflicts  :  0 107569 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 369
+c Layers in PHI: 371
+c Layers in KSI: 371
+c last restart ## conflicts  :  0 107308 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 370
+c Layers in PHI: 372
+c Layers in KSI: 372
+c last restart ## conflicts  :  0 110739 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 371
+c Layers in PHI: 373
+c Layers in KSI: 373
+c last restart ## conflicts  :  0 110320 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 372
+c Layers in PHI: 374
+c Layers in KSI: 374
+c last restart ## conflicts  :  0 109631 
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 373
+c Layers in PHI: 375
+c Layers in KSI: 375
+c last restart ## conflicts  :  0 109122 
+c last restart ## conflicts  :  0 13 
+c Number of calls is: 374
+c Layers in PHI: 376
+c Layers in KSI: 376
+c last restart ## conflicts  :  0 108861 
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 375
+c Layers in PHI: 377
+c Layers in KSI: 377
+c last restart ## conflicts  :  0 108765 
+c last restart ## conflicts  :  0 11 
+c Number of calls is: 376
+c Layers in PHI: 378
+c Layers in KSI: 378
+c last restart ## conflicts  :  0 112290 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 377
+c Layers in PHI: 379
+c Layers in KSI: 379
+c last restart ## conflicts  :  0 111840 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 378
+c Layers in PHI: 380
+c Layers in KSI: 380
+c last restart ## conflicts  :  0 111098 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 379
+c Layers in PHI: 381
+c Layers in KSI: 381
+c last restart ## conflicts  :  0 110727 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 380
+c Layers in PHI: 382
+c Layers in KSI: 382
+c last restart ## conflicts  :  0 110337 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 381
+c Layers in PHI: 383
+c Layers in KSI: 383
+c last restart ## conflicts  :  101 131152 
+c [glucose 4]
+c [glucose 4]        calls          168        15.0 per second
+c [glucose 4]     restarts          168        15.0 per second
+c [glucose 4]    conflicts           89         8.0 per second
+c [glucose 4]    decisions         2542       227.1 per second
+c [glucose 4] propagations         2850       254.6 per second
+c [glucose 4]
+c last restart ## conflicts  :  1 13 
+c Number of calls is: 382
+c Layers in PHI: 384
+c Layers in KSI: 384
+c last restart ## conflicts  :  31 128967 
+c [glucose 4]
+c [glucose 4]        calls            1         0.1 per second
+c [glucose 4]     restarts            1         0.1 per second
+c [glucose 4]    conflicts            1         0.1 per second
+c [glucose 4]    decisions           16         1.4 per second
+c [glucose 4] propagations           20         1.8 per second
+c [glucose 4]
+c last restart ## conflicts  :  3 15 
+c Number of calls is: 383
+c Layers in PHI: 385
+c Layers in KSI: 385
+c last restart ## conflicts  :  0 128657 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 384
+c Layers in PHI: 386
+c Layers in KSI: 386
+c last restart ## conflicts  :  0 126138 
+c last restart ## conflicts  :  1 31 
+c Number of calls is: 385
+c Layers in PHI: 387
+c Layers in KSI: 773
+c sat_solver_phi calld 386 times, running for 8.96962 seconds.
+c number of layers in PHI is 388
+c sat_solver_ksi was running for 0.004907 seconds.
+c number of layers in KSI is 773
+c mysolver was running for 11.4063 seconds.
+s cnf 0
+solving done with exit code 20
+
+QBF solver OK
+
+running SAT Solver...
+
+/tmp/ferpcert2787expanded.cnf
+s UNSATISFIABLE
+
+PROOF GENERATION OK
+
+checking unsat proof
+
+resolved 1 root and 1 empty clause
+trace-size2: 3252484
+
+TRACE CHECK OK
+
+running toferp...
+
+ferp-size: 2520160
+TOFERP OK
+
+checking FERP PROOF...
+
+FERP CHECK OK
+
+extracting AIG ...
+
+aig-size: 645883669
+aig-header: aag 24567971 952 0 16 24567016
+FERP CERT OK
+
+merging  AIG into QBF ...
+
+CERTCHECK OK
+
+merged-cnf-header: p cnf 24574488 73717685
+merged-cnf-size: 1714450602
+running SAT solver...
+
+c ---- [ banner ] ------------------------------------------------------------
+c
+c KISSAT SAT Solver
+c Copyright (c) 2019-2020 Armin Biere JKU Linz
+c 
+c Version 1.0.3 59813addcacc4d6fb880ebdd63685600475aa940
+c gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0 -W -Wall -O3 -DNEMBEDDED -DNDEBUG -DNMETRICS -DNSTATISTICS
+c Sun Feb 14 23:58:54 CET 2021 Linux cluster3 4.15.0-135-generic x86_64
+c
+c ---- [ parsing ] -----------------------------------------------------------
+c
+c opened and reading DIMACS file:
+c 
+c   /tmp/ferpcert_merged_cnf2787.cnf
+c 
+c parsed 'p cnf 24574488 73717685' header
+c closing input after reading 1714450602 bytes (2 GB)
+c finished parsing after 21.84 seconds
+c
+c ---- [ solving ] -----------------------------------------------------------
+c
+c  seconds   reductions redundant irredundant
+c           MB   restarts    trail          variables
+c            level  conflicts   glue               remaining
+c
+c * 21.84 3523 0  0  0   0   0 0% 0 73717683 24569027 100%
+c { 21.84 3524 0  0  0   0   0 0% 0 73717683 24569027 100%
+c i 29.80 3924 763  0  2 179 170 60% 7 73717683 24569026 100%
+c i 30.99 3927 510  0  2 236 223 42% 5 73717683 24569024 100%
+c i 30.99 3927 506  0  2 237 223 42% 5 73717683 24569022 100%
+c - 34.48 3930 369  1  2 300 239 31% 4 73708627 24569022 100%
+c i 36.92 3932 375  1  2 328 264 32% 4 73708627 24569020 100%
+c i 36.97 3932 422  1  2 361 295 34% 4 73708627 24569018 100%
+c i 39.72 3933 456  1  6 391 320 35% 4 73708627 24569016 100%
+c i 39.74 3933 493  1  6 424 347 37% 4 73708627 24569014 100%
+c i 39.80 3933 552  1  6 495 408 39% 4 73708627 24569012 100%
+c i 41.23 3933 537  1  6 508 418 39% 4 73708627 24569010 100%
+c i 42.31 3934 491  1  6 545 454 36% 3 73708627 24569008 100%
+c i 43.53 3935 466  1  6 573 481 35% 3 73708627 24569006 100%
+c i 44.34 3935 418  1  6 638 538 31% 3 73708627 24569005 100%
+c i 44.34 3935 417  1  6 639 538 31% 3 73708627 24569004 100%
+c i 45.92 3936 401  1  6 661 556 30% 3 73708627 24569002 100%
+c i 48.82 3937 378  1 15 700 593 30% 3 73708627 24569000 100%
+c i 52.52 3937 367  1 19 715 606 29% 3 73708627 24568998 100%
+c i 57.00 3939 344  1 25 802 689 30% 3 73708627 24568997 100%
+c
+c  seconds     reductions redundant  irredundant
+c           MB     restarts     trail          variables
+c             level   conflicts    glue               remaining
+c
+c i 57.28 3939 344  1 25 804 690 30% 3 73708627 24568996 100%
+c i 57.52 3939 344  1 25 806 691 30% 3 73708627 24568995 100%
+c i 60.62 3940 329  1 25 876 758 30% 3 73708627 24568993 100%
+c i 60.69 3940 329  1 25 878 759 30% 3 73708627 24568992 100%
+c i 62.19 3940 332  1 25 890 770 30% 3 73708627 24568991 100%
+c - 64.59 3941 335  2 25 900 729 31% 3 73708535 24568991 100%
+c i 66.15 3941 340  2 25 909 735 31% 3 73708535 24568989 100%
+c i 66.27 3941 342  2 25 913 736 31% 3 73708535 24568987 100%
+c i 68.80 3941 346  2 30 933 754 32% 3 73708535 24568985 100%
+c i 70.45 3941 337  2 33 948 768 31% 3 73708535 24568984 100%
+c i 71.19 3941 337  2 33 949 768 31% 3 73708535 24568983 100%
+c i 72.28 3941 333  2 33 955 772 31% 3 73708535 24568982 100%
+c i 73.77 3942 331  2 33 960 776 31% 3 73708535 24568980 100%
+c i 73.80 3942 330  2 33 962 777 31% 3 73708535 24568978 100%
+c } 76.43 3942 318  2 33 1002 810 32% 3 73708535 24568978 100%
+c [ 76.43 3942 0  2 33 1002 810 0% 0 73708535 24568978 100%
+c a 81.48 3942 0  2 33 1002 810 0% 0 73705816 24568964 100%
+c O 83.30 3943 185  2 33 1003 811 64% 4 73705816 24568964 100%
+c i 87.96 3976 242  2 33 1056 863 51% 3 73705816 24568963 100%
+c i 88.34 3976 236  2 33 1057 863 50% 3 73705816 24568962 100%
+c
+c  seconds     reductions  redundant  irredundant
+c           MB     restarts      trail          variables
+c             level   conflicts     glue               remaining
+c
+c i 88.70 3976 222  2 33 1059 864 48% 3 73705816 24568959 100%
+c i 88.83 3976 216  2 33 1060 864 46% 3 73705816 24568958 100%
+c i 90.04 3977 167  2 33 1075 877 39% 2 73705816 24568955 100%
+c i 92.11 3977 148  2 33 1084 885 38% 3 73705816 24568954 100%
+c i 92.57 3977 138  2 33 1089 889 36% 2 73705816 24568953 100%
+c i 92.81 3977 136  2 33 1090 889 36% 2 73705816 24568952 100%
+c i 93.05 3977 134  2 33 1091 889 35% 2 73705816 24568951 100%
+c i 95.41 3977 114  2 33 1104 899 33% 3 73705816 24568950 100%
+c i 96.17 3977 110  2 33 1106 900 33% 3 73705816 24568947 100%
+c i 97.85 3977 106  2 33 1110 903 33% 2 73705816 24568946 100%
+c i 101.12 3977 108  2 33 1126 918 34% 2 73705816 24568945 100%
+c i 101.49 3977 107  2 33 1127 918 34% 2 73705816 24568944 100%
+c i 101.88 3977 105  2 33 1128 918 33% 2 73705816 24568943 100%
+c i 107.79 3987 638  2 33 1167 950 36% 10 73705816 24568941 100%
+c i 109.77 3992 1304  2 33 1208 988 44% 16 73705816 24568939 100%
+c i 110.58 3992 1425  2 33 1224 1002 45% 17 73705816 24568937 100%
+c i 116.81 3996 1592  2 33 1358 1123 58% 13 73705816 24568936 100%
+c i 116.83 3996 1593  2 33 1360 1124 58% 13 73705816 24568935 100%
+c i 117.89 3997 1601  2 33 1381 1139 59% 13 73705816 24568934 100%
+c i 122.01 3999 1601  2 33 1646 1382 63% 9 73705816 24568932 100%
+c
+c  seconds       reductions  redundant    irredundant
+c            MB      restarts       trail           variables
+c              level    conflicts       glue               remaining
+c
+c i 123.33 4000 1585  2 33 1669 1403 62% 10 73705816 24568930 100%
+c i 123.37 4000 1548  2 33 1707 1437 62% 10 73705816 24568928 100%
+c - 126.13 4000 1451  3 33 1800 1320 62% 11 73705706 24568928 100%
+c i 132.59 4002 1273  3 33 1901 1414 57% 10 73705706 24568926 100%
+c i 133.22 4003 1115  3 33 2023 1531 54% 9 73705706 24568924 100%
+c i 133.26 4003 1095  3 33 2040 1547 54% 9 73705706 24568922 100%
+c i 133.29 4003 1090  3 33 2045 1549 54% 9 73705706 24568908 100%
+c i 133.43 4003 1053  3 34 2106 1606 53% 9 73705706 24568903 100%
+c ] 136.10 4006 1030  3 34 2155 1655 53% 9 73705706 24568897 100%
+c { 136.10 4006 318  3 34 2155 1655 32% 3 73705706 24568897 100%
+c i 139.26 4006 286  3 50 2316 1805 28% 3 73705706 24568895 100%
+c i 140.33 4006 286  3 50 2317 1805 28% 3 73705706 24568893 100%
+c i 141.65 4006 286  3 50 2319 1806 28% 3 73705706 24568891 100%
+c i 143.35 4007 281  3 50 2348 1830 28% 3 73705706 24568890 100%
+c i 144.35 4007 280  3 50 2352 1833 28% 3 73705706 24568889 100%
+c i 146.54 4007 278  3 50 2367 1847 29% 3 73705706 24568888 100%
+c i 146.98 4007 277  3 50 2370 1849 29% 3 73705706 24568887 100%
+c i 147.90 4007 269  3 50 2401 1876 28% 3 73705706 24568886 100%
+c i 147.90 4007 269  3 50 2402 1876 28% 3 73705706 24568885 100%
+c i 150.11 4007 268  3 50 2408 1881 28% 3 73705706 24568883 100%
+c
+c  seconds      reductions  redundant   irredundant
+c            MB     restarts       trail          variables
+c              level   conflicts      glue               remaining
+c
+c i 157.09 4008 264  3 50 2428 1900 28% 3 73705706 24568881 100%
+c i 162.51 4008 257  3 50 2470 1940 29% 3 73705706 24568879 100%
+c i 162.52 4008 256  3 50 2479 1948 30% 3 73705706 24568877 100%
+c i 162.52 4008 255  3 50 2484 1951 30% 3 73705706 24568875 100%
+c i 165.05 4008 249  3 54 2518 1981 30% 3 73705706 24568874 100%
+c i 165.14 4008 249  3 54 2520 1982 30% 3 73705706 24568873 100%
+c i 165.23 4008 248  3 54 2522 1983 30% 3 73705706 24568872 100%
+c i 165.43 4008 248  3 54 2524 1984 30% 3 73705706 24568871 100%
+c i 165.59 4008 247  3 54 2526 1985 30% 3 73705706 24568870 100%
+c i 165.85 4008 246  3 54 2529 1987 30% 3 73705706 24568869 100%
+c i 174.71 4008 242  3 54 2571 2024 31% 3 73705706 24568868 100%
+c i 175.92 4008 239  3 54 2592 2044 31% 3 73705706 24568866 100%
+c i 175.93 4008 238  3 54 2596 2047 31% 3 73705706 24568865 100%
+c i 177.68 4008 237  3 54 2598 2048 31% 3 73705706 24568863 100%
+c i 182.00 4012 235  3 54 2632 2080 33% 3 73705706 24568861 100%
+c i 182.24 4012 233  3 54 2652 2098 33% 3 73705706 24568859 100%
+c i 182.30 4012 231  3 54 2662 2104 33% 3 73705706 24568857 100%
+c i 182.71 4012 225  3 54 2690 2129 32% 3 73705706 24568856 100%
+c i 195.42 4019 224  3 54 2721 2156 34% 3 73705706 24568855 100%
+c i 196.23 4020 230  3 54 2725 2159 34% 3 73705706 24568853 100%
+c
+c  seconds      reductions  redundant   irredundant
+c            MB     restarts       trail          variables
+c              level   conflicts      glue               remaining
+c
+c i 196.37 4020 238  3 54 2730 2162 34% 3 73705706 24568851 100%
+c i 196.46 4020 245  3 54 2736 2165 34% 3 73705706 24568850 100%
+c i 196.85 4020 247  3 54 2742 2167 35% 3 73705706 24568849 100%
+c i 198.62 4020 244  3 54 2759 2183 34% 3 73705706 24568848 100%
+c i 203.80 4023 237  3 54 2813 2231 36% 3 73705706 24568847 100%
+c i 207.75 4023 236  3 54 2822 2237 37% 3 73705706 24568846 100%
+c i 221.59 4028 221  3 54 2921 2331 38% 3 73705706 24568845 100%
+c i 226.67 4028 220  3 54 2925 2334 38% 3 73705706 24568843 100%
+c i 227.23 4028 221  3 54 2936 2342 39% 3 73705706 24568841 100%
+c i 227.23 4028 221  3 54 2940 2345 39% 3 73705706 24568840 100%
+c i 227.27 4028 222  3 54 2954 2358 39% 3 73705706 24568838 100%
+c i 228.60 4029 222  3 54 2972 2375 40% 3 73705706 24568837 100%
+c i 229.23 4029 223  3 54 2980 2382 40% 3 73705706 24568835 100%
+c i 229.38 4029 223  3 54 2985 2386 40% 3 73705706 24568834 100%
+c i 229.42 4029 223  3 54 2987 2387 41% 3 73705706 24568833 100%
+c i 229.49 4029 223  3 54 2994 2391 41% 3 73705706 24568821 100%
+c - 231.38 4029 224  4 54 3002 2152 41% 3 73705384 24568818 100%
+c a 237.25 4029 223  4 54 3004 2154 41% 3 73705313 24568813 100%
+c I 237.36 4029 223  4 54 3005 2154 41% 3 73705313 24568813 100%
+c i 237.36 4029 223  4 54 3005 2154 41% 3 73705313 24568796 100%
+c
+c  seconds      reductions  redundant   irredundant
+c            MB     restarts       trail          variables
+c              level   conflicts      glue               remaining
+c
+c i 237.63 4029 223  4 54 3008 2156 41% 3 73705313 24568794 100%
+c i 238.55 4029 221  4 54 3014 2161 41% 3 73705313 24568782 100%
+c i 239.84 4029 221  4 54 3016 2162 41% 3 73705313 24568780 100%
+c i 243.17 4029 220  4 54 3022 2167 41% 3 73705313 24568778 100%
+c i 249.59 4029 218  4 54 3044 2188 42% 3 73705313 24568777 100%
+c i 252.87 4029 213  4 54 3080 2212 41% 3 73705313 24568775 100%
+c i 269.34 4029 201  4 54 3151 2273 41% 3 73705313 24568774 100%
+c i 275.38 4029 198  4 54 3173 2294 41% 3 73705313 24568773 100%
+c i 275.86 4029 196  4 54 3181 2301 41% 3 73705313 24568772 100%
+c i 276.11 4029 196  4 54 3183 2302 41% 3 73705313 24568770 100%
+c i 276.29 4029 194  4 54 3193 2311 40% 3 73705313 24568769 100%
+c i 279.71 4029 193  4 54 3203 2319 40% 2 73705313 24568767 100%
+c i 288.11 4030 190  4 54 3241 2353 41% 3 73705313 24568766 100%
+c i 307.22 4031 190  4 72 3331 2435 41% 3 73705313 24568765 100%
+c i 310.48 4031 189  4 80 3339 2442 41% 3 73705313 24568763 100%
+c i 317.44 4031 187  4 92 3374 2471 41% 3 73705313 24568761 100%
+c i 324.61 4032 187  4 96 3384 2479 41% 3 73705313 24568759 100%
+c i 352.35 4032 186  4 110 3415 2507 41% 3 73705313 24568758 100%
+c i 360.30 4032 185  4 117 3430 2519 41% 3 73705313 24568757 100%
+c i 360.53 4032 185  4 117 3431 2519 41% 3 73705313 24568756 100%
+c
+c  seconds      reductions   redundant   irredundant
+c            MB     restarts        trail          variables
+c              level    conflicts      glue               remaining
+c
+c i 376.73 4032 182  4 119 3467 2554 41% 3 73705313 24568754 100%
+c i 379.18 4032 182  4 119 3476 2562 41% 3 73705313 24568753 100%
+c i 379.43 4032 182  4 119 3477 2562 41% 3 73705313 24568752 100%
+c i 392.68 4032 179  4 122 3529 2611 41% 3 73705313 24568750 100%
+c i 393.42 4032 179  4 123 3531 2612 41% 3 73705313 24568749 100%
+c i 400.61 4032 178  4 129 3551 2627 41% 3 73705313 24568748 100%
+c i 404.12 4032 177  4 132 3558 2633 41% 3 73705313 24568744 100%
+c i 405.48 4032 177  4 132 3560 2634 41% 3 73705313 24568742 100%
+c i 406.99 4032 177  4 132 3563 2636 41% 3 73705313 24568717 100%
+c i 409.92 4032 177  4 133 3568 2640 41% 3 73705313 24568715 100%
+c i 413.56 4032 177  4 136 3575 2646 41% 3 73705313 24568710 100%
+c i 414.62 4032 177  4 137 3576 2646 41% 3 73705313 24568709 100%
+c i 416.40 4032 176  4 138 3580 2649 41% 3 73705313 24568708 100%
+c i 448.13 4032 174  4 163 3638 2705 41% 3 73705313 24568707 100%
+c i 448.13 4032 174  4 164 3640 2706 41% 3 73705313 24568705 100%
+c i 457.61 4032 173  4 175 3669 2734 40% 3 73705313 24568704 100%
+c i 469.55 4032 171  4 185 3693 2757 40% 3 73705313 24568702 100%
+c i 476.60 4032 171  4 187 3698 2761 40% 3 73705313 24568687 100%
+c i 487.37 4032 171  4 193 3717 2779 40% 3 73705313 24568686 100%
+c i 490.81 4032 173  4 205 3749 2809 40% 3 73705313 24568684 100%
+c
+c  seconds      reductions   redundant   irredundant
+c            MB     restarts        trail          variables
+c              level    conflicts      glue               remaining
+c
+c i 491.85 4032 172  4 208 3756 2815 40% 3 73705313 24568682 100%
+c i 492.25 4032 172  4 209 3757 2815 40% 3 73705313 24568681 100%
+c i 492.89 4032 172  4 209 3758 2815 40% 3 73705313 24568679 100%
+c i 502.90 4032 170  4 219 3783 2837 40% 3 73705313 24568677 100%
+c i 504.01 4032 170  4 221 3789 2842 39% 3 73705313 24568675 100%
+c i 504.54 4032 170  4 223 3795 2847 39% 3 73705313 24568673 100%
+c i 510.82 4032 169  4 226 3804 2855 39% 3 73705313 24568672 100%
+c i 512.79 4032 168  4 226 3827 2877 39% 3 73705313 24568670 100%
+c i 515.78 4033 167  4 226 3833 2882 39% 3 73705313 24568668 100%
+c i 534.96 4033 160  4 243 3943 2985 39% 3 73705313 24568635 100%
+c i 535.65 4033 160  4 243 3944 2985 39% 3 73705313 24568606 100%
+c i 537.95 4033 160  4 246 3952 2991 39% 3 73705313 24568604 100%
+c i 539.92 4033 159  4 247 3955 2993 39% 3 73705313 24568602 100%
+c i 556.07 4033 158  4 258 3991 3024 39% 3 73705313 24568599 100%
+c i 558.25 4033 158  4 258 3998 3030 39% 3 73705313 24568598 100%
+c i 576.95 4033 155  4 273 4046 3073 38% 3 73705313 24568596 100%
+c i 578.12 4033 154  4 273 4051 3077 38% 3 73705313 24568595 100%
+c i 579.39 4033 154  4 273 4059 3084 38% 3 73705313 24568594 100%
+c i 587.33 4033 152  4 273 4099 3119 38% 3 73705313 24568593 100%
+c i 594.29 4033 151  4 273 4119 3138 38% 3 73705313 24568591 100%
+c
+c  seconds      reductions   redundant   irredundant
+c            MB     restarts        trail          variables
+c              level    conflicts      glue               remaining
+c
+c i 596.08 4033 150  4 273 4135 3153 38% 3 73705313 24568590 100%
+c i 596.46 4033 150  4 273 4141 3158 38% 3 73705313 24568588 100%
+c } 598.62 4033 149  4 273 4156 3170 38% 3 73705313 24568588 100%
+c [ 598.62 4033 1030  4 273 4156 3170 53% 9 73705313 24568588 100%
+c i 601.91 4033 984  4 273 4228 3236 53% 9 73705313 24568587 100%
+c i 605.36 4034 953  4 273 4269 3276 53% 8 73705313 24568585 100%
+c i 607.28 4034 927  4 273 4305 3309 53% 8 73705313 24568584 100%
+c i 610.21 4035 854  4 273 4421 3406 56% 8 73705313 24568582 100%
+c - 614.39 4035 801  5 273 4503 3198 56% 7 73704656 24568582 100%
+c 3 658.63 4124 612  5 273 4900 8537 56% 11 73704656 24568582 100%
+c t 659.93 4124 612  5 273 4900 8537 56% 11 73704654 24568582 100%
+c caught signal 15 (SIGTERM)
+c
+c ---- [ profiling ] ---------------------------------------------------------
+c
+c         619.56   73.97 %  search
+c         512.11   61.14 %  focused
+c         196.16   23.42 %  simplify
+c         186.21   22.23 %  probe
+c         177.62   21.21 %  failed
+c         107.45   12.83 %  stable
+c          21.84    2.61 %  parse
+c           9.94    1.19 %  autarky
+c           7.61    0.91 %  reduce
+c           7.29    0.87 %  ternary
+c           1.30    0.16 %  transitive
+c =============================================
+c         837.55  100.00 %  total
+c
+c ---- [ statistics ] --------------------------------------------------------
+c
+c conflicts:                             4900                5.85 per second
+c decisions:                            67664               13.81 per conflict
+c propagations:                    5746792025          6861401    per second
+c reductions:                               5              980    interval
+c rephased:                                 2             2450    interval
+c restarts:                               273               17.95 interval
+c
+c ---- [ resources ] ---------------------------------------------------------
+c
+c maximum-resident-set-size:       4834054144 bytes       4610 MB
+c process-time:                        13m 57s             837.55 seconds
+c raising signal 15 (SIGTERM)
+clean up and exit
+c array.sh: end:      Tue Feb 16 22:58:57 CET 2021

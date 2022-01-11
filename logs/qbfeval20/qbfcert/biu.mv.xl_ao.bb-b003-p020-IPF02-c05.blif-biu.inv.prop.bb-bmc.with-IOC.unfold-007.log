@@ -1,0 +1,14 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/biu.mv.xl_ao.bb-b003-p020-IPF02-c05.blif-biu.inv.prop.bb-bmc.with-IOC.unfold-007.qdimacs
+c array.sh: name:     biu.mv.xl_ao.bb-b003-p020-IPF02-c05.blif-biu.inv.prop.bb-bmc.with-IOC.unfold-007
+c array.sh: task:     13
+c array.sh: host:     c3n07
+c array.sh: uname:    Linux c3n07 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Thu Feb 18 09:53:05 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18838260-13-biu.mv.xl_ao.bb-b003-p020-IPF02-c05.blif-biu.inv.prop.bb-bmc.with-IOC.unfold-007.cnf
+*** qbfcert: using tmp directory:
+*** qbfcert:   /tmp
+*** qbfcert: clean up and exit
+c array.sh: end:      Thu Feb 18 10:08:05 CET 2021

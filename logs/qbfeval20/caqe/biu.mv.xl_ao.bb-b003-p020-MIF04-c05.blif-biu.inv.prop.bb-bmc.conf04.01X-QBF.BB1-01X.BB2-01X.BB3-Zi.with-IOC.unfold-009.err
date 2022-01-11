@@ -1,0 +1,58 @@
+[runlim] version:		1.21
+[runlim] host:			c3n11
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		7000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18816929-173-biu.mv.xl_ao.bb-b003-p020-MIF04-c05.blif-biu.inv.prop.bb-bmc.conf04.01X-QBF.BB1-01X.BB2-01X.BB3-Zi.with-IOC.unfold-009.cnf
+[runlim] start:			Fri Feb 12 12:53:06 2021
+[runlim] child:			5926
+[runlim] sample:		0.00 time, 10.01 real, 3 MB
+[runlim] sample:		0.00 time, 20.01 real, 3 MB
+[runlim] sample:		0.00 time, 30.01 real, 3 MB
+[runlim] sample:		0.00 time, 40.01 real, 3 MB
+[runlim] sample:		0.00 time, 50.01 real, 3 MB
+[runlim] sample:		0.00 time, 60.01 real, 3 MB
+[runlim] sample:		0.00 time, 70.01 real, 3 MB
+[runlim] sample:		0.00 time, 80.01 real, 3 MB
+[runlim] sample:		0.00 time, 90.01 real, 3 MB
+[runlim] sample:		0.00 time, 100.01 real, 3 MB
+[runlim] sample:		0.00 time, 110.01 real, 3 MB
+[runlim] sample:		0.00 time, 120.01 real, 3 MB
+[runlim] sample:		0.00 time, 130.01 real, 3 MB
+[runlim] sample:		0.00 time, 140.01 real, 3 MB
+[runlim] sample:		0.00 time, 150.01 real, 3 MB
+[runlim] sample:		0.00 time, 160.01 real, 3 MB
+[runlim] sample:		0.00 time, 170.01 real, 3 MB
+[runlim] sample:		0.00 time, 180.01 real, 3 MB
+[runlim] sample:		0.00 time, 190.01 real, 3 MB
+[runlim] sample:		0.00 time, 200.01 real, 3 MB
+[runlim] sample:		0.00 time, 210.01 real, 3 MB
+[runlim] sample:		0.00 time, 220.01 real, 3 MB
+[runlim] sample:		0.00 time, 230.01 real, 3 MB
+[runlim] sample:		0.00 time, 240.01 real, 3 MB
+[runlim] sample:		0.00 time, 250.01 real, 3 MB
+[runlim] sample:		0.00 time, 260.01 real, 3 MB
+[runlim] sample:		0.00 time, 270.01 real, 3 MB
+[runlim] sample:		0.00 time, 280.01 real, 3 MB
+[runlim] sample:		0.00 time, 290.01 real, 3 MB
+[runlim] sample:		0.00 time, 300.01 real, 3 MB
+[runlim] sample:		0.00 time, 310.01 real, 3 MB
+[runlim] sample:		0.00 time, 320.01 real, 3 MB
+[runlim] sample:		0.00 time, 330.01 real, 3 MB
+[runlim] sample:		0.00 time, 340.01 real, 3 MB
+[runlim] sample:		0.00 time, 350.01 real, 3 MB
+[runlim] sample:		0.00 time, 360.01 real, 3 MB
+[runlim] sample:		0.00 time, 370.01 real, 3 MB
+[runlim] sample:		0.00 time, 380.01 real, 3 MB
+[runlim] sample:		0.00 time, 390.01 real, 3 MB
+[runlim] sample:		0.00 time, 400.01 real, 3 MB
+[runlim] sample:		0.00 time, 410.01 real, 3 MB
+[runlim] end:			Fri Feb 12 13:00:02 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] real:			415.86 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			3 MB
+[runlim] samples:		4158

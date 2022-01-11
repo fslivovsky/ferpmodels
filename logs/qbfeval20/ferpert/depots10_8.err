@@ -1,0 +1,60 @@
+[runlim] version:		1.21
+[runlim] host:			c3n16
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-32-depots10_8.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:43:54 2021
+[runlim] child:			2728
+solving-time: 6.30
+proof-gen-satsolver: 1.52
+[runlim] sample:		8.30 time, 10.02 real, 27 MB
+[runlim] sample:		18.29 time, 20.02 real, 27 MB
+tracecheck-time: 11.38
+[runlim] sample:		28.25 time, 30.02 real, 243 MB
+[runlim] sample:		38.26 time, 40.02 real, 495 MB
+[runlim] sample:		48.25 time, 50.02 real, 654 MB
+[runlim] sample:		58.25 time, 60.02 real, 655 MB
+[runlim] sample:		68.25 time, 70.02 real, 655 MB
+[runlim] sample:		77.22 time, 80.02 real, 655 MB
+[runlim] sample:		86.98 time, 90.01 real, 655 MB
+[runlim] sample:		96.97 time, 100.02 real, 655 MB
+[runlim] sample:		106.96 time, 110.02 real, 655 MB
+[runlim] sample:		116.68 time, 120.02 real, 655 MB
+[runlim] sample:		126.01 time, 130.01 real, 655 MB
+[runlim] sample:		136.01 time, 140.02 real, 655 MB
+toferp-time: 121.83
+[runlim] sample:		145.92 time, 150.01 real, 76 MB
+[runlim] sample:		155.92 time, 160.02 real, 130 MB
+[runlim] sample:		165.92 time, 170.02 real, 183 MB
+[runlim] sample:		175.92 time, 180.01 real, 234 MB
+[runlim] sample:		185.92 time, 190.01 real, 282 MB
+[runlim] sample:		195.92 time, 200.02 real, 335 MB
+[runlim] sample:		205.93 time, 210.02 real, 384 MB
+[runlim] sample:		215.92 time, 220.02 real, 434 MB
+[runlim] sample:		225.92 time, 230.02 real, 487 MB
+[runlim] sample:		235.93 time, 240.02 real, 540 MB
+[runlim] sample:		245.92 time, 250.02 real, 592 MB
+[runlim] sample:		255.92 time, 260.02 real, 642 MB
+[runlim] sample:		265.92 time, 270.02 real, 689 MB
+ferpcheck-time: 137.19
+[runlim] sample:		275.84 time, 280.02 real, 286 MB
+[runlim] sample:		285.84 time, 290.02 real, 8301 MB
+[runlim] sample:		295.85 time, 300.02 real, 15297 MB
+[runlim] sample:		305.84 time, 310.02 real, 21125 MB
+[runlim] sample:		315.85 time, 320.02 real, 26856 MB
+[runlim] sample:		325.84 time, 330.02 real, 32285 MB
+[runlim] sample:		335.84 time, 340.02 real, 38169 MB
+[runlim] sample:		345.84 time, 350.01 real, 43310 MB
+[runlim] sample:		355.83 time, 360.02 real, 48715 MB
+Terminated
+[runlim] end:			Tue Feb 16 22:49:56 2021
+[runlim] status:		out of memory
+[runlim] result:		3
+[runlim] children:		14
+[runlim] real:			362.10 seconds
+[runlim] time:			357.84 seconds
+[runlim] space:			50070 MB
+[runlim] samples:		3620

@@ -1,0 +1,34 @@
+[runlim] version:		1.21
+[runlim] host:			c3n26
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-51-filesys_smbmrx_cvsndrcv.c.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:43:54 2021
+[runlim] child:			2752
+solving-time: 1.10
+proof-gen-satsolver: 0.43
+tracecheck-time: 0.17
+toferp-time: 1.15
+[runlim] sample:		7.12 time, 10.01 real, 28 MB
+ferpcheck-time: 6.23
+[runlim] sample:		17.00 time, 20.01 real, 8008 MB
+[runlim] sample:		27.01 time, 30.01 real, 16738 MB
+[runlim] sample:		37.01 time, 40.01 real, 25231 MB
+[runlim] sample:		47.01 time, 50.01 real, 33218 MB
+[runlim] sample:		57.01 time, 60.01 real, 35136 MB
+[runlim] sample:		67.00 time, 70.01 real, 35136 MB
+[runlim] sample:		77.00 time, 80.01 real, 35136 MB
+ferpcert-time: 71.55
+merging-time 0.18
+final-check-time: 0.31
+[runlim] end:			Tue Feb 16 22:45:17 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		24
+[runlim] real:			82.91 seconds
+[runlim] time:			79.65 seconds
+[runlim] space:			35136 MB
+[runlim] samples:		829

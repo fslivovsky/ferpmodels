@@ -1,0 +1,26 @@
+[runlim] version:		1.21
+[runlim] host:			c3n13
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-25-c6_BMC_p2_k1024.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:43:53 2021
+[runlim] child:			2867
+solving-time: 2.60
+proof-gen-satsolver: 0.50
+tracecheck-time: 0.12
+toferp-time: 1.12
+ferpcheck-time: 0.83
+ferpcert-time: 0.10
+merging-time 0.56
+final-check-time: 0.69
+[runlim] end:			Tue Feb 16 22:44:02 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		21
+[runlim] real:			8.97 seconds
+[runlim] time:			5.72 seconds
+[runlim] space:			154 MB
+[runlim] samples:		89

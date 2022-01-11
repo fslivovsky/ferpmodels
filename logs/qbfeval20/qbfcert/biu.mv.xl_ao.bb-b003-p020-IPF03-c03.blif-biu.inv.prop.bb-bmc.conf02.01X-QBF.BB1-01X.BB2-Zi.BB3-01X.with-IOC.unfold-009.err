@@ -1,0 +1,36 @@
+[runlim] version:		1.21
+[runlim] host:			c3n08
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		60000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18838260-15-biu.mv.xl_ao.bb-b003-p020-IPF03-c03.blif-biu.inv.prop.bb-bmc.conf02.01X-QBF.BB1-01X.BB2-Zi.BB3-01X.with-IOC.unfold-009.cnf
+[runlim] start:			Thu Feb 18 09:53:05 2021
+[runlim] child:			14071
+[runlim] sample:		9.98 time, 10.01 real, 45 MB
+[runlim] sample:		19.98 time, 20.01 real, 45 MB
+[runlim] sample:		29.98 time, 30.02 real, 46 MB
+[runlim] sample:		39.18 time, 40.01 real, 47 MB
+solving-time: 48.73
+[runlim] sample:		48.43 time, 50.01 real, 225 MB
+[runlim] sample:		58.12 time, 60.01 real, 1900 MB
+[runlim] sample:		68.12 time, 70.01 real, 1972 MB
+[runlim] sample:		78.11 time, 80.01 real, 1972 MB
+[runlim] sample:		88.12 time, 90.01 real, 1972 MB
+[runlim] sample:		98.12 time, 100.01 real, 1972 MB
+OK
+qrpcheck-time: 58.72
+[runlim] sample:		106.65 time, 110.01 real, 488 MB
+[runlim] sample:		116.66 time, 120.01 real, 2179 MB
+[runlim] sample:		126.62 time, 130.01 real, 1226 MB
+qrpcert-time: 24.30
+certcheck-time: 0.12
+final-check-time: 0.44
+[runlim] end:			Thu Feb 18 09:55:18 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		16
+[runlim] real:			132.91 seconds
+[runlim] time:			128.61 seconds
+[runlim] space:			2749 MB
+[runlim] samples:		1328

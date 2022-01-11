@@ -1,0 +1,26 @@
+[runlim] version:		1.21
+[runlim] host:			c3n32
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-114-trueque_query71_1344n.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:58:05 2021
+[runlim] child:			3637
+solving-time: 4.80
+proof-gen-satsolver: 0.12
+tracecheck-time: 0.02
+toferp-time: 0.28
+ferpcheck-time: 0.00
+ferpcert-time: 0.00
+merging-time 0.00
+final-check-time: 0.00
+[runlim] end:			Tue Feb 16 22:58:10 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		7
+[runlim] real:			5.32 seconds
+[runlim] time:			5.09 seconds
+[runlim] space:			270 MB
+[runlim] samples:		53

@@ -1,0 +1,29 @@
+[runlim] version:		1.21
+[runlim] host:			c3n11
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-73-incrementer-enc07-uniform-depth-25.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:45:21 2021
+[runlim] child:			2978
+solving-time: 0.44
+proof-gen-satsolver: 0.19
+tracecheck-time: 0.14
+toferp-time: 1.27
+ferpcheck-time: 1.51
+[runlim] sample:		9.61 time, 10.02 real, 5043 MB
+[runlim] sample:		19.60 time, 20.02 real, 12971 MB
+[runlim] sample:		29.60 time, 30.02 real, 13649 MB
+ferpcert-time: 27.88
+merging-time 0.07
+final-check-time: 0.23
+[runlim] end:			Tue Feb 16 22:45:53 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		17
+[runlim] real:			31.84 seconds
+[runlim] time:			31.22 seconds
+[runlim] space:			13649 MB
+[runlim] samples:		318

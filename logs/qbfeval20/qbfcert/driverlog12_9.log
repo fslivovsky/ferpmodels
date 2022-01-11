@@ -1,0 +1,14 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/driverlog12_9.qdimacs
+c array.sh: name:     driverlog12_9
+c array.sh: task:     38
+c array.sh: host:     c3n19
+c array.sh: uname:    Linux c3n19 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Thu Feb 18 09:53:05 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18838260-38-driverlog12_9.cnf
+*** qbfcert: using tmp directory:
+*** qbfcert:   /tmp
+*** qbfcert: clean up and exit
+c array.sh: end:      Thu Feb 18 10:08:05 CET 2021

@@ -1,0 +1,12 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/s01423_PR_4_75.qdimacs
+c array.sh: name:     s01423_PR_4_75
+c array.sh: task:     223
+c array.sh: host:     c3n14
+c array.sh: uname:    Linux c3n14 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Fri Feb 12 12:52:58 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18816929-223-s01423_PR_4_75.cnf
+solving-result: 20
+c array.sh: end:      Fri Feb 12 12:53:08 CET 2021

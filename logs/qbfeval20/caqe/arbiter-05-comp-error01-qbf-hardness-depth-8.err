@@ -1,0 +1,17 @@
+[runlim] version:		1.21
+[runlim] host:			c3n04
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		7000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18816929-54-arbiter-05-comp-error01-qbf-hardness-depth-8.cnf
+[runlim] start:			Fri Feb 12 12:52:46 2021
+[runlim] child:			7340
+[runlim] end:			Fri Feb 12 12:52:48 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] real:			2.95 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			3 MB
+[runlim] samples:		29

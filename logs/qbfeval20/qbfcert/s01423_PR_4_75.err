@@ -1,0 +1,23 @@
+[runlim] version:		1.21
+[runlim] host:			c3n28
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		60000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18838260-96-s01423_PR_4_75.cnf
+[runlim] start:			Thu Feb 18 09:56:11 2021
+[runlim] child:			8041
+solving-time: 0.01
+OK
+qrpcheck-time: 0.00
+qrpcert-time: 0.00
+certcheck-time: 0.01
+final-check-time: 0.01
+[runlim] end:			Thu Feb 18 09:56:11 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] real:			0.12 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0 MB
+[runlim] samples:		1

@@ -1,0 +1,52 @@
+[runlim] version:		1.21
+[runlim] host:			c3n31
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-62-freecell03_6.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:43:59 2021
+[runlim] child:			2799
+[runlim] sample:		9.96 time, 10.01 real, 485 MB
+solving-time: 15.94
+proof-gen-satsolver: 2.00
+[runlim] sample:		19.83 time, 20.01 real, 76 MB
+tracecheck-time: 7.58
+[runlim] sample:		29.76 time, 30.01 real, 107 MB
+[runlim] sample:		39.76 time, 40.01 real, 362 MB
+[runlim] sample:		49.76 time, 50.01 real, 466 MB
+[runlim] sample:		59.75 time, 60.01 real, 466 MB
+[runlim] sample:		69.75 time, 70.01 real, 466 MB
+[runlim] sample:		79.76 time, 80.01 real, 466 MB
+[runlim] sample:		88.82 time, 90.01 real, 466 MB
+[runlim] sample:		98.81 time, 100.01 real, 466 MB
+toferp-time: 77.36
+[runlim] sample:		108.78 time, 110.01 real, 109 MB
+[runlim] sample:		118.77 time, 120.01 real, 162 MB
+[runlim] sample:		128.78 time, 130.01 real, 216 MB
+[runlim] sample:		138.78 time, 140.01 real, 268 MB
+[runlim] sample:		148.78 time, 150.01 real, 324 MB
+[runlim] sample:		158.78 time, 160.01 real, 381 MB
+[runlim] sample:		168.77 time, 170.01 real, 438 MB
+[runlim] sample:		178.77 time, 180.01 real, 496 MB
+[runlim] sample:		188.78 time, 190.01 real, 554 MB
+ferpcheck-time: 95.18
+[runlim] sample:		198.75 time, 200.02 real, 1002 MB
+[runlim] sample:		208.75 time, 210.02 real, 7313 MB
+[runlim] sample:		218.75 time, 220.02 real, 13487 MB
+[runlim] sample:		228.75 time, 230.02 real, 19896 MB
+[runlim] sample:		238.75 time, 240.02 real, 26133 MB
+[runlim] sample:		248.75 time, 250.02 real, 32561 MB
+[runlim] sample:		258.75 time, 260.02 real, 38771 MB
+[runlim] sample:		268.74 time, 270.02 real, 45621 MB
+Terminated
+Terminated
+[runlim] end:			Tue Feb 16 22:48:34 2021
+[runlim] status:		out of memory
+[runlim] result:		3
+[runlim] children:		13
+[runlim] real:			275.69 seconds
+[runlim] time:			274.34 seconds
+[runlim] space:			50039 MB
+[runlim] samples:		2756

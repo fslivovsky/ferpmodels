@@ -1,0 +1,24 @@
+[runlim] version:		1.21
+[runlim] host:			c3n27
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		60000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18838260-53-fpu-01Xh-error02-uniform-depth-24.cnf
+[runlim] start:			Thu Feb 18 09:53:05 2021
+[runlim] child:			6667
+solving-time: 4.98
+OK
+qrpcheck-time: 0.59
+qrpcert-time: 0.49
+certcheck-time: 2.81
+[runlim] sample:		9.55 time, 10.01 real, 184 MB
+final-check-time: 4.40
+[runlim] end:			Thu Feb 18 09:53:18 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		14
+[runlim] real:			13.48 seconds
+[runlim] time:			12.85 seconds
+[runlim] space:			840 MB
+[runlim] samples:		134

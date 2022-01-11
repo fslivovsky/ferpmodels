@@ -1,0 +1,32 @@
+[runlim] version:		1.21
+[runlim] host:			c3n24
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		60000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18838260-66-gttt_2_1_001020_4x4_torus_w.cnf
+[runlim] start:			Thu Feb 18 09:53:05 2021
+[runlim] child:			11269
+[runlim] sample:		9.98 time, 10.02 real, 40 MB
+[runlim] sample:		19.98 time, 20.01 real, 82 MB
+[runlim] sample:		29.98 time, 30.01 real, 105 MB
+[runlim] sample:		39.27 time, 40.01 real, 126 MB
+[runlim] sample:		49.04 time, 50.01 real, 176 MB
+[runlim] sample:		59.05 time, 60.01 real, 197 MB
+[runlim] sample:		68.42 time, 70.01 real, 246 MB
+[runlim] sample:		77.85 time, 80.01 real, 246 MB
+solving-time: 80.52
+[runlim] sample:		87.80 time, 90.01 real, 1572 MB
+OK
+qrpcheck-time: 15.93
+qrpcert-time: 0.85
+certcheck-time: 0.06
+final-check-time: 0.11
+[runlim] end:			Thu Feb 18 09:54:43 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		12
+[runlim] real:			97.90 seconds
+[runlim] time:			95.12 seconds
+[runlim] space:			2222 MB
+[runlim] samples:		978

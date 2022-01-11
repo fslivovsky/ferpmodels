@@ -1,0 +1,29 @@
+[runlim] version:		1.21
+[runlim] host:			c3n03
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834717-5-parity40.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:30:17 2021
+[runlim] child:			3062
+solving-time: 0.01
+proof-gen-satsolver: 0.00
+tracecheck-time: 0.00
+toferp-time: 0.02
+ferpcheck-time: 0.03
+ferpcert-time: 0.13
+merging-time 0.11
+[runlim] sample:		9.76 time, 10.02 real, 42 MB
+[runlim] sample:		19.75 time, 20.02 real, 34 MB
+[runlim] sample:		29.75 time, 30.02 real, 33 MB
+final-check-time: 36.43
+[runlim] end:			Tue Feb 16 22:30:54 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		7
+[runlim] real:			36.83 seconds
+[runlim] time:			36.45 seconds
+[runlim] space:			50 MB
+[runlim] samples:		368

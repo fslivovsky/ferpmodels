@@ -1,0 +1,226 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/incrementer-enc07-uniform-depth-25.qdimacs
+c array.sh: name:     incrementer-enc07-uniform-depth-25
+c array.sh: task:     73
+c array.sh: host:     c3n11
+c array.sh: uname:    Linux c3n11 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Tue Feb 16 22:45:21 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18834727-73-incrementer-enc07-uniform-depth-25.cnf
+using tmp directory:
+  /tmp
+running QBF solver...
+
+/home/seidl/cert_tests/bin/ferp-models/ijtihad/ijtihad --dependencies=0 --wit_per_call=-1 --cex_per_call=-1 --log_phi=/tmp/ferpcert2978expanded.cnf /tmp/local-unzipped-18834727-73-incrementer-enc07-uniform-depth-25.cnf
+c Options after parsing: 
+c cex_per_call = 18446744073709551615
+c wit_per_call = 18446744073709551615
+c warmup = 1
+c warmup_randoms = 0
+c trimming_phi = 0
+c trimming_ksi = 2
+c trimming_interval = 200
+c memory_limit = 3000000
+c MySolverv970-glucose
+-1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21 -22 -23 -24 -25 -26 -27 -28 -29 -30 -31 -32 -33 -34 -35 -36 -37 -38 -39 -40 -41 -42 -43 -44 -45 -46 -47 -48 -49 -50 -51 -52 
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 
+c Number of calls is: 0
+c Layers in PHI: 0
+c Layers in KSI: 0
+c Running Ijtihad loop
+c sat_solver_phi calld 0 times, running for 0.07266 seconds.
+c number of layers in PHI is 2
+c sat_solver_ksi was running for 0 seconds.
+c number of layers in KSI is 0
+c mysolver was running for 0.185444 seconds.
+s cnf 0
+solving done with exit code 20
+
+QBF solver OK
+
+running SAT Solver...
+
+/tmp/ferpcert2978expanded.cnf
+s UNSATISFIABLE
+
+PROOF GENERATION OK
+
+checking unsat proof
+
+resolved 1 root and 1 empty clause
+trace-size2: 6878154
+
+TRACE CHECK OK
+
+running toferp...
+
+ferp-size: 5866960
+TOFERP OK
+
+checking FERP PROOF...
+
+c Warning: Variable count mismatch 18434 18435
+FERP CHECK OK
+
+extracting AIG ...
+
+aig-size: 104862
+aig-header: aag 18434 18257 0 52 52
+FERP CERT OK
+
+merging  AIG into QBF ...
+
+CERTCHECK OK
+
+merged-cnf-header: p cnf 146923 330317
+merged-cnf-size: 5826419
+running SAT solver...
+
+c ---- [ banner ] ------------------------------------------------------------
+c
+c KISSAT SAT Solver
+c Copyright (c) 2019-2020 Armin Biere JKU Linz
+c 
+c Version 1.0.3 59813addcacc4d6fb880ebdd63685600475aa940
+c gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0 -W -Wall -O3 -DNEMBEDDED -DNDEBUG -DNMETRICS -DNSTATISTICS
+c Sun Feb 14 23:58:54 CET 2021 Linux cluster3 4.15.0-135-generic x86_64
+c
+c ---- [ parsing ] -----------------------------------------------------------
+c
+c opened and reading DIMACS file:
+c 
+c   /tmp/ferpcert_merged_cnf2978.cnf
+c 
+c parsed 'p cnf 146923 330317' header
+c closing input after reading 5826419 bytes (6 MB)
+c finished parsing after 0.10 seconds
+c
+c ---- [ solving ] -----------------------------------------------------------
+c
+c  seconds reductions redundant irredundant
+c         MB   restarts    trail       variables
+c          level  conflicts   glue          remaining
+c
+c *  0.10 20 0  0  0   0   0 0% 0 330315 31154 21%
+c {  0.10 20 0  0  0   0   0 0% 0 330315 31154 21%
+c i  0.10 20 12  0  0   1   0 7% 0 330315 31146 21%
+c i  0.10 20 12  0  1   2   0 7% 0 330315 31138 21%
+c i  0.10 20 13  0  2   3   0 7% 0 330315 31130 21%
+c i  0.10 20 14  0  3   4   0 7% 0 330315 31122 21%
+c i  0.10 20 14  0  4   5   0 7% 0 330315 31114 21%
+c i  0.10 20 15  0  5   6   0 6% 0 330315 31106 21%
+c i  0.10 20 16  0  6   7   0 6% 0 330315 31098 21%
+c i  0.10 20 16  0  7   8   0 6% 0 330315 31090 21%
+c i  0.10 21 17  0  8   9   0 6% 0 330315 31082 21%
+c i  0.10 21 17  0  9  10   0 6% 0 330315 31074 21%
+c i  0.10 21 18  0 10  11   0 6% 0 330315 31066 21%
+c i  0.10 21 18  0 11  12   0 6% 0 330315 31058 21%
+c i  0.10 21 19  0 12  13   0 6% 0 330315 31050 21%
+c i  0.10 21 20  0 13  14   0 6% 0 330315 31042 21%
+c i  0.10 21 21  0 14  15   0 6% 0 330315 31034 21%
+c i  0.10 21 21  0 15  16   0 6% 0 330315 31026 21%
+c i  0.10 21 21  0 16  17   0 6% 0 330315 31018 21%
+c i  0.10 21 22  0 17  18   0 6% 0 330315 31010 21%
+c
+c  seconds  reductions redundant irredundant
+c         MB    restarts    trail       variables
+c          level   conflicts   glue          remaining
+c
+c i  0.10 21 22  0 18  19   0 6% 0 330315 31002 21%
+c i  0.10 21 23  0 19  20   0 6% 0 330315 30994 21%
+c i  0.10 21 24  0 20  21   0 6% 0 330315 30986 21%
+c i  0.10 21 24  0 21  22   0 6% 0 330315 30978 21%
+c i  0.11 21 51  0 22 191 150 26% 1 330315 30903 21%
+c i  0.12 21 46  0 28 217 175 23% 1 330315 30898 21%
+c i  0.12 21 46  0 28 218 175 23% 1 330315 30889 21%
+c i  0.12 21 45  0 28 219 175 23% 1 330315 30855 21%
+c i  0.12 21 36  0 32 271 224 20% 1 330315 30840 21%
+c i  0.12 21 34  0 54 298 249 18% 1 330315 30820 21%
+c -  0.14 12 34  1 56 300 245 18% 1 84771 30820 21%
+c i  0.15  9 33  1 60 304 248 18% 1 84771 30795 21%
+c i  0.15  9 32  1 73 321 264 17% 2 84771 30781 21%
+c i  0.15  9 32  1 73 322 264 17% 2 84771 30770 21%
+c i  0.16  9 29  1 103 370 311 16% 2 84771 30672 21%
+c i  0.16  9 28  1 110 389 328 15% 2 84771 30655 21%
+c i  0.16  9 28  1 110 390 328 15% 2 84771 30647 21%
+c i  0.16  9 27  1 116 402 339 15% 2 84771 30596 21%
+c i  0.17  9 25  1 145 476 410 13% 2 84771 30592 21%
+c i  0.17  9 25  1 148 482 415 13% 2 84771 30557 21%
+c
+c  seconds  reductions  redundant irredundant
+c         MB    restarts      trail      variables
+c          level    conflicts    glue         remaining
+c
+c i  0.17  9 24  1 161 516 448 13% 2 84771 30532 21%
+c i  0.17  9 24  1 162 517 448 13% 2 84771 30522 21%
+c i  0.17  9 24  1 162 518 448 13% 2 84771 30484 21%
+c i  0.17  9 24  1 163 519 448 13% 2 84771 30479 21%
+c i  0.17  9 23  1 163 520 448 12% 2 84771 30470 21%
+c i  0.17  9 23  1 181 556 482 12% 2 84771 30394 21%
+c i  0.18  9 22  1 197 594 517 12% 2 84771 30318 21%
+c i  0.18  9 21  1 215 677 595 11% 2 84771 30300 21%
+c i  0.18  9 21  1 220 717 633 11% 2 84771 30276 21%
+c i  0.19  9 20  1 239 790 703 11% 2 84771 30190 21%
+c i  0.19  9 20  1 241 828 739 10% 2 84771 30139 21%
+c i  0.19  9 19  1 248 889 792 10% 2 84771 30131 21%
+c -  0.20  9 19  2 252 900 740 10% 2 82792 30131 21%
+c i  0.20  9 18  2 279 972 807 10% 2 82792 30073 20%
+c }  0.21  9 18  2 291 1001 835 10% 2 82792 30073 20%
+c [  0.21  9 0  2 291 1001 835 0% 0 82792 30073 20%
+c O  0.21  9 5  2 291 1002 791 8% 1 82424 30073 20%
+c i  0.22  9 19  2 291 1009 797 9% 2 82424 30071 20%
+c i  0.22  9 12  2 291 1013 799 6% 1 82424 30055 20%
+c i  0.22  9 11  2 291 1014 799 5% 1 82424 30051 20%
+c
+c  seconds  reductions   redundant irredundant
+c         MB    restarts       trail      variables
+c          level    conflicts     glue         remaining
+c
+c i  0.23  9 13  2 291 1354 1123 6% 4 82424 29807 20%
+c i  0.23  9 13  2 291 1366 1132 6% 4 82424 29803 20%
+c i  0.23  9 13  2 291 1367 1132 6% 4 82424 29785 20%
+c i  0.24  9 13  2 291 1398 1159 6% 4 82424 29783 20%
+c i  0.24  9 12  2 291 1410 1162 6% 4 82424 29634 20%
+c i  0.24  9 12  2 291 1417 1167 6% 3 82424 29482 20%
+c ]  0.24  9 12  2 291 1419 1167 5% 3 82424 29018 20%
+c 0  0.24  9 18  2 291 1419 1167 10% 2 82424 29018 20%
+c
+c ---- [ result ] ------------------------------------------------------------
+c
+s UNSATISFIABLE
+c
+c ---- [ profiling ] ---------------------------------------------------------
+c
+c           0.13   54.75 %  search
+c           0.11   45.10 %  focused
+c           0.10   42.25 %  parse
+c           0.02    9.60 %  stable
+c           0.02    8.96 %  reduce
+c           0.01    2.93 %  autarky
+c           0.01    2.93 %  simplify
+c =============================================
+c           0.24  100.00 %  total
+c
+c ---- [ statistics ] --------------------------------------------------------
+c
+c conflicts:                             1419             5959.33 per second
+c decisions:                             7232                5.10 per conflict
+c propagations:                       1294402          5436060    per second
+c reductions:                               2              710    interval
+c rephased:                                 1             1419    interval
+c restarts:                               291                4.88 interval
+c
+c ---- [ resources ] ---------------------------------------------------------
+c
+c maximum-resident-set-size:         21958656 bytes         21 MB
+c process-time:                             0s               0.24 seconds
+c
+c ---- [ shutting down ] -----------------------------------------------------
+c
+c exit 20
+
+SAT solver OK
+
+VALID
+c array.sh: end:      Tue Feb 16 22:45:53 CET 2021

@@ -1,0 +1,36 @@
+[runlim] version:		1.21
+[runlim] host:			c3n32
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-101-tlc05-uniform-depth-50.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:54:57 2021
+[runlim] child:			3120
+solving-time: 0.68
+proof-gen-satsolver: 0.52
+tracecheck-time: 0.36
+toferp-time: 3.23
+ferpcheck-time: 5.18
+[runlim] sample:		9.57 time, 10.01 real, 3 MB
+[runlim] sample:		19.55 time, 20.01 real, 8448 MB
+[runlim] sample:		29.56 time, 30.01 real, 16445 MB
+[runlim] sample:		39.56 time, 40.01 real, 24142 MB
+[runlim] sample:		49.55 time, 50.01 real, 26799 MB
+[runlim] sample:		59.56 time, 60.01 real, 26799 MB
+[runlim] sample:		69.55 time, 70.01 real, 26799 MB
+[runlim] sample:		79.56 time, 80.01 real, 26799 MB
+[runlim] sample:		89.56 time, 90.02 real, 26799 MB
+[runlim] sample:		99.55 time, 100.01 real, 26799 MB
+ferpcert-time: 92.41
+merging-time 0.07
+final-check-time: 0.79
+[runlim] end:			Tue Feb 16 22:56:40 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		15
+[runlim] real:			103.33 seconds
+[runlim] time:			102.63 seconds
+[runlim] space:			26799 MB
+[runlim] samples:		1033

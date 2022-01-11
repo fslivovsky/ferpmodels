@@ -1,0 +1,23 @@
+[runlim] version:		1.21
+[runlim] host:			c3n04
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		60000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18838260-8-axquery_query71_1344n.cnf
+[runlim] start:			Thu Feb 18 09:53:05 2021
+[runlim] child:			15463
+solving-time: 0.25
+OK
+qrpcheck-time: 0.02
+qrpcert-time: 0.00
+certcheck-time: 0.00
+final-check-time: 0.00
+[runlim] end:			Thu Feb 18 09:53:05 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		3
+[runlim] real:			0.36 seconds
+[runlim] time:			0.18 seconds
+[runlim] space:			7 MB
+[runlim] samples:		3

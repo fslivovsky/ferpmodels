@@ -1,0 +1,11 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/network_irda_miniport_nscirda_comm.c.qdimacs
+c array.sh: name:     network_irda_miniport_nscirda_comm.c
+c array.sh: task:     1
+c array.sh: host:     c3n01
+c array.sh: uname:    Linux c3n01 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Fri Feb 12 12:52:40 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18816929-1-network_irda_miniport_nscirda_comm.c.cnf
+c array.sh: end:      Fri Feb 12 13:07:43 CET 2021

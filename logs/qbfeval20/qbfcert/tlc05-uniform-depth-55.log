@@ -1,0 +1,14 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/tlc05-uniform-depth-55.qdimacs
+c array.sh: name:     tlc05-uniform-depth-55
+c array.sh: task:     102
+c array.sh: host:     c3n18
+c array.sh: uname:    Linux c3n18 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Thu Feb 18 10:08:06 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      2%
+c array.sh: unzipped: /tmp/local-unzipped-18838260-102-tlc05-uniform-depth-55.cnf
+*** qbfcert: using tmp directory:
+*** qbfcert:   /tmp
+*** qbfcert: clean up and exit
+c array.sh: end:      Thu Feb 18 10:23:06 CET 2021

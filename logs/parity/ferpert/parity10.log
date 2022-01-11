@@ -1,0 +1,168 @@
+c array.sh: path:     /home/seidl/data/parity/parity10.qdimacs
+c array.sh: name:     parity10
+c array.sh: task:     3
+c array.sh: host:     c3n02
+c array.sh: uname:    Linux c3n02 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Tue Feb 16 22:30:17 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18834717-3-parity10.cnf
+using tmp directory:
+  /tmp
+running QBF solver...
+
+/home/seidl/cert_tests/bin/ferp-models/ijtihad/ijtihad --dependencies=0 --wit_per_call=-1 --cex_per_call=-1 --log_phi=/tmp/ferpcert3230expanded.cnf /tmp/local-unzipped-18834717-3-parity10.cnf
+c Options after parsing: 
+c cex_per_call = 18446744073709551615
+c wit_per_call = 18446744073709551615
+c warmup = 1
+c warmup_randoms = 0
+c trimming_phi = 0
+c trimming_ksi = 2
+c trimming_interval = 200
+c memory_limit = 3000000
+c MySolverv970-glucose
+-1 
+1 
+c Number of calls is: 0
+c Layers in PHI: 0
+c Layers in KSI: 0
+c Running Ijtihad loop
+c sat_solver_phi calld 0 times, running for 0.000286 seconds.
+c number of layers in PHI is 2
+c sat_solver_ksi was running for 0 seconds.
+c number of layers in KSI is 0
+c mysolver was running for 0.000569 seconds.
+s cnf 0
+solving done with exit code 20
+
+QBF solver OK
+
+running SAT Solver...
+
+/tmp/ferpcert3230expanded.cnf
+s UNSATISFIABLE
+
+PROOF GENERATION OK
+
+checking unsat proof
+
+resolved 1 root and 1 empty clause
+trace-size2: 13059
+
+TRACE CHECK OK
+
+running toferp...
+
+ferp-size: 13469
+TOFERP OK
+
+checking FERP PROOF...
+
+FERP CHECK OK
+
+extracting AIG ...
+
+aig-size: 300748
+aig-header: aag 17819 19 0 1 17800
+FERP CERT OK
+
+merging  AIG into QBF ...
+
+CERTCHECK OK
+
+merged-cnf-header: p cnf 17951 53735
+merged-cnf-size: 846698
+running SAT solver...
+
+c ---- [ banner ] ------------------------------------------------------------
+c
+c KISSAT SAT Solver
+c Copyright (c) 2019-2020 Armin Biere JKU Linz
+c 
+c Version 1.0.3 59813addcacc4d6fb880ebdd63685600475aa940
+c gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0 -W -Wall -O3 -DNEMBEDDED -DNDEBUG -DNMETRICS -DNSTATISTICS
+c Sun Feb 14 23:58:54 CET 2021 Linux cluster3 4.15.0-135-generic x86_64
+c
+c ---- [ parsing ] -----------------------------------------------------------
+c
+c opened and reading DIMACS file:
+c 
+c   /tmp/ferpcert_merged_cnf3230.cnf
+c 
+c parsed 'p cnf 17951 53735' header
+c closing input after reading 846698 bytes (827 KB)
+c finished parsing after 0.01 seconds
+c
+c ---- [ solving ] -----------------------------------------------------------
+c
+c  seconds reductions redundant irredundant
+c         MB   restarts    trail      variables
+c          level  conflicts   glue         remaining
+c
+c *  0.01  5 0  0  0   0   0 0% 0 53733 17855 99%
+c {  0.01  5 0  0  0   0   0 0% 0 53733 17855 99%
+c i  0.03  6 20  0  0  81  79 78% 4 53733 17854 99%
+c i  0.04  6 24  0  0 114 111 72% 6 53733 17853 99%
+c i  0.05  6 23  0  0 169 158 61% 5 53733 17852 99%
+c -  0.08  6 17  1  0 301 243 70% 5 53574 17852 99%
+c -  0.29  6 10  2  0 901 687 72% 4 53574 17852 99%
+c i  0.31  6 10  2  0 934 692 73% 4 53574 17426 97%
+c }  0.36  6 10  2  0 1002 724 74% 4 53574 17426 97%
+c [  0.36  6 0  2  0 1002 724 0% 0 53574 17426 97%
+c O  0.36  6 109  2  0 1003 429 14% 2 51830 17426 97%
+c i  0.36  6 55  2  0 1008 433 16% 2 51830 17423 97%
+c i  0.36  6 48  2  0 1010 434 24% 1 51830 17422 97%
+c i  0.47  6 5  2  0 1238 597 81% 4 51830 17082 95%
+c i  0.50  6 5  2  0 1272 602 84% 3 51830 15814 88%
+c i  0.52  6 5  2  0 1304 607 85% 3 51830 15023 84%
+c i  0.52  6 5  2  0 1318 611 85% 3 51830 14367 80%
+c i  0.53  6 5  2  0 1326 614 86% 3 51830 11159 62%
+c i  0.53  6 5  2  0 1330 616 86% 3 51830 10431 58%
+c i  0.53  6 5  2  0 1332 617 86% 3 51830 4615 26%
+c
+c  seconds reductions  redundant irredundant
+c         MB   restarts      trail     variables
+c          level  conflicts     glue      remaining
+c
+c ]  0.53  6 5  2  0 1334 617 85% 3 51830 591 3%
+c 0  0.53  6 10  2  0 1334 617 74% 4 51830 591 3%
+c
+c ---- [ result ] ------------------------------------------------------------
+c
+s UNSATISFIABLE
+c
+c ---- [ profiling ] ---------------------------------------------------------
+c
+c           0.52   96.77 %  search
+c           0.34   63.97 %  focused
+c           0.18   32.78 %  stable
+c           0.01    2.54 %  parse
+c           0.00    0.67 %  autarky
+c           0.00    0.67 %  simplify
+c           0.00    0.62 %  reduce
+c =============================================
+c           0.53  100.00 %  total
+c
+c ---- [ statistics ] --------------------------------------------------------
+c
+c conflicts:                             1334             2494.36 per second
+c decisions:                             2205                1.65 per conflict
+c propagations:                       6143318         11486981    per second
+c reductions:                               2              667    interval
+c rephased:                                 1             1334    interval
+c
+c ---- [ resources ] ---------------------------------------------------------
+c
+c maximum-resident-set-size:          6721536 bytes          6 MB
+c process-time:                             0s               0.53 seconds
+c
+c ---- [ shutting down ] -----------------------------------------------------
+c
+c exit 20
+
+SAT solver OK
+
+VALID
+c array.sh: end:      Tue Feb 16 22:30:18 CET 2021

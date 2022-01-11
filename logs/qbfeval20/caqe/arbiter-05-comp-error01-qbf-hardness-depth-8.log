@@ -1,0 +1,12 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/arbiter-05-comp-error01-qbf-hardness-depth-8.qdimacs
+c array.sh: name:     arbiter-05-comp-error01-qbf-hardness-depth-8
+c array.sh: task:     54
+c array.sh: host:     c3n04
+c array.sh: uname:    Linux c3n04 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Fri Feb 12 12:52:43 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18816929-54-arbiter-05-comp-error01-qbf-hardness-depth-8.cnf
+solving-result: 20
+c array.sh: end:      Fri Feb 12 12:52:49 CET 2021

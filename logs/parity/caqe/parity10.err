@@ -1,0 +1,22 @@
+[runlim] version:		1.21
+[runlim] host:			c3n10
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834963-3-parity10.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 23:34:27 2021
+[runlim] child:			4040
+solving-time: 0.11
+merging-time 0.01
+aigtocnf: 0.01
+final-check-time: 0.48
+[runlim] end:			Tue Feb 16 23:34:28 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		5
+[runlim] real:			0.67 seconds
+[runlim] time:			0.53 seconds
+[runlim] space:			10 MB
+[runlim] samples:		6

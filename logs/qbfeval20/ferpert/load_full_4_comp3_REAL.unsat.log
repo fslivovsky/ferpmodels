@@ -1,0 +1,155 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/load_full_4_comp3_REAL.unsat.qdimacs
+c array.sh: name:     load_full_4_comp3_REAL.unsat
+c array.sh: task:     77
+c array.sh: host:     c3n11
+c array.sh: uname:    Linux c3n11 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Tue Feb 16 22:45:53 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18834727-77-load_full_4_comp3_REAL.unsat.cnf
+using tmp directory:
+  /tmp
+running QBF solver...
+
+/home/seidl/cert_tests/bin/ferp-models/ijtihad/ijtihad --dependencies=0 --wit_per_call=-1 --cex_per_call=-1 --log_phi=/tmp/ferpcert3082expanded.cnf /tmp/local-unzipped-18834727-77-load_full_4_comp3_REAL.unsat.cnf
+c Options after parsing: 
+c cex_per_call = 18446744073709551615
+c wit_per_call = 18446744073709551615
+c warmup = 1
+c warmup_randoms = 0
+c trimming_phi = 0
+c trimming_ksi = 2
+c trimming_interval = 200
+c memory_limit = 3000000
+c MySolverv970-glucose
+-1 -2 -3 -4 
+1 2 3 4 
+c Number of calls is: 0
+c Layers in PHI: 0
+c Layers in KSI: 0
+c Running Ijtihad loop
+c last restart ## conflicts  :  164 49 
+c [glucose 4]
+c [glucose 4]        calls            0         0.0 per second
+c [glucose 4]     restarts            0         0.0 per second
+c [glucose 4]    conflicts            0         0.0 per second
+c [glucose 4]    decisions            0         0.0 per second
+c [glucose 4] propagations            0         0.0 per second
+c [glucose 4]
+c last restart ## conflicts  :  0 3 
+c Number of calls is: 0
+c Layers in PHI: 2
+c Layers in KSI: 2
+c last restart ## conflicts  :  0 43 
+c last restart ## conflicts  :  0 3 
+c Number of calls is: 1
+c Layers in PHI: 3
+c Layers in KSI: 3
+c last restart ## conflicts  :  0 36 
+c last restart ## conflicts  :  0 3 
+c Number of calls is: 2
+c Layers in PHI: 4
+c Layers in KSI: 4
+c last restart ## conflicts  :  0 39 
+c last restart ## conflicts  :  1 3 
+c Number of calls is: 3
+c Layers in PHI: 5
+c Layers in KSI: 5
+c last restart ## conflicts  :  0 39 
+c last restart ## conflicts  :  1 3 
+c Number of calls is: 4
+c Layers in PHI: 6
+c Layers in KSI: 6
+c last restart ## conflicts  :  0 38 
+c last restart ## conflicts  :  1 3 
+c Number of calls is: 5
+c Layers in PHI: 7
+c Layers in KSI: 7
+c last restart ## conflicts  :  0 38 
+c last restart ## conflicts  :  1 2 
+c Number of calls is: 6
+c Layers in PHI: 8
+c Layers in KSI: 8
+c last restart ## conflicts  :  0 38 
+c last restart ## conflicts  :  1 3 
+c Number of calls is: 7
+c Layers in PHI: 9
+c Layers in KSI: 9
+c last restart ## conflicts  :  0 38 
+c last restart ## conflicts  :  1 2 
+c Number of calls is: 8
+c Layers in PHI: 10
+c Layers in KSI: 10
+c last restart ## conflicts  :  0 39 
+c last restart ## conflicts  :  1 2 
+c Number of calls is: 9
+c Layers in PHI: 11
+c Layers in KSI: 11
+c last restart ## conflicts  :  83 31 
+c [glucose 4]
+c [glucose 4]        calls           10         0.7 per second
+c [glucose 4]     restarts           10         0.7 per second
+c [glucose 4]    conflicts            7         0.5 per second
+c [glucose 4]    decisions           44         3.1 per second
+c [glucose 4] propagations           47         3.3 per second
+c [glucose 4]
+c last restart ## conflicts  :  4 3 
+c Number of calls is: 10
+c Layers in PHI: 12
+c Layers in KSI: 12
+c last restart ## conflicts  :  0 175 
+c last restart ## conflicts  :  2 1 
+c Number of calls is: 11
+c Layers in PHI: 13
+c Layers in KSI: 13
+c last restart ## conflicts  :  461 480 
+c [glucose 4]
+c [glucose 4]        calls            2         0.0 per second
+c [glucose 4]     restarts            2         0.0 per second
+c [glucose 4]    conflicts            6         0.1 per second
+c [glucose 4]    decisions           12         0.3 per second
+c [glucose 4] propagations           17         0.4 per second
+c [glucose 4]
+c last restart ## conflicts  :  4 2 
+c Number of calls is: 12
+c Layers in PHI: 14
+c Layers in KSI: 14
+c last restart ## conflicts  :  706 60 
+c [glucose 4]
+c [glucose 4]        calls            1         0.0 per second
+c [glucose 4]     restarts            1         0.0 per second
+c [glucose 4]    conflicts            4         0.0 per second
+c [glucose 4]    decisions            7         0.1 per second
+c [glucose 4] propagations           11         0.1 per second
+c [glucose 4]
+c last restart ## conflicts  :  6 1 
+c Number of calls is: 13
+c Layers in PHI: 15
+c Layers in KSI: 15
+c
+c Try to adapt solver strategies
+c 
+c Nothing extreme in this problem, continue with glucose default strategies.
+c
+c sat_solver_phi calld 14 times, running for 140.312 seconds.
+c number of layers in PHI is 16
+c sat_solver_ksi was running for 0.000154 seconds.
+c number of layers in KSI is 15
+c mysolver was running for 142.95 seconds.
+s cnf 0
+solving done with exit code 20
+
+QBF solver OK
+
+running SAT Solver...
+
+/tmp/ferpcert3082expanded.cnf
+s UNSATISFIABLE
+
+PROOF GENERATION OK
+
+checking unsat proof
+
+clean up and exit
+c array.sh: end:      Tue Feb 16 23:00:54 CET 2021

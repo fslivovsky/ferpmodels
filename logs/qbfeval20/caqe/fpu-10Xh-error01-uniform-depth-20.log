@@ -1,0 +1,12 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/fpu-10Xh-error01-uniform-depth-20.qdimacs
+c array.sh: name:     fpu-10Xh-error01-uniform-depth-20
+c array.sh: task:     225
+c array.sh: host:     c3n15
+c array.sh: uname:    Linux c3n15 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Fri Feb 12 12:52:48 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18816929-225-fpu-10Xh-error01-uniform-depth-20.cnf
+solving-result: 20
+c array.sh: end:      Fri Feb 12 12:54:17 CET 2021

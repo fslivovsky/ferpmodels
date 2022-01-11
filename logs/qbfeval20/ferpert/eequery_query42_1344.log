@@ -1,0 +1,195 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/eequery_query42_1344.qdimacs
+c array.sh: name:     eequery_query42_1344
+c array.sh: task:     43
+c array.sh: host:     c3n22
+c array.sh: uname:    Linux c3n22 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Tue Feb 16 22:43:51 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18834727-43-eequery_query42_1344.cnf
+using tmp directory:
+  /tmp
+running QBF solver...
+
+/home/seidl/cert_tests/bin/ferp-models/ijtihad/ijtihad --dependencies=0 --wit_per_call=-1 --cex_per_call=-1 --log_phi=/tmp/ferpcert2788expanded.cnf /tmp/local-unzipped-18834727-43-eequery_query42_1344.cnf
+c Options after parsing: 
+c cex_per_call = 18446744073709551615
+c wit_per_call = 18446744073709551615
+c warmup = 1
+c warmup_randoms = 0
+c trimming_phi = 0
+c trimming_ksi = 2
+c trimming_interval = 200
+c memory_limit = 3000000
+c MySolverv970-glucose
+-1 -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15 -16 
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 
+c Number of calls is: 0
+c Layers in PHI: 0
+c Layers in KSI: 0
+c Running Ijtihad loop
+c last restart ## conflicts  :  9 707 
+c [glucose 4]
+c [glucose 4]        calls            0         0.0 per second
+c [glucose 4]     restarts            0         0.0 per second
+c [glucose 4]    conflicts            0         0.0 per second
+c [glucose 4]    decisions            0         0.0 per second
+c [glucose 4] propagations            0         0.0 per second
+c [glucose 4]
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 0
+c Layers in PHI: 2
+c Layers in KSI: 2
+c last restart ## conflicts  :  104 938 
+c [glucose 4]
+c [glucose 4]        calls            1        34.9 per second
+c [glucose 4]     restarts            1        34.9 per second
+c [glucose 4]    conflicts            1        34.9 per second
+c [glucose 4]    decisions           18       628.2 per second
+c [glucose 4] propagations           20       698.0 per second
+c [glucose 4]
+c last restart ## conflicts  :  1 14 
+c Number of calls is: 1
+c Layers in PHI: 3
+c Layers in KSI: 3
+c last restart ## conflicts  :  133 1300 
+c [glucose 4]
+c [glucose 4]        calls            1        25.2 per second
+c [glucose 4]     restarts            1        25.2 per second
+c [glucose 4]    conflicts            1        25.2 per second
+c [glucose 4]    decisions           17       428.1 per second
+c [glucose 4] propagations           20       503.6 per second
+c [glucose 4]
+c last restart ## conflicts  :  2 14 
+c Number of calls is: 2
+c Layers in PHI: 4
+c Layers in KSI: 4
+c last restart ## conflicts  :  0 1637 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 3
+c Layers in PHI: 5
+c Layers in KSI: 5
+c last restart ## conflicts  :  0 1915 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 4
+c Layers in PHI: 6
+c Layers in KSI: 6
+c last restart ## conflicts  :  0 2204 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 5
+c Layers in PHI: 7
+c Layers in KSI: 7
+c last restart ## conflicts  :  0 2522 
+c last restart ## conflicts  :  1 15 
+c Number of calls is: 6
+c Layers in PHI: 8
+c Layers in KSI: 8
+c last restart ## conflicts  :  0 2845 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 7
+c Layers in PHI: 9
+c Layers in KSI: 9
+c last restart ## conflicts  :  0 3160 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 8
+c Layers in PHI: 10
+c Layers in KSI: 10
+c last restart ## conflicts  :  0 3356 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 9
+c Layers in PHI: 11
+c Layers in KSI: 11
+c last restart ## conflicts  :  0 3775 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 10
+c Layers in PHI: 12
+c Layers in KSI: 12
+c last restart ## conflicts  :  0 4083 
+c last restart ## conflicts  :  0 15 
+c Number of calls is: 11
+c Layers in PHI: 13
+c Layers in KSI: 13
+c last restart ## conflicts  :  84 4163 
+c [glucose 4]
+c [glucose 4]        calls           10        82.5 per second
+c [glucose 4]     restarts           10        82.5 per second
+c [glucose 4]    conflicts            6        49.5 per second
+c [glucose 4]    decisions          166      1369.2 per second
+c [glucose 4] propagations          169      1394.0 per second
+c [glucose 4]
+c last restart ## conflicts  :  2 14 
+c Number of calls is: 12
+c Layers in PHI: 14
+c Layers in KSI: 14
+c last restart ## conflicts  :  0 5197 
+c last restart ## conflicts  :  0 14 
+c Number of calls is: 13
+c Layers in PHI: 15
+c Layers in KSI: 15
+c last restart ## conflicts  :  54 4850 
+c [glucose 4]
+c [glucose 4]        calls            2        14.2 per second
+c [glucose 4]     restarts            2        14.2 per second
+c [glucose 4]    conflicts            2        14.2 per second
+c [glucose 4]    decisions           33       235.1 per second
+c [glucose 4] propagations           38       270.7 per second
+c [glucose 4]
+c last restart ## conflicts  :  1 12 
+c Number of calls is: 14
+c Layers in PHI: 16
+c Layers in KSI: 16
+c last restart ## conflicts  :  1066 5640 
+c [glucose 4]
+c [glucose 4]        calls            1         4.1 per second
+c [glucose 4]     restarts            1         4.1 per second
+c [glucose 4]    conflicts            1         4.1 per second
+c [glucose 4]    decisions           15        61.0 per second
+c [glucose 4] propagations           20        81.3 per second
+c [glucose 4]
+c last restart ## conflicts  :  2 12 
+c Number of calls is: 15
+c Layers in PHI: 17
+c Layers in KSI: 17
+c last restart ## conflicts  :  5 6226 
+c last restart ## conflicts  :  1 28 
+c Number of calls is: 16
+c Layers in PHI: 18
+c Layers in KSI: 35
+c sat_solver_phi calld 17 times, running for 0.300894 seconds.
+c number of layers in PHI is 19
+c sat_solver_ksi was running for 9.2e-05 seconds.
+c number of layers in KSI is 35
+c mysolver was running for 0.366213 seconds.
+s cnf 0
+solving done with exit code 20
+
+QBF solver OK
+
+running SAT Solver...
+
+/tmp/ferpcert2788expanded.cnf
+s UNSATISFIABLE
+
+PROOF GENERATION OK
+
+checking unsat proof
+
+resolved 1 root and 1 empty clause
+trace-size2: 308113705
+
+TRACE CHECK OK
+
+running toferp...
+
+ferp-size: 270141665
+TOFERP OK
+
+checking FERP PROOF...
+
+FERP CHECK OK
+
+extracting AIG ...
+
+clean up and exit
+c array.sh: end:      Tue Feb 16 22:47:27 CET 2021

@@ -1,0 +1,106 @@
+[runlim] version:		1.21
+[runlim] host:			c3n20
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		7000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18816929-313-p20-1.pddl_planlen=49.cnf
+[runlim] start:			Fri Feb 12 12:53:06 2021
+[runlim] child:			5045
+[runlim] sample:		0.00 time, 10.01 real, 3 MB
+[runlim] sample:		0.00 time, 20.01 real, 3 MB
+[runlim] sample:		0.00 time, 30.01 real, 3 MB
+[runlim] sample:		0.00 time, 40.01 real, 3 MB
+[runlim] sample:		0.00 time, 50.01 real, 3 MB
+[runlim] sample:		0.00 time, 60.01 real, 3 MB
+[runlim] sample:		0.00 time, 70.01 real, 3 MB
+[runlim] sample:		0.00 time, 80.01 real, 3 MB
+[runlim] sample:		0.00 time, 90.01 real, 3 MB
+[runlim] sample:		0.00 time, 100.01 real, 3 MB
+[runlim] sample:		0.00 time, 110.01 real, 3 MB
+[runlim] sample:		0.00 time, 120.01 real, 3 MB
+[runlim] sample:		0.00 time, 130.01 real, 3 MB
+[runlim] sample:		0.00 time, 140.01 real, 3 MB
+[runlim] sample:		0.00 time, 150.01 real, 3 MB
+[runlim] sample:		0.00 time, 160.01 real, 3 MB
+[runlim] sample:		0.00 time, 170.01 real, 3 MB
+[runlim] sample:		0.00 time, 180.01 real, 3 MB
+[runlim] sample:		0.00 time, 190.01 real, 3 MB
+[runlim] sample:		0.00 time, 200.01 real, 3 MB
+[runlim] sample:		0.00 time, 210.01 real, 3 MB
+[runlim] sample:		0.00 time, 220.01 real, 3 MB
+[runlim] sample:		0.00 time, 230.01 real, 3 MB
+[runlim] sample:		0.00 time, 240.01 real, 3 MB
+[runlim] sample:		0.00 time, 250.01 real, 3 MB
+[runlim] sample:		0.00 time, 260.01 real, 3 MB
+[runlim] sample:		0.00 time, 270.01 real, 3 MB
+[runlim] sample:		0.00 time, 280.01 real, 3 MB
+[runlim] sample:		0.00 time, 290.01 real, 3 MB
+[runlim] sample:		0.00 time, 300.01 real, 3 MB
+[runlim] sample:		0.00 time, 310.01 real, 3 MB
+[runlim] sample:		0.00 time, 320.01 real, 3 MB
+[runlim] sample:		0.00 time, 330.01 real, 3 MB
+[runlim] sample:		0.00 time, 340.01 real, 1 MB
+[runlim] sample:		0.00 time, 350.01 real, 1 MB
+[runlim] sample:		0.00 time, 360.01 real, 0 MB
+[runlim] sample:		0.00 time, 370.01 real, 0 MB
+[runlim] sample:		0.00 time, 380.01 real, 0 MB
+[runlim] sample:		0.00 time, 390.01 real, 0 MB
+[runlim] sample:		0.00 time, 400.01 real, 0 MB
+[runlim] sample:		0.00 time, 410.01 real, 0 MB
+[runlim] sample:		0.00 time, 421.41 real, 0 MB
+[runlim] sample:		0.00 time, 431.41 real, 0 MB
+[runlim] sample:		0.00 time, 441.41 real, 0 MB
+[runlim] sample:		0.00 time, 451.41 real, 0 MB
+[runlim] sample:		0.00 time, 461.41 real, 0 MB
+[runlim] sample:		0.00 time, 471.41 real, 0 MB
+[runlim] sample:		0.00 time, 481.41 real, 0 MB
+[runlim] sample:		0.00 time, 491.41 real, 0 MB
+[runlim] sample:		0.00 time, 501.41 real, 0 MB
+[runlim] sample:		0.00 time, 511.41 real, 0 MB
+[runlim] sample:		0.00 time, 521.41 real, 0 MB
+[runlim] sample:		0.00 time, 531.41 real, 0 MB
+[runlim] sample:		0.00 time, 541.41 real, 0 MB
+[runlim] sample:		0.00 time, 551.41 real, 0 MB
+[runlim] sample:		0.00 time, 561.41 real, 0 MB
+[runlim] sample:		0.00 time, 571.41 real, 0 MB
+[runlim] sample:		0.00 time, 581.41 real, 0 MB
+[runlim] sample:		0.00 time, 591.41 real, 0 MB
+[runlim] sample:		0.00 time, 601.41 real, 0 MB
+[runlim] sample:		0.00 time, 611.41 real, 0 MB
+[runlim] sample:		0.00 time, 621.41 real, 0 MB
+[runlim] sample:		0.00 time, 631.41 real, 0 MB
+[runlim] sample:		0.00 time, 641.41 real, 0 MB
+[runlim] sample:		0.00 time, 651.41 real, 0 MB
+[runlim] sample:		0.00 time, 661.41 real, 0 MB
+[runlim] sample:		0.00 time, 672.11 real, 0 MB
+[runlim] sample:		0.00 time, 682.11 real, 0 MB
+[runlim] sample:		0.00 time, 692.11 real, 0 MB
+[runlim] sample:		0.00 time, 702.11 real, 0 MB
+[runlim] sample:		0.00 time, 712.11 real, 0 MB
+[runlim] sample:		0.00 time, 722.11 real, 0 MB
+[runlim] sample:		0.00 time, 732.11 real, 0 MB
+[runlim] sample:		0.00 time, 742.11 real, 0 MB
+[runlim] sample:		0.00 time, 752.11 real, 0 MB
+[runlim] sample:		0.00 time, 762.11 real, 0 MB
+[runlim] sample:		0.00 time, 772.11 real, 0 MB
+[runlim] sample:		0.00 time, 782.11 real, 0 MB
+[runlim] sample:		0.00 time, 792.11 real, 0 MB
+[runlim] sample:		0.00 time, 802.11 real, 0 MB
+[runlim] sample:		0.00 time, 812.11 real, 0 MB
+[runlim] sample:		0.00 time, 822.11 real, 0 MB
+[runlim] sample:		0.00 time, 832.11 real, 0 MB
+[runlim] sample:		0.00 time, 842.11 real, 0 MB
+[runlim] sample:		0.00 time, 852.11 real, 0 MB
+[runlim] sample:		0.00 time, 862.51 real, 0 MB
+[runlim] sample:		0.00 time, 872.51 real, 0 MB
+[runlim] sample:		0.00 time, 882.51 real, 0 MB
+[runlim] sample:		0.00 time, 892.51 real, 0 MB
+[runlim] end:			Fri Feb 12 13:08:06 2021
+[runlim] status:		out of time
+[runlim] result:		2
+[runlim] children:		1
+[runlim] real:			900.05 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			3 MB
+[runlim] samples:		8975

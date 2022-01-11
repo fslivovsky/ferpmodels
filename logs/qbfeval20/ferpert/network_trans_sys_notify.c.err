@@ -1,0 +1,32 @@
+[runlim] version:		1.21
+[runlim] host:			c3n01
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-79-network_trans_sys_notify.c.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:47:06 2021
+[runlim] child:			3657
+solving-time: 0.51
+proof-gen-satsolver: 0.19
+tracecheck-time: 0.10
+toferp-time: 0.65
+ferpcheck-time: 4.06
+[runlim] sample:		9.75 time, 10.01 real, 3865 MB
+[runlim] sample:		19.75 time, 20.01 real, 12607 MB
+[runlim] sample:		29.76 time, 30.02 real, 20963 MB
+[runlim] sample:		39.76 time, 40.01 real, 28953 MB
+[runlim] sample:		49.75 time, 50.02 real, 29261 MB
+[runlim] sample:		59.76 time, 60.02 real, 29262 MB
+ferpcert-time: 60.51
+merging-time 0.15
+final-check-time: 0.24
+[runlim] end:			Tue Feb 16 22:48:12 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		17
+[runlim] real:			66.52 seconds
+[runlim] time:			66.01 seconds
+[runlim] space:			29262 MB
+[runlim] samples:		665

@@ -1,0 +1,23 @@
+[runlim] version:		1.21
+[runlim] host:			c3n09
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		60000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18838260-17-biu.mv.xl_ao.bb-b003-p020-MIF04-c05.blif-biu.inv.prop.bb-bmc.conf01.01X-QBF.BB1-Zi.BB2-01X.BB3-01X.with-IOC.unfold-010.cnf
+[runlim] start:			Thu Feb 18 09:53:05 2021
+[runlim] child:			15157
+solving-time: 1.04
+OK
+qrpcheck-time: 0.32
+qrpcert-time: 0.08
+certcheck-time: 0.14
+final-check-time: 0.19
+[runlim] end:			Thu Feb 18 09:53:07 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		11
+[runlim] real:			1.87 seconds
+[runlim] time:			1.46 seconds
+[runlim] space:			51 MB
+[runlim] samples:		18

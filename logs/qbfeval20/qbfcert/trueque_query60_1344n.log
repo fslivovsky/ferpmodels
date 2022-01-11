@@ -1,0 +1,78 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/trueque_query60_1344n.qdimacs
+c array.sh: name:     trueque_query60_1344n
+c array.sh: task:     112
+c array.sh: host:     c3n21
+c array.sh: uname:    Linux c3n21 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Thu Feb 18 10:08:08 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18838260-112-trueque_query60_1344n.cnf
+*** qbfcert: using tmp directory:
+*** qbfcert:   /tmp
+trace-size: 12701
+solving-res 20
+proof-size: 3249
+cert-size: 1091
+cert-header: aag 318 242 0 11 11
+merged-header: p cnf 2241 4847
+merged-size: 66418
+c ---- [ banner ] ------------------------------------------------------------
+c
+c KISSAT SAT Solver
+c Copyright (c) 2019-2020 Armin Biere JKU Linz
+c 
+c Version 1.0.3 59813addcacc4d6fb880ebdd63685600475aa940
+c gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0 -W -Wall -O3 -DNEMBEDDED -DNDEBUG -DNMETRICS -DNSTATISTICS
+c Sun Feb 14 23:58:54 CET 2021 Linux cluster3 4.15.0-135-generic x86_64
+c
+c ---- [ parsing ] -----------------------------------------------------------
+c
+c opened and reading DIMACS file:
+c 
+c   /tmp/qbfcert_merged_cnf11214.cnf
+c 
+c parsed 'p cnf 2241 4847' header
+c closing input after reading 66418 bytes (65 KB)
+c finished parsing after 0.00 seconds
+c
+c ---- [ solving ] -----------------------------------------------------------
+c
+c  seconds reductions redundant irredundant
+c         MB   restarts    trail    variables
+c          level  conflicts   glue      remaining
+c
+c *  0.00  2 0  0  0   1   0 0% 0 4835 939 42%
+c {  0.00  2 0  0  0   1   0 0% 0 4835 939 42%
+c }  0.00  2 0  0  0   1   0 0% 0 4835 939 42%
+c 0  0.00  2 0  0  0   1   0 0% 0 4835 939 42%
+c
+c ---- [ result ] ------------------------------------------------------------
+c
+s UNSATISFIABLE
+c
+c ---- [ profiling ] ---------------------------------------------------------
+c
+c           0.00   83.73 %  parse
+c           0.00    6.95 %  search
+c           0.00    2.02 %  focused
+c           0.00    0.00 %  simplify
+c =============================================
+c           0.00  100.00 %  total
+c
+c ---- [ statistics ] --------------------------------------------------------
+c
+c conflicts:                                1              426.44 per second
+c decisions:                                0                0.00 per conflict
+c propagations:                           978           417058    per second
+c
+c ---- [ resources ] ---------------------------------------------------------
+c
+c maximum-resident-set-size:          2547712 bytes          2 MB
+c process-time:                             0s               0.00 seconds
+c
+c ---- [ shutting down ] -----------------------------------------------------
+c
+c exit 20
+*** qbfcert: VALID
+c array.sh: end:      Thu Feb 18 10:08:08 CET 2021

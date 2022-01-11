@@ -1,0 +1,24 @@
+[runlim] version:		1.21
+[runlim] host:			c3n26
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		60000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18838260-52-fpu-01Xh-error02-nonuniform-depth-18.cnf
+[runlim] start:			Thu Feb 18 09:53:05 2021
+[runlim] child:			7337
+solving-time: 3.45
+OK
+qrpcheck-time: 0.42
+qrpcert-time: 0.31
+certcheck-time: 3.01
+[runlim] sample:		8.77 time, 10.02 real, 450 MB
+final-check-time: 3.18
+[runlim] end:			Thu Feb 18 09:53:16 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		12
+[runlim] real:			10.56 seconds
+[runlim] time:			9.16 seconds
+[runlim] space:			654 MB
+[runlim] samples:		105

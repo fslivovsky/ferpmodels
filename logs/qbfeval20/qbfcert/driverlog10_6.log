@@ -1,0 +1,115 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/driverlog10_6.qdimacs
+c array.sh: name:     driverlog10_6
+c array.sh: task:     35
+c array.sh: host:     c3n18
+c array.sh: uname:    Linux c3n18 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Thu Feb 18 09:53:05 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18838260-35-driverlog10_6.cnf
+*** qbfcert: using tmp directory:
+*** qbfcert:   /tmp
+trace-size: 5577511460
+solving-res 20
+proof-size: 1819971176
+cert-size: 27699817
+cert-header: aag 1365969 1881 0 2 1364088
+merged-header: p cnf 1470485 4400162
+merged-size: 81823807
+c ---- [ banner ] ------------------------------------------------------------
+c
+c KISSAT SAT Solver
+c Copyright (c) 2019-2020 Armin Biere JKU Linz
+c 
+c Version 1.0.3 59813addcacc4d6fb880ebdd63685600475aa940
+c gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0 -W -Wall -O3 -DNEMBEDDED -DNDEBUG -DNMETRICS -DNSTATISTICS
+c Sun Feb 14 23:58:54 CET 2021 Linux cluster3 4.15.0-135-generic x86_64
+c
+c ---- [ parsing ] -----------------------------------------------------------
+c
+c opened and reading DIMACS file:
+c 
+c   /tmp/qbfcert_merged_cnf13859.cnf
+c 
+c parsed 'p cnf 1470485 4400162' header
+c closing input after reading 81823807 bytes (78 MB)
+c finished parsing after 1.13 seconds
+c
+c ---- [ solving ] -----------------------------------------------------------
+c
+c  seconds  reductions redundant irredundant
+c          MB   restarts    trail         variables
+c           level  conflicts   glue             remaining
+c
+c *  1.13 218 0  0  0   0   0 0% 0 4400160 1403936 95%
+c {  1.13 218 0  0  0   0   0 0% 0 4400160 1403936 95%
+c -  6.79 259 42  1 43 300 272 44% 4 4270829 1403936 95%
+c i  6.83 259 41  1 43 309 279 44% 4 4270829 1403935 95%
+c - 24.55 270 342  2 184 902 652 50% 18 4270809 1403935 95%
+c } 27.48 270 290  2 192 1001 748 53% 20 4270809 1403935 95%
+c [ 27.48 270 0  2 192 1001 748 0% 0 4270809 1403935 95%
+c O 27.91 271 7  2 192 1002 749 42% 2 4238477 1403935 95%
+c - 30.81 283 394  3 192 1802 970 71% 46 4238477 1403935 95%
+c - 37.21 284 364  4 193 3003 1209 71% 55 4238477 1403935 95%
+c I 37.36 284 366  4 193 3004 1210 71% 55 4238477 1403935 95%
+c d 44.86 286 772  4 194 3604 1758 75% 72 4238473 1403933 95%
+c d 45.18 295 772  4 194 3604 1758 75% 72 4238437 1403915 95%
+c 3 46.01 286 772  4 194 3604 5766 75% 72 4238437 1403915 95%
+c f 259.74 296 772  4 194 3604 125073 75% 72 4238437 1403915 95%
+c u 262.84 297 772  4 194 3604 125062 75% 72 4238437 1403915 95%
+c v 263.17 297 772  4 194 3604 125058 75% 72 4238437 1403915 95%
+c - 269.18 298 2147  5 194 4503 8234 75% 169 4238437 1403915 95%
+c ] 269.36 298 2152  5 194 4513 8244 75% 171 4238437 1403915 95%
+c { 269.36 298 290  5 194 4513 8244 53% 20 4238437 1403915 95%
+c
+c  seconds     reductions   redundant    irredundant
+c           MB     restarts        trail          variables
+c             level    conflicts       glue             remaining
+c
+c B 297.63 299 311  5 332 6005 9626 55% 29 4238437 1403915 95%
+c - 307.65 300 605  6 398 6386 6216 54% 30 4238437 1403915 95%
+c } 309.32 300 649  6 398 6515 6338 54% 29 4238437 1403915 95%
+c [ 309.32 300 2152  6 398 6515 6338 75% 171 4238437 1403915 95%
+c - 329.25 307 1954  7 399 8492 5328 64% 272 4238437 1403915 95%
+c ] 338.54 307 1751  7 400 9602 6176 60% 265 4238437 1403915 95%
+c { 338.54 307 649  7 400 9602 6176 54% 29 4238437 1403915 95%
+c W 351.74 307 1251  7 435 10035 6358 54% 42 4238437 1403915 95%
+c 3 378.30 322 1116  7 645 10807 11088 54% 76 4238437 1403915 95%
+c caught signal 15 (SIGTERM)
+c
+c ---- [ profiling ] ---------------------------------------------------------
+c
+c         358.08   69.58 %  simplify
+c         356.74   69.32 %  probe
+c         349.76   67.96 %  failed
+c         155.41   30.20 %  search
+c         103.68   20.15 %  focused
+c          51.72   10.05 %  stable
+c           3.43    0.67 %  vivify
+c           1.76    0.34 %  ternary
+c           1.50    0.29 %  substitute
+c           1.13    0.22 %  parse
+c           0.79    0.15 %  reduce
+c           0.68    0.13 %  autarky
+c           0.66    0.13 %  walking
+c           0.30    0.06 %  transitive
+c =============================================
+c         514.63  100.00 %  total
+c
+c ---- [ statistics ] --------------------------------------------------------
+c
+c conflicts:                            10807               21.00 per second
+c decisions:                           344307               31.86 per conflict
+c propagations:                    2874607823          5585809    per second
+c reductions:                               7             1544    interval
+c rephased:                                 4             2702    interval
+c restarts:                               645               16.76 interval
+c
+c ---- [ resources ] ---------------------------------------------------------
+c
+c maximum-resident-set-size:        395345920 bytes        377 MB
+c process-time:                         8m 34s             514.63 seconds
+c raising signal 15 (SIGTERM)
+*** qbfcert: clean up and exit
+c array.sh: end:      Thu Feb 18 10:08:05 CET 2021

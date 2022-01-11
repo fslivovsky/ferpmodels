@@ -1,0 +1,100 @@
+c array.sh: path:     /data/qbf/qbf20/PCNF/gttt_2_2_000111_4x4_torus_w.qdimacs
+c array.sh: name:     gttt_2_2_000111_4x4_torus_w
+c array.sh: task:     67
+c array.sh: host:     c3n25
+c array.sh: uname:    Linux c3n25 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Thu Feb 18 09:53:05 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18838260-67-gttt_2_2_000111_4x4_torus_w.cnf
+*** qbfcert: using tmp directory:
+*** qbfcert:   /tmp
+trace-size: 12574087322
+solving-res 20
+proof-size: 19483187
+cert-size: 56567
+cert-header: aag 12508 6269 0 32 1328
+merged-header: p cnf 138223 347492
+merged-size: 5851149
+c ---- [ banner ] ------------------------------------------------------------
+c
+c KISSAT SAT Solver
+c Copyright (c) 2019-2020 Armin Biere JKU Linz
+c 
+c Version 1.0.3 59813addcacc4d6fb880ebdd63685600475aa940
+c gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0 -W -Wall -O3 -DNEMBEDDED -DNDEBUG -DNMETRICS -DNSTATISTICS
+c Sun Feb 14 23:58:54 CET 2021 Linux cluster3 4.15.0-135-generic x86_64
+c
+c ---- [ parsing ] -----------------------------------------------------------
+c
+c opened and reading DIMACS file:
+c 
+c   /tmp/qbfcert_merged_cnf10204.cnf
+c 
+c parsed 'p cnf 138223 347492' header
+c closing input after reading 5851149 bytes (6 MB)
+c finished parsing after 0.10 seconds
+c
+c ---- [ solving ] -----------------------------------------------------------
+c
+c  seconds reductions redundant irredundant
+c         MB   restarts    trail       variables
+c          level  conflicts   glue          remaining
+c
+c *  0.10 21 0  0  0   0   0 0% 0 347490 47283 34%
+c {  0.10 21 0  0  0   0   0 0% 0 347490 47283 34%
+c i  0.12 21 6  0  0  57  46 65% 4 347490 16506 12%
+c i  0.14 21 11  0  0 161 136 54% 5 347490 9927 7%
+c i  0.14 21 11  0  0 175 149 52% 5 347490 9925 7%
+c i  0.15 21 10  0  0 189 162 50% 5 347490 9923 7%
+c i  0.15 21 10  0  0 208 176 47% 4 347490 9921 7%
+c i  0.15 21 9  0  0 214 179 46% 4 347490 9581 7%
+c i  0.15 21 9  0  0 215 179 46% 4 347490 9579 7%
+c i  0.15 21 9  0  0 226 189 44% 4 347490 9577 7%
+c i  0.15 21 8  0  0 246 202 41% 4 347490 9574 7%
+c i  0.15 21 8  0  0 251 206 40% 4 347490 9300 7%
+c i  0.15 21 8  0  0 260 214 39% 4 347490 9298 7%
+c i  0.15 21 8  0  0 263 213 39% 4 347490 9296 7%
+c i  0.15 21 8  0  0 268 216 38% 4 347490 9259 7%
+c i  0.15 21 8  0  0 269 216 38% 4 347490 9257 7%
+c i  0.15 21 8  0  0 270 216 38% 4 347490 9246 7%
+c i  0.15 21 8  0  0 271 216 38% 4 347490 9245 7%
+c i  0.15 21 8  0  0 274 218 38% 3 347490 8888 6%
+c }  0.15 21 8  0  0 276 218 38% 3 347490 7996 6%
+c
+c  seconds reductions redundant irredundant
+c         MB   restarts     trail      variables
+c          level  conflicts    glue        remaining
+c
+c 0  0.15 21 8  0  0 276 218 38% 3 347490 7996 6%
+c
+c ---- [ result ] ------------------------------------------------------------
+c
+s UNSATISFIABLE
+c
+c ---- [ profiling ] ---------------------------------------------------------
+c
+c           0.10   63.89 %  parse
+c           0.06   36.02 %  search
+c           0.06   35.95 %  focused
+c           0.00    0.00 %  simplify
+c =============================================
+c           0.16  100.00 %  total
+c
+c ---- [ statistics ] --------------------------------------------------------
+c
+c conflicts:                              276             1772.21 per second
+c decisions:                              525                1.90 per conflict
+c propagations:                        803840          5161489    per second
+c
+c ---- [ resources ] ---------------------------------------------------------
+c
+c maximum-resident-set-size:         22343680 bytes         21 MB
+c process-time:                             0s               0.16 seconds
+c
+c ---- [ shutting down ] -----------------------------------------------------
+c
+c exit 20
+*** qbfcert: VALID
+c array.sh: end:      Thu Feb 18 10:00:40 CET 2021

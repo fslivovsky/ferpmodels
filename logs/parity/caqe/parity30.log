@@ -1,0 +1,17 @@
+c array.sh: path:     /home/seidl/data/parity/parity30.qdimacs
+c array.sh: name:     parity30
+c array.sh: task:     10
+c array.sh: host:     c3n01
+c array.sh: uname:    Linux c3n01 4.15.0-135-generic #139-Ubuntu SMP Mon Jan 18 17:38:24 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+c array.sh: start:    Tue Feb 16 23:41:34 CET 2021
+c array.sh: noturbo:  1
+c array.sh: governor: 32 performance
+c array.sh: tmp:      1%
+c array.sh: unzipped: /tmp/local-unzipped-18834963-10-parity30.cnf
+using tmp directory:
+  /tmp
+running QBF solver...
+
+/home/seidl/cert_tests/bin//caqe -c /tmp/local-unzipped-18834963-10-parity30.cnf
+clean up and exit
+c array.sh: end:      Tue Feb 16 23:56:35 CET 2021

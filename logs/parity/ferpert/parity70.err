@@ -1,0 +1,44 @@
+[runlim] version:		1.21
+[runlim] host:			c3n01
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834717-2-parity70.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:30:17 2021
+[runlim] child:			3147
+solving-time: 0.02
+proof-gen-satsolver: 0.00
+tracecheck-time: 0.01
+toferp-time: 0.05
+ferpcheck-time: 0.06
+ferpcert-time: 0.66
+merging-time 0.28
+[runlim] sample:		9.71 time, 10.01 real, 85 MB
+[runlim] sample:		19.71 time, 20.01 real, 96 MB
+[runlim] sample:		29.71 time, 30.01 real, 77 MB
+[runlim] sample:		39.72 time, 40.01 real, 78 MB
+[runlim] sample:		49.72 time, 50.01 real, 79 MB
+[runlim] sample:		59.71 time, 60.01 real, 74 MB
+[runlim] sample:		69.72 time, 70.02 real, 79 MB
+[runlim] sample:		79.72 time, 80.01 real, 71 MB
+[runlim] sample:		89.72 time, 90.01 real, 79 MB
+[runlim] sample:		99.72 time, 100.02 real, 79 MB
+[runlim] sample:		109.71 time, 110.01 real, 80 MB
+[runlim] sample:		119.71 time, 120.02 real, 80 MB
+[runlim] sample:		129.72 time, 130.01 real, 70 MB
+[runlim] sample:		139.72 time, 140.02 real, 80 MB
+[runlim] sample:		149.72 time, 150.01 real, 72 MB
+[runlim] sample:		159.72 time, 160.02 real, 74 MB
+[runlim] sample:		169.71 time, 170.01 real, 71 MB
+[runlim] sample:		179.72 time, 180.01 real, 72 MB
+final-check-time: 187.57
+[runlim] end:			Tue Feb 16 22:33:26 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		9
+[runlim] real:			188.76 seconds
+[runlim] time:			188.41 seconds
+[runlim] space:			224 MB
+[runlim] samples:		1887

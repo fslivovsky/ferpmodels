@@ -1,0 +1,49 @@
+[runlim] version:		1.21
+[runlim] host:			c3n10
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-92-pipesnotankage18_7.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:52:08 2021
+[runlim] child:			2879
+[runlim] sample:		10.00 time, 10.01 real, 546 MB
+[runlim] sample:		19.99 time, 20.01 real, 626 MB
+solving-time: 25.22
+[runlim] sample:		29.96 time, 30.01 real, 324 MB
+proof-gen-satsolver: 5.03
+tracecheck-time: 2.70
+[runlim] sample:		39.80 time, 40.01 real, 155 MB
+[runlim] sample:		49.80 time, 50.01 real, 160 MB
+toferp-time: 22.41
+[runlim] sample:		59.71 time, 60.01 real, 109 MB
+[runlim] sample:		69.70 time, 70.01 real, 181 MB
+[runlim] sample:		79.70 time, 80.01 real, 230 MB
+ferpcheck-time: 27.71
+[runlim] sample:		89.67 time, 90.02 real, 5460 MB
+[runlim] sample:		99.68 time, 100.02 real, 14062 MB
+[runlim] sample:		109.67 time, 110.02 real, 22446 MB
+[runlim] sample:		119.67 time, 120.02 real, 30427 MB
+[runlim] sample:		129.67 time, 130.02 real, 37410 MB
+[runlim] sample:		139.67 time, 140.01 real, 44088 MB
+[runlim] sample:		149.67 time, 150.02 real, 48382 MB
+[runlim] sample:		159.67 time, 160.02 real, 48382 MB
+[runlim] sample:		169.67 time, 170.02 real, 48401 MB
+[runlim] sample:		179.67 time, 180.02 real, 48408 MB
+[runlim] sample:		189.67 time, 190.01 real, 48418 MB
+[runlim] sample:		199.67 time, 200.01 real, 48557 MB
+[runlim] sample:		209.67 time, 210.01 real, 48737 MB
+[runlim] sample:		219.67 time, 220.02 real, 49030 MB
+[runlim] sample:		229.67 time, 230.02 real, 49297 MB
+[runlim] sample:		239.67 time, 240.01 real, 49528 MB
+[runlim] sample:		249.67 time, 250.02 real, 49774 MB
+Terminated
+[runlim] end:			Tue Feb 16 22:56:27 2021
+[runlim] status:		out of memory
+[runlim] result:		3
+[runlim] children:		13
+[runlim] real:			259.20 seconds
+[runlim] time:			258.77 seconds
+[runlim] space:			50002 MB
+[runlim] samples:		2591

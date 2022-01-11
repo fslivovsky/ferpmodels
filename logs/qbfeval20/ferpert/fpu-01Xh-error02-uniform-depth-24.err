@@ -1,0 +1,48 @@
+[runlim] version:		1.21
+[runlim] host:			c3n27
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		50000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18834727-53-fpu-01Xh-error02-uniform-depth-24.cnf
+[runlim] argv[2]:		900 50000
+[runlim] start:			Tue Feb 16 22:43:55 2021
+[runlim] child:			2782
+[runlim] sample:		9.78 time, 10.01 real, 680 MB
+solving-time: 13.01
+proof-gen-satsolver: 2.02
+tracecheck-time: 0.29
+[runlim] sample:		19.48 time, 20.01 real, 144 MB
+toferp-time: 5.91
+[runlim] sample:		29.44 time, 30.01 real, 81 MB
+ferpcheck-time: 12.63
+[runlim] sample:		39.37 time, 40.01 real, 1957 MB
+[runlim] sample:		49.36 time, 50.01 real, 1957 MB
+[runlim] sample:		59.36 time, 60.01 real, 1957 MB
+[runlim] sample:		69.37 time, 70.01 real, 1957 MB
+[runlim] sample:		79.36 time, 80.01 real, 1957 MB
+[runlim] sample:		89.36 time, 90.01 real, 1957 MB
+[runlim] sample:		99.37 time, 100.01 real, 1957 MB
+[runlim] sample:		109.36 time, 110.01 real, 1957 MB
+[runlim] sample:		119.37 time, 120.01 real, 1957 MB
+[runlim] sample:		129.37 time, 130.01 real, 1957 MB
+[runlim] sample:		139.36 time, 140.01 real, 1957 MB
+[runlim] sample:		149.36 time, 150.01 real, 1957 MB
+[runlim] sample:		159.36 time, 160.01 real, 1957 MB
+[runlim] sample:		169.36 time, 170.01 real, 1957 MB
+[runlim] sample:		179.36 time, 180.01 real, 1957 MB
+[runlim] sample:		189.36 time, 190.01 real, 1957 MB
+[runlim] sample:		199.36 time, 200.01 real, 1957 MB
+[runlim] sample:		209.36 time, 210.01 real, 1957 MB
+ferpcert-time: 185.23
+[runlim] sample:		219.25 time, 220.01 real, 57 MB
+merging-time 2.80
+final-check-time: 4.37
+[runlim] end:			Tue Feb 16 22:47:42 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		17
+[runlim] real:			226.58 seconds
+[runlim] time:			225.62 seconds
+[runlim] space:			1957 MB
+[runlim] samples:		2265

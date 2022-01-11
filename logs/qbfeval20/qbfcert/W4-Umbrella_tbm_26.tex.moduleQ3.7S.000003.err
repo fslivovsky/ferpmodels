@@ -1,0 +1,24 @@
+[runlim] version:		1.21
+[runlim] host:			c3n21
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		60000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18838260-118-W4-Umbrella_tbm_26.tex.moduleQ3.7S.000003.cnf
+[runlim] start:			Thu Feb 18 10:08:08 2021
+[runlim] child:			11407
+[runlim] sample:		9.98 time, 10.01 real, 31 MB
+solving-time: 10.85
+OK
+qrpcheck-time: 1.28
+qrpcert-time: 0.07
+certcheck-time: 0.00
+final-check-time: 0.07
+[runlim] end:			Thu Feb 18 10:08:21 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		9
+[runlim] real:			12.38 seconds
+[runlim] time:			12.09 seconds
+[runlim] space:			180 MB
+[runlim] samples:		123

@@ -1,0 +1,23 @@
+[runlim] version:		1.21
+[runlim] host:			c3n27
+[runlim] time limit:		900 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		60000 MB
+[runlim] argv[0]:		./binary
+[runlim] argv[1]:		/tmp/local-unzipped-18838260-54-fpu-10Xh-correct04-nonuniform-depth-14.cnf
+[runlim] start:			Thu Feb 18 09:53:05 2021
+[runlim] child:			6663
+solving-time: 2.84
+OK
+qrpcheck-time: 0.32
+qrpcert-time: 0.22
+certcheck-time: 1.69
+final-check-time: 2.65
+[runlim] end:			Thu Feb 18 09:53:13 2021
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		11
+[runlim] real:			7.89 seconds
+[runlim] time:			7.48 seconds
+[runlim] space:			520 MB
+[runlim] samples:		78
