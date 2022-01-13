@@ -5,7 +5,7 @@ import sys, os, shutil, errno, subprocess, signal
 home = os.path.dirname(os.path.abspath(__file__)) + "/"
 dependencies = ["ijtihad/ijtihad", "picosat-965/picosat", 
                 "booleforce-1.2/tracecheck", "toferp/toferp", 
-                "ferpcert/ferpcheck", "ferpcert/ferpcert",
+                "ferpcert/ferpcheck", "ferpcert2/ferpcert",
                 "certcheck-1.0.1/certcheck"]
 
 dependencies = [home + x for x in dependencies]

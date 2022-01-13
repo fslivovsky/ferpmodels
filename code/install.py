@@ -94,10 +94,13 @@ def main():
   compile_jku("certcheck-1.0.1", "certcheck", None, None)
   
   get_repository("ijtihad", "https://extgit.iaik.tugraz.at/scos/ijtihad.git")
+  get_repository("toferp", "https://extgit.iaik.tugraz.at/scos/scos.sources/toferp.git")
+  get_repository("ferpcert", "https://extgit.iaik.tugraz.at/scos/scos.sources/ferpcert.git")
+
   compile_ijtihad()
   compile_ferp_tool("toferp", "toferp")
   compile_ferp_tool("ferpcert", "ferpcheck")
-  compile_ferp_tool("ferpcert", "ferpcert")
+  compile_jku("ferpcert2", "ferpcert", None, None)
   
 
 if __name__ == '__main__':
