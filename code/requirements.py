@@ -1,6 +1,7 @@
 #!/usr/bin/env python2
 
-import os, errno, requests, tarfile, subprocess
+import requests
+import os, errno, tarfile, subprocess
 
 
 def assure_dir(path):
