@@ -6,8 +6,11 @@ scripts ... bash scripts used to call the tools as described in the paper
 
 
 # To run the tool
+1. Move to the code folder.       $cd code
 
-To install all necessary third-party tools like SAT solvers and to build our
-tools, the script install.py is provided. The full tool chain is called via
+2. Run requirements.py. To install all necessary third-party tools like SAT solvers and to build our
+tools, the script requirements.py is provided. 
+
+3. Run the tool. The full tool chain is called via
 pipeline.py <qbf> <f> where <qbf> is the input QBF in QDIMACS format and
 <f> is the name of the file in which the generated winning strategy is stored.
