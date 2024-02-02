@@ -60,11 +60,11 @@ struct Clause {
 
 
 
-Scope *outer_most, *inner_most; 
-Var *vars;
-Clause *clauses, *empty_clause;
-int num_vars, num_clauses;
-int universal_vars, existential_vars, implicit_vars, orig_clauses;
+extern Scope *outer_most, *inner_most;
+extern Var *vars;
+extern Clause *clauses, *empty_clause;
+extern int num_vars, num_clauses;
+extern int universal_vars, existential_vars, implicit_vars, orig_clauses;
 
 
 void add_quantifier (int); 

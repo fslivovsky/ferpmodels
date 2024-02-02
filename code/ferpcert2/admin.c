@@ -8,6 +8,8 @@
 
 #include "admin.h"
 
+int num_lits, size_lits, * lits;
+
 void die (const char * fmt, ...) {
   va_list ap;
   fputs ("*** ferpcert: ", stderr);

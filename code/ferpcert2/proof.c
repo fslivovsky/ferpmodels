@@ -15,6 +15,12 @@
 #define aiger_true SIMPLEAIG_TRUE
 #define aiger_false SIMPLEAIG_FALSE
 
+int a_vars_size, p_clauses_size;
+A_Var *a_vars;
+P_Clause *p_clauses;
+int p_empty_clause;
+int num_p_vars, num_p_clauses;
+
 
 int avar_get_level (int l) {
   Var *v = vars + a_lit2var (l); 

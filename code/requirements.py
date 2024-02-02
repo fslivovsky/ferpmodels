@@ -38,7 +38,7 @@ def compile_jku(dir_name, tool_name, cfg_name, cfg_command):
   if not os.path.exists(tool_path):
     os.chdir(dir_name)
     if cfg_name is not None and cfg_command is not None:
-      os.chmod("./%s" % cfg_name, 0700)
+      os.chmod("./%s" % cfg_name, 0o0700)
       subprocess.call(cfg_command, shell=True)
     subprocess.call("make")
     os.chdir("..")

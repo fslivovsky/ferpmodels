@@ -30,7 +30,7 @@
 
 void die (const char *, ...); 
 
-int num_lits, size_lits, * lits;
+extern int num_lits, size_lits, * lits;
 void push_literal (int); 
 void release_lits (); 
 

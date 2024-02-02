@@ -27,11 +27,11 @@ struct P_Clause {
 }; 
 
 
-int a_vars_size, p_clauses_size; 
-A_Var *a_vars;
-P_Clause *p_clauses;
-int p_empty_clause;
-int num_p_vars, num_p_clauses;
+extern int a_vars_size, p_clauses_size;
+extern A_Var *a_vars;
+extern P_Clause *p_clauses;
+extern int p_empty_clause;
+extern int num_p_vars, num_p_clauses;
 
 int a_lit2var (int); 
 int avar_get_level (int); 

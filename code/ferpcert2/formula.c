@@ -9,6 +9,11 @@
 #include "admin.h"
 #include "formula.h"
 
+Scope *outer_most, *inner_most;
+Var *vars;
+Clause *clauses, *empty_clause;
+int num_vars, num_clauses;
+int universal_vars, existential_vars, implicit_vars, orig_clauses;
 
 int order = 1; 
 int max_var;
