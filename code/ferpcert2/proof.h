@@ -16,16 +16,14 @@ struct A_Var {
 
 struct P_Clause {
   int name; 
-  int aig_label; 
-  int aig_prelabel; 
   int pivot; 		// pivot
   int p1, p2; 		// parent clauses
   int size;		// number of nodes
   int *nodes;  		// literals of clause
-  int *var_activity; 
-  int *var_activity_p; 
-}; 
-
+  int *universals; // universal variables with non-trivial partial functions
+  int *aig_labels; // aig labels for partial functions
+  int num_universals;
+};
 
 extern int a_vars_size, p_clauses_size;
 extern A_Var *a_vars;

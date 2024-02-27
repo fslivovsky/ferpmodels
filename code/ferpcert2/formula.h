@@ -6,7 +6,6 @@ typedef struct Scope Scope;
 typedef struct Var Var;
 typedef struct Node Node;
 typedef struct Clause Clause;
-typedef struct Occ Occ;
 typedef struct AnnotationNode AnnotationNode; 
 
 
@@ -23,11 +22,6 @@ struct Scope {
   Scope *inner, *outer;  
 };
 
-struct Occ {
-  struct Node *first, *last; 
-};
-
-
 
 struct Var {
   struct Scope *scope; 
@@ -35,7 +29,6 @@ struct Var {
   AnnotationNode *an; 
   int mark; 
   Var *next, *prev;     // next variable in same quantifier block 
-  Occ occs[2]; 
 };
 
 struct AnnotationNode {
@@ -46,16 +39,13 @@ struct AnnotationNode {
 
 struct Node {
   int lit; 
-  struct Node *prev, *next; 
-  struct Node *cnext; 
-  int clause_id;  
-}; 
+  struct Node *next; 
+};
 
 
 struct Clause {
-  int p1, p2; 
   int size; 
-  Node *first; 
+  int *lits;
 }; 
 
 
@@ -67,10 +57,10 @@ extern int num_vars, num_clauses;
 extern int universal_vars, existential_vars, implicit_vars, orig_clauses;
 
 
-void add_quantifier (int); 
+void add_quantifier (int);
+void add_clause();
 Scope *lit2scope (int); 
-Var *lit2var (int); 
-Occ *lit2occ (int);
+Var *lit2var (int);
 int lit2order (int); 
 int is_universal (int);  
 int fresh_var (); 

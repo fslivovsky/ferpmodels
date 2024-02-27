@@ -26,6 +26,14 @@ static int nline, szline;
 static int remaining; 
 
 
+static void init_vars_clauses (int vnum, int cnum) {
+  num_vars = vnum; 
+  NEWN (vars, num_vars + 1);
+  max_var = num_vars + 1; 
+  num_clauses = cnum; 
+  NEWN (clauses, num_clauses + 1); 
+}
+
 static int init_variables (int start) {
   int i;
   assert (0 < start && start <= num_vars);
@@ -104,7 +112,7 @@ HERR:
   lineno++;
   remaining = num_vars = m;
 
-  NEWN (vars, num_vars +1);
+  init_vars_clauses(m, n);
 
   init_variables (1);
   remaining_clauses_to_parse = n;
@@ -211,8 +219,8 @@ NEXT:
      if (lit) push_literal (lit);
      else {
        if (!empty_clause ) {
-         ; //add_clause ();
-	 num_lits = 0; 
+         add_clause ();
+	       num_lits = 0;
          if (empty_clause) {
            orig_clauses = i;
            goto DONE;
@@ -277,16 +285,28 @@ void add_quantifier (int lit) {
     scope = inner_most; 
   } 
   add_var (abs(lit), scope); 
+}
 
+void add_clause () {
+  Clause *c;
+  int i;
+
+  if (max_cl >= num_clauses) {
+    enlarge_clauses ();
+  }
+
+  c = clauses + max_cl++;
+  c->size = num_lits;
+
+  c->lits = (int *) malloc (sizeof (int) * (num_lits));
+
+  for (i = 0; i < num_lits; i++) {
+    c->lits[i] = lits[i];
+  }
 }
 
 Scope * lit2scope (int lit) {
   return lit2var (lit)->scope;
-}
-
-Occ * lit2occ (int lit) {
-  Var * v = lit2var (lit);
-  return v->occs + (lit < 0);
 }
 
 
@@ -303,15 +323,6 @@ int is_universal (int lit) {
   Scope *s = lit2scope (lit); 
   return s->type == FORALL; 
 }
-
-void init_vars_clauses (int vnum, int cnum) {
-  num_vars = vnum; 
-  NEWN (vars, num_vars + 1);
-  max_var = num_vars + 1; 
-  num_clauses = cnum; 
-  NEWN (clauses, num_clauses + 1); 
-}
-
 
 static void * fix_ptr (void * ptr, long delta) {
   if (!ptr) return 0;
@@ -366,15 +377,10 @@ int fresh_var () {
 
 }
 
-
-
-
-
 void release () {
   Scope *s, *snext;
   int i;  
   Clause *c;
-  Node *n, *next;
   AnnotationNode *a, *a2;   
 
   for (s = outer_most; s; s = snext) {
@@ -383,13 +389,7 @@ void release () {
   }
   for (i = 0; i < num_clauses; i++) {
     c = clauses + i; 
-    n = c->first; 
-    while (n) {
-      next = n->cnext; 
-      free (n); 
-      n = next; 
-   }
-
+    free (c->lits);
   }
 
   for (i = 1; i <= num_vars; i++) {

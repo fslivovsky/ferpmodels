@@ -7,6 +7,10 @@ dependencies = ["ijtihad/ijtihad", "picosat-965/picosat",
                 "booleforce-1.2/tracecheck", "toferp/toferp", 
                 "ferpcert/ferpcheck", "ferpcert2/ferpcert",
                 "certcheck-1.0.1/certcheck"]
+path_aigtoaig = "/home/fs/tools/aiger/aigtoaig"
+path_extract = "/home/fs/tools/extract/python/extract.py"
+path_postprocess = "/home/fs/tools/extract/python/postprocess_aag.py"
+path_validate = "/home/fs/tools/extract/python/validate.py"
 
 dependencies = [home + x for x in dependencies]
 tmp_dir = home + "tmp/tmp-%d/" % os.getpid()
@@ -161,7 +165,18 @@ def main():
 
   sys.stdout.write("Extracting strategy ... ")
   sys.stdout.flush()
-  ret = subprocess.call([dependencies[5], input_path, tmp_dir + "tmp.ferp", output_path])
+  #ret = subprocess.call([dependencies[5], input_path, tmp_dir + "tmp.ferp", output_path])
+
+  ret = subprocess.call(["python", path_extract, input_path, tmp_dir + "tmp.ferp", tmp_dir + "tmp.aag"])
+
+  aag_path = tmp_dir + "tmp.aag"
+  trimmed_aag_path = tmp_dir + "tmp1.aag"
+  ret = subprocess.call(f"head -n -1 {aag_path} > {trimmed_aag_path}", shell=True)
+
+  postprocessed_aag_path = tmp_dir + "tmp2.aag"
+  ret = subprocess.call(["python", path_postprocess, trimmed_aag_path, postprocessed_aag_path])
+
+  ret = subprocess.call([path_aigtoaig, postprocessed_aag_path, output_path])
 
   if ret != 0:
     print("FAILED", ret)
@@ -172,12 +187,12 @@ def main():
 
   # Merge AIGER and QDIMACS files into a formula checkable by a SAT solver
 
-  sys.stdout.write("Producing CNF ... ")
-  sys.stdout.flush()
+  #sys.stdout.write("Producing CNF ... ")
+  #sys.stdout.flush()
 
-  FCNF = open(tmp_dir + "tmp.cnf2", "wb")
-  ret = subprocess.call([dependencies[6], input_path, output_path], stdout=FCNF)
-  FCNF.close()
+  #FCNF = open(tmp_dir + "tmp.cnf2", "wb")
+  #ret = subprocess.call([dependencies[6], input_path, output_path], stdout=FCNF)
+  #FCNF.close()
   
   if ret != 0:
     print("FAILED", ret)
@@ -187,16 +202,12 @@ def main():
 
   sys.stdout.write("Check validity of certificate ... ")
   sys.stdout.flush()
-  ret = subprocess.call([dependencies[1], tmp_dir + "tmp.cnf2"],
-                        stdout=FNULL, stderr=FNULL)
-  if ret == 10:
+  ret = subprocess.call(["python", path_validate, output_path, input_path])
+                         
+  if ret != 0:
     print("FAILED")
     print("The merged formula is SAT")
     clean(10)
-  elif ret != 20:
-    print("FAILED")
-    print("There has been an error with code %d" % ret)
-    clean(11)
   else:
     print("SUCCESS")
     subprocess.call(["gzip", output_path])

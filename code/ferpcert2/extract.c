@@ -18,21 +18,34 @@
 #define aiger_false SIMPLEAIG_FALSE 
 #define aiger_true SIMPLEAIG_TRUE
 
+static int int_cmpfunc (const void * a, const void * b) {
+   return ( *(int*)a - *(int*)b );
+}
 
 static  int aig_aux;
 static simpleaig * aig;
+static simpleaig * aig_out;
 int print_aig_and = 1;
-int visited = 1; 
+int visited = 1;
 
+static int * var_order;
+int * tmp_var_array;
+char * aig_var_mapped;
+int * lit_to_lit;
+int * var_to_idx;
+int * idx_queue;
+int idx_queue_size, idx_queue_pos;
 
+int og_cmpfunc (const void * a, const void * b) {
+  const int *l1 = a, *l2 = b;
+  return var_order[abs(*l1)] - var_order[abs(*l2)];
+}
 
 int plit2qlit (int l) {
   if (l < 0) 
   return -a_vars [abs(l)].orig_ex_name;
   else return a_vars [abs(l)].orig_ex_name;
 }
-
-
 
  int get_fresh_aig_idx () {
   aig_aux += 1;
@@ -86,15 +99,124 @@ void init_inputs_outputs () {
       if (s->type == FORALL) {
         simpleaig_add_output (aig, abs(v->name));
         dprint ("output: %d\n", v->name);
-      } else {
-        simpleaig_add_input (aig, abs(v->name));
-        dprint ("input: %d\n", v->name);
       }
+      simpleaig_add_input (aig, abs(v->name));
+      dprint ("input: %d\n", v->name);
     }
 
     s = s->inner;
   }
 
+}
+
+void init_output_aig () {
+  aig_out = simpleaig_init ();
+  simpleaig_set_buckets (aig_out, aig->num_ands) ; 
+  
+  aig_aux = num_vars ; 
+  aig_out->lhs_aux = num_vars + 1; 
+
+  Scope *s = outer_most;
+  Var *v;
+  while (s) {
+    for (v = s->first; v; v = v->next) {
+      if (s->type == FORALL) {
+        simpleaig_add_output (aig_out, abs(v->name));
+        dprint ("Final AIG output: %d\n", v->name);
+      } else {
+        simpleaig_add_input (aig_out, abs(v->name));
+        dprint ("Final AIG input: %d\n", v->name);
+      }
+    }
+    s = s->inner;
+  }
+}
+
+void init_aig_traversal() {
+  aig_var_mapped = (char *) malloc (sizeof (char) * (aig->max_var + 1));
+  lit_to_lit = (int *) malloc (sizeof (int) * (aig->max_var + 1));
+  var_to_idx = (int *) malloc (sizeof (int) * (aig->max_var + 1));
+  idx_queue = (int *) malloc (sizeof (int) * (aig->num_ands));
+  idx_queue_pos = 0;
+  idx_queue_size = 0;
+
+  for (int i = 0; i < aig->max_var + 1; i++) {
+    aig_var_mapped[i] = 0;
+    lit_to_lit[i] = 0;
+    var_to_idx[i] = aig->num_ands;
+  }
+  for (int i = 0; i < aig->num_ands; i++) {
+    assert(aig->ands[i].lhs > 0);
+    var_to_idx[aig->ands[i].lhs] = i;
+  }
+  // Map inputs
+  for (int i = 0; i < aig_out->num_inputs; i++) {
+    aig_var_mapped[aig_out->inputs[i]] = 1;
+    lit_to_lit[aig_out->inputs[i]] = aig_out->inputs[i];
+  }
+}
+
+void release_aig_traversal() {
+  free(aig_var_mapped);
+  free(lit_to_lit);
+  free(var_to_idx);
+  free(idx_queue);
+}
+
+char aig_is_const (int v) {
+  return v == aiger_true || v == aiger_false;
+}
+
+void aig_get_cone (int v) {
+  assert(!aig_var_mapped[v]);
+  aig_var_mapped[v] = 1;
+  assert(var_to_idx[v] < aig->num_ands);
+  idx_queue[0] = var_to_idx[v];
+  idx_queue_size = 1;
+  idx_queue_pos = 0;
+  while (idx_queue_pos < idx_queue_size) {
+    int idx = idx_queue[idx_queue_pos++];
+    simpleaigand *and = aig->ands + idx;
+    if (!aig_is_const(and->rhs0) && aig_var_mapped[abs(and->rhs0)] == 0) {
+      aig_var_mapped[abs(and->rhs0)] = 1;
+      assert(var_to_idx[abs(and->rhs0)] < aig->num_ands);
+      idx_queue[idx_queue_size++] = var_to_idx[abs(and->rhs0)];
+    }
+    if (!aig_is_const(and->rhs1) && aig_var_mapped[abs(and->rhs1)] == 0) {
+      aig_var_mapped[abs(and->rhs1)] = 1;
+      assert(var_to_idx[abs(and->rhs1)] < aig->num_ands);
+      idx_queue[idx_queue_size++] = var_to_idx[abs(and->rhs1)];
+    }
+  }
+  qsort(idx_queue, idx_queue_size, sizeof(int), int_cmpfunc);
+}
+
+void aig_map_cone (int v) {
+  for (int i = 0; i < idx_queue_size; i++) {
+    int idx = idx_queue[i];
+    simpleaigand *and = aig->ands + idx;
+    int rhs0, rhs1;
+    if (aig_is_const(and->rhs0)) {
+      rhs0 = and->rhs0;
+    } else {
+      assert(aig_var_mapped[abs(and->rhs0)]);
+      int rhs0_mapped = lit_to_lit[abs(and->rhs0)];
+      rhs0 = and->rhs0 > 0 ? rhs0_mapped : simpleaig_not(rhs0_mapped);
+    }
+    if (aig_is_const(and->rhs1)) {
+      rhs1 = and->rhs1;
+    } else {
+      assert(aig_var_mapped[abs(and->rhs1)]);
+      int rhs1_mapped = lit_to_lit[abs(and->rhs1)];
+      rhs1 = and->rhs1 > 0 ? rhs1_mapped : simpleaig_not(rhs1_mapped);
+    }
+    if (and->lhs == v) {
+      lit_to_lit[and->lhs] = simpleaig_add_and(aig_out, v, rhs0, rhs1);
+    } else {
+      lit_to_lit[and->lhs] = simpleaig_add_and(aig_out, SIMPLEAIG_FALSE, rhs0, rhs1);
+    }
+    assert(aig_var_mapped[and->lhs]);
+  }
 }
 
 
@@ -120,179 +242,159 @@ void init_outermost_univ () {
 
 }
 
-
-void extract_leave (P_Clause *cl, int level) {
-  int i, j, lit_level, set_univ = 0;
-  int univ; 
-
-  dprint ("\n extracting activitiy of leaf clause %d with aig-label %d at level %d\n", cl->name, cl->aig_label, level); 
-
-  for (i = 0; i < cl->size; i++) {
-    lit_level = avar_get_level (cl->nodes [i]);
-
-    dprint ("  lit %d has level %d\n", cl->nodes [i], lit_level); 
-
-    if (lit_level < level){	// literal has been assigned
-	    			// therefore it is not active
-      dprint ("  lit %d is inactive\n", cl->nodes [i]); 
-      cl->var_activity [abs(cl->nodes [i])] = aiger_false;
-      cl->var_activity_p [abs(cl->nodes [i])] = aiger_false;
-      continue;
+void extract_leaf (P_Clause *cl) {
+  assert(cl->p2 == 0);
+  // First, compute universal literals in original clause and annotations
+  num_lits = 0; // Reused from parser
+  // Go through all annotated literals and their annotations
+  for (int i = 0; i < cl->size; i++) {
+    int lit = cl->nodes[i];
+    for (int j = 0; j < a_vars [abs(lit)].ann_size; j++) {
+      int u_lit = a_vars [abs(lit)].u_annotations [j];
+      // Use the clause index to check whether a variable has occurred before
+      if (tmp_var_array[abs(u_lit)] < cl->name) {
+        tmp_var_array [abs(u_lit)] = cl->name;
+        push_literal(u_lit);
+        assert(is_universal(u_lit));
+      }
     }
-	
-					// include universals in 
-					// activity of clause
-    if ((!set_univ) && (lit_level >= level)) {
-      set_univ = 1; 
-      for (j = 0; j < a_vars [abs(cl->nodes[i])].ann_size; j++) {
-        univ = a_vars [abs(cl->nodes [i])].u_annotations [j];
-
-	 dprint ("  univ %d with level  %d\n", 
-			 univ, (vars + abs(univ))->scope->order); 
-	 if ((vars + abs(univ))->scope->order == level -1 ) {
-	  dprint ("  adding univ %d to activity of cl %d\n", 
-			   univ, cl->name);  
-          cl->aig_label = makeAND (cl->aig_label, univ);
-	 }
- 	}
-    }
-
-    if (lit_level == level) {	// literal is now assigned
-				// -> influences activity of clause
-      dprint ("   lit %d (orig: %d) becomes inactive\n", 
-		      cl->nodes[i], plit2qlit (cl->nodes[i]));
-      cl->aig_label = makeAND (cl->aig_label, -plit2qlit (cl->nodes [i])); 
-
-      dprint ("   cl %d has act label %d\n", cl->name, cl->aig_label); 
-
-      cl->var_activity [abs(cl->nodes [i])] = aiger_false;
-      cl->var_activity_p [abs(cl->nodes [i])] = aiger_false;
-    } else {
-      cl->var_activity [abs(cl->nodes [i])] = cl->aig_label;
-      cl->var_activity_p [abs(cl->nodes [i])] = cl->aig_label;
-      dprint ("  setting var activity of %d to %d\n", cl->nodes[i], cl->aig_label); 
-    }
-
-
-
   }
 
+  Clause* og_clause =  &clauses [cl->p1];
+  for (int i = 0; i < og_clause->size; i++) {
+    int lit = og_clause->lits[i];
+    if (is_universal(lit) && tmp_var_array [abs(lit)] < cl->name) {
+        tmp_var_array [abs(lit)] = cl->name;
+        push_literal(lit);
+    }
+  }
+  // Copy complete annotation
+  cl->universals = (int *) malloc (sizeof (int) * num_lits);
+  for (int i = 0; i < num_lits; i++) {
+    cl->universals[i] = lits[i];
+  }
+  qsort(cl->universals, num_lits, sizeof(int), og_cmpfunc);
+  // Second, compute AIG labels for partial functions
+  cl->aig_labels = (int *) malloc (sizeof (int) * num_lits);
+  // This circuit checks whether the universals so far match the annotation
+  int annotation_match_aig = aiger_true;
+
+  for (int i = 0; i < num_lits; i++) {
+    if (cl->universals[i] > 0) {
+      cl->aig_labels[i] = aiger_true;
+      annotation_match_aig = makeAND(annotation_match_aig, cl->universals[i]);
+    } else {
+      cl->aig_labels[i] = makeITE(annotation_match_aig, aiger_false, aiger_true);
+      annotation_match_aig = makeAND(annotation_match_aig, simpleaig_not(abs(cl->universals[i])));
+    }
+    // Forget the sign of the annotation literal
+    // We only need to know which universal variables have partial functions
+    cl->universals[i] = abs(cl->universals[i]);
+  }
+  cl->num_universals = num_lits;
 }
 
 
- int get_var_activity (int a1, int a2,          // var act in parents
-                               int p1, int p2,          // pivot act
-                               int c1, int c2) {        // cl activity
-   int cond1, or1; 
-   int cond2, ite2, conj2;
-
-  cond2 = makeAND (simpleaig_not (p1), c1); 
-
-  conj2 = makeAND (simpleaig_not(p2), c2); 
-  conj2 = makeAND (conj2, a2); 
-
-  ite2 = makeITE (cond2, a1, conj2); 
-
-  or1 = makeOR (a1, a2); 
-
-  cond1 = makeAND (p1, p2);
-
-  return makeITE (cond1, or1, ite2);  
-
-
-
-
-}
-
-
-
-void extract_non_leave (P_Clause *cl, int level) {
+void extract_non_leaf (P_Clause *cl) {
   P_Clause *p1, *p2; 
-   int a1, a2, conj_piv; 
-  int i; 
-  int pivot = abs (cl->pivot); 
-  
-  dprint ("\n ** extracting activitiy of non-leaf clause %d with aig-label %d at level %d\n", cl->name, cl->aig_label, level); 
+  int pivot = cl->pivot;
+  int pivot_og_var = a_lit2var(pivot);
   
   p1 = p_clauses + cl->p1; 
   p2 = p_clauses + cl->p2;
   dprint ("  parents: %d %d, pivot: %d\n", p1->name, p2->name, pivot); 
 
-  assert (p1 && p2);  
+  assert (p1 && p2);
 
-  // activity of clause
-  
-  conj_piv = makeAND (p1->var_activity [pivot], p2->var_activity [pivot]); 
+  int* universals1 = p1->universals;
+  int* universals2 = p2->universals;
 
-  a1 = makeAND (simpleaig_not (p1->var_activity [pivot]), p1->aig_label); 
-  a2 = makeAND (simpleaig_not (p2->var_activity [pivot]), p2->aig_label); 
+  int* aig_labels1 = p1->aig_labels;
+  int* aig_labels2 = p2->aig_labels;
 
-  a1 = makeOR (conj_piv, a1); 
-  a1 = makeOR (a1, a2); 
+  int* aig_labels = (int *) malloc (sizeof (int) * (p1->num_universals + p2->num_universals));
+  int nr_labels = 0;
 
-  cl->aig_label = a1; 
-  
-  // activity of literals
+  // Get pivot annotation
+  qsort(a_vars [abs(pivot)].u_annotations, a_vars [abs(pivot)].ann_size, sizeof(int), og_cmpfunc);
 
-  for (i = 1; i < a_vars_size; i++) {
-    a1 = p1->var_activity_p [i];
-    a2 = p2->var_activity_p [i];
+  int annotation_match_aig = aiger_true;
 
-    
-    if (!a1 && !a2) {
-      cl->var_activity [i] = aiger_false;
-      cl->var_activity_p [i] = aiger_false;
-      continue;
-    }
-
-   
-
-    if (i == pivot) {
-      cl->var_activity [i] = aiger_false;
+  int i, j, k;
+  num_lits = 0; // Reused from parser
+  for (i = j = k = 0; i < p1->num_universals || j < p2->num_universals; ) {
+    int u = 0;
+    int aig1, aig2;
+    int cmp;
+    if (i == p1->num_universals) {
+      cmp = 1;
+    } else if (j == p2->num_universals) {
+      cmp = -1;
     } else {
-      cl->var_activity [i] = get_var_activity (
-                      p1->var_activity [i],
-                      p2->var_activity [i],
-                      p1->var_activity [pivot],
-                      p2->var_activity [pivot],
-                      p1->aig_label,
-                      p2->aig_label);
-
+      cmp = og_cmpfunc(&universals1[i], &universals2[j]);
     }
-
-    cl->var_activity_p [i] = get_var_activity (a1, a2,
-                      p1->var_activity [pivot],
-                      p2->var_activity [pivot],
-                      p1->aig_label,
-                      p2->aig_label);
-
-    dprint ("var %d in clause %d is %d %d\n", i, cl->name, 
-		    cl->var_activity_p[i], cl->var_activity[i]); 
-
+    if (cmp == 0) {
+      u = universals1[i];
+      aig1 = aig_labels1[i];
+      aig2 = aig_labels2[j];
+      i++;
+      j++;
+    } else if (cmp < 0) {
+      u = universals1[i];
+      aig1 = aig_labels1[i];
+      aig2 = aiger_true;
+      i++;
+    } else {
+      u = universals2[j];
+      aig1 = aiger_true;
+      aig2 = aig_labels2[j];
+      j++;
+    }
+    push_literal(u);
+    // Update annotation match AIG with literals preceding u
+    for (; k < a_vars[abs(pivot)].ann_size && og_cmpfunc(&a_vars[abs(pivot)].u_annotations[k], &u) < 0; k++) {
+      int annotation_lit = a_vars[abs(pivot)].u_annotations[k];
+      int lit_aig = annotation_lit > 0 ? annotation_lit : simpleaig_not(abs(annotation_lit));
+      annotation_match_aig = makeAND(annotation_match_aig, lit_aig);
+    }
+    if (og_cmpfunc(&pivot_og_var, &u) > 0) {
+      // Universal u precedes the pivot, u must appear in the pivot annotation
+      assert(k < a_vars[abs(pivot)].ann_size && og_cmpfunc(&a_vars[abs(pivot)].u_annotations[k], &u) == 0);
+      int annotation_lit = a_vars[abs(pivot)].u_annotations[k];
+      if (annotation_lit > 0) {
+        // Definitely in 1 part
+        aig_labels[nr_labels++] = makeAND(aig1, aig2);
+        annotation_match_aig = makeAND(annotation_match_aig, annotation_lit);
+      } else {
+        // Possibly in 0 part
+        aig_labels[nr_labels++] = makeITE(annotation_match_aig, makeOR(aig1, aig2), makeAND(aig1, aig2));
+        annotation_match_aig = makeAND(annotation_match_aig, simpleaig_not(abs(annotation_lit)));
+      }
+    } else if (og_cmpfunc(&pivot_og_var, &u) < 0) {
+      // Universal u comes after the pivot, so this is either 1-local or shared
+      assert(k == a_vars[abs(pivot)].ann_size);
+      int pivot_aig = pivot > 0 ? pivot_og_var : simpleaig_not(pivot_og_var);
+      int shared_aig = makeITE(pivot_aig, aig2, aig1);
+      int local_aig = makeAND(aig1, aig2);
+      aig_labels[nr_labels++] = makeITE(annotation_match_aig, shared_aig, local_aig);
+    } else {
+      // Pivot is existential and u is universal
+      assert(0);
+    }
   }
-
+  cl->universals = (int *) malloc (sizeof (int) * num_lits);
+  for (int i = 0; i < num_lits; i++) {
+    cl->universals[i] = lits[i];
+  }
+  cl->num_universals = num_lits;
+  cl->aig_labels = (int *) malloc (sizeof (int) * nr_labels);
+  for (int i = 0; i < nr_labels; i++) {
+    cl->aig_labels[i] = aig_labels[i];
+  }
+  free(aig_labels);
 }
 
-
-
-void extract_exist (int level) {
-  int i;
-
-  for (i = 1; i < num_p_clauses; i++) {
-
-    if (!p_clauses [i].p1) {
-      extract_leave (p_clauses + i, level);
-    } else {
-      extract_non_leave (p_clauses + i, level);
-    }
-
-  }
-}
-
-
-
-
-void extract_univ (Scope *s, int level) {
+/* void extract_univ (Scope *s, int level) {
   AnnotationNode *a; 
   Var *v;
    int disj;
@@ -349,57 +451,111 @@ void extract_univ (Scope *s, int level) {
 
 
   }
+} */
 
+void create_var_order() {
+  var_order = (int *) malloc (sizeof (int) * (num_vars + 1));
+  
+  int order = 0;
+  Scope *s = outer_most;
 
-
-
+  while (s) {
+    Var *v = s->first;
+    while (v) {
+      var_order[v->name] = order++;
+      v = v->next;
+    }
+    s = s->inner;
+  }
 }
 
 simpleaig * extract () {
-  Scope *s; 
-  int level = 1; 
+  dprint ("extract: first fresh aiger var: %d\n", aig_aux);
 
-
-  dprint ("extract: first fresh aiger var: %d\n", aig_aux); 
+  create_var_order();
 
   aig = simpleaig_init ();
-
-  simpleaig_set_buckets (aig, (unsigned) a_vars_size * p_clauses_size * 2) ; 
+  simpleaig_set_buckets (aig, (unsigned) universal_vars * p_clauses_size * 2) ; 
   init_inputs_outputs ();
   
   aig_aux = num_vars ; 
   aig->lhs_aux = num_vars + 1; 
 
-  s = outer_most;  
+  tmp_var_array = (int *) malloc (sizeof (int) * (num_vars + 1));
 
-  if (s->type == FORALL) {
-    init_outermost_univ (); 
-
-    s = s->inner; 
-    level++; 
+  for (int i = 0; i < num_vars + 1; i++) {
+    tmp_var_array [i] = 0; 
   }
 
- 
+  // Compute partial interpolants
+
+  for (int i = 0; i < num_p_clauses; i++) {
+    if (!p_clauses [i].p2) {
+      extract_leaf (p_clauses + i);
+    } else {
+      extract_non_leaf (p_clauses + i);
+    }
+  }
+
+  // Set universal strategy function to constant true by default
+
+  for (int i = 0; i < num_vars + 1; i++) {
+    tmp_var_array [i] = aiger_true; 
+  }
+
+  P_Clause *root = p_clauses + p_empty_clause;
+
+  for (int i = 0; i < root->num_universals; i++) {
+    int u = root->universals[i];
+    tmp_var_array[u] = root->aig_labels[i];
+  }
+
+  Scope *s = outer_most;
+
   while (s) {
-
-    dprint ("\n------- considering level %d ---------- \n\n", level); 
     if (s->type == EXISTS) {
-      extract_exist (level);  
+      s = s->inner;
+      continue;
     }
-    else {
-      extract_univ (s, level); 
+    assert(s->type == FORALL);
+    Var *v = s->first;
+    while (v) {
+      simpleaig_add_and (aig, v->name, tmp_var_array[v->name], tmp_var_array[v->name]);
+      v = v->next;
     }
-
-    level++; 
-
-    s = s->inner; 
-    if (!s || (!s->inner && s->type == EXISTS)) break;
-
+    s = s->inner;
   }
+
+  init_output_aig();
+  init_aig_traversal();
+
+  s = outer_most;
+
+  while (s) {
+  if (s->type == EXISTS) {
+    s = s->inner;
+    continue;
+  }
+  assert(s->type == FORALL);
+  Var *v = s->first;
+  while (v) {
+    aig_get_cone(v->name);
+    aig_map_cone(v->name);
+    v = v->next;
+  }
+  s = s->inner;
+}
 
   ////aiger_prune (aig); 
 
-  return aig; 
+  release_aig_traversal();
+
+  free(tmp_var_array);
+  free(var_order);
+
+  simpleaig_reset(aig);
+
+  return aig_out; 
 }
 
 

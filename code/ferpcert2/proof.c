@@ -56,10 +56,9 @@ void proof_release () {
     if (!a_vars [i].next) free (a_vars [i].u_annotations); 
   }
   for (i = 0; i < p_clauses_size; i++) {
-    free (p_clauses [i].nodes); 
-    free (p_clauses [i].var_activity); 
-    free (p_clauses [i].var_activity_p); 
-   
+    free (p_clauses [i].nodes);
+    free (p_clauses [i].universals);
+    free (p_clauses [i].aig_labels);
   }
  
   free (p_clauses); 
@@ -214,21 +213,8 @@ int parse_proof (FILE *f) {
 
    p_clauses [cl].size = count_vars;    
    p_clauses [cl].nodes = lts;   
-   p_clauses [cl].aig_label = aiger_true;  
-   p_clauses [cl].var_activity = malloc (sizeof (int) * a_vars_size);  
-   p_clauses [cl].var_activity_p = malloc (sizeof (int) * a_vars_size); 
-   int j; 
-
-   for (j = 0; j < a_vars_size; j++) {
-    p_clauses [cl].var_activity [j] = aiger_false; 
-    p_clauses [cl].var_activity_p [j] = aiger_false; 
-   }
-
-
-   p_clauses [cl].aig_prelabel = 0;  
 
    if (count_vars == 0) p_empty_clause = cl; 
-  
  
    tmp = fscanf (f, "%d %d", &p1, &p2); 
 
@@ -246,13 +232,20 @@ int parse_proof (FILE *f) {
 
      assert (i < p_clauses [p2].size); 
 
-     p_clauses[cl].pivot = abs(p_clauses[p2].nodes[i]); 
+     p_clauses[cl].pivot = -p_clauses[p2].nodes[i];
      for (i = 0; i < p_clauses [p1].size; i++) {
        a_vars [abs(p_clauses[p1].nodes[i])].mark = 0; 
      }
      tmp = fscanf (f, "%d", &lit); // process final zero
     
-   } 
+   } else {
+    // Single parent
+
+    assert(p1 && !p2);
+    assert(p1 <= num_clauses);
+    p_clauses[cl].p1 = p1;
+    p_clauses[cl].p2 = 0;
+   }
 
    num_lits = 0; 
    if (p_empty_clause) break; 
