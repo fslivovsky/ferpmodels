@@ -6,7 +6,7 @@ home = os.path.dirname(os.path.abspath(__file__)) + "/"
 dependencies = ["ijtihad/ijtihad", "picosat-965/picosat", 
                 "booleforce-1.2/tracecheck", "toferp/toferp", 
                 "ferpcert/ferpcheck", "ferpcert2/ferpcert",
-                "certcheck-1.0.1/certcheck"]
+                "certcheck-1.0.1/certcheck", "cadical/build/cadical"]
 
 dependencies = [home + x for x in dependencies]
 tmp_dir = home + "tmp/tmp-%d/" % os.getpid()
@@ -187,7 +187,7 @@ def main():
 
   sys.stdout.write("Check validity of certificate ... ")
   sys.stdout.flush()
-  ret = subprocess.call([dependencies[1], tmp_dir + "tmp.cnf2"],
+  ret = subprocess.call([dependencies[7], tmp_dir + "tmp.cnf2"],
                         stdout=FNULL, stderr=FNULL)
   if ret == 10:
     print("FAILED")
