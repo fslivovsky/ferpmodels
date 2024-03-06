@@ -18,23 +18,13 @@
 #define aiger_false SIMPLEAIG_FALSE 
 #define aiger_true SIMPLEAIG_TRUE
 
-static int int_cmpfunc (const void * a, const void * b) {
-   return ( *(int*)a - *(int*)b );
-}
-
-static  int aig_aux;
+static int aig_aux;
 static simpleaig * aig;
-static simpleaig * aig_out;
 int print_aig_and = 1;
 int visited = 1;
 
 static int * var_order;
 int * tmp_var_array;
-char * aig_var_mapped;
-int * lit_to_lit;
-int * var_to_idx;
-int * idx_queue;
-int idx_queue_size, idx_queue_pos;
 
 int og_cmpfunc (const void * a, const void * b) {
   const int *l1 = a, *l2 = b;
@@ -99,126 +89,20 @@ void init_inputs_outputs () {
       if (s->type == FORALL) {
         simpleaig_add_output (aig, abs(v->name));
         dprint ("output: %d\n", v->name);
-      }
-      simpleaig_add_input (aig, abs(v->name));
-      dprint ("input: %d\n", v->name);
-    }
-
-    s = s->inner;
-  }
-
-}
-
-void init_output_aig () {
-  aig_out = simpleaig_init ();
-  simpleaig_set_buckets (aig_out, aig->num_ands) ; 
-  
-  aig_aux = num_vars ; 
-  aig_out->lhs_aux = num_vars + 1; 
-
-  Scope *s = outer_most;
-  Var *v;
-  while (s) {
-    for (v = s->first; v; v = v->next) {
-      if (s->type == FORALL) {
-        simpleaig_add_output (aig_out, abs(v->name));
-        dprint ("Final AIG output: %d\n", v->name);
       } else {
-        simpleaig_add_input (aig_out, abs(v->name));
-        dprint ("Final AIG input: %d\n", v->name);
+        simpleaig_add_input (aig, abs(v->name));
+        dprint ("input: %d\n", v->name);
       }
     }
+
     s = s->inner;
   }
-}
 
-void init_aig_traversal() {
-  aig_var_mapped = (char *) malloc (sizeof (char) * (aig->max_var + 1));
-  lit_to_lit = (int *) malloc (sizeof (int) * (aig->max_var + 1));
-  var_to_idx = (int *) malloc (sizeof (int) * (aig->max_var + 1));
-  idx_queue = (int *) malloc (sizeof (int) * (aig->num_ands));
-  idx_queue_pos = 0;
-  idx_queue_size = 0;
-
-  for (int i = 0; i < aig->max_var + 1; i++) {
-    aig_var_mapped[i] = 0;
-    lit_to_lit[i] = 0;
-    var_to_idx[i] = aig->num_ands;
-  }
-  for (int i = 0; i < aig->num_ands; i++) {
-    assert(aig->ands[i].lhs > 0);
-    var_to_idx[aig->ands[i].lhs] = i;
-  }
-  // Map inputs
-  for (int i = 0; i < aig_out->num_inputs; i++) {
-    aig_var_mapped[aig_out->inputs[i]] = 1;
-    lit_to_lit[aig_out->inputs[i]] = aig_out->inputs[i];
-  }
-}
-
-void release_aig_traversal() {
-  free(aig_var_mapped);
-  free(lit_to_lit);
-  free(var_to_idx);
-  free(idx_queue);
 }
 
 char aig_is_const (int v) {
   return v == aiger_true || v == aiger_false;
 }
-
-void aig_get_cone (int v) {
-  assert(!aig_var_mapped[v]);
-  aig_var_mapped[v] = 1;
-  assert(var_to_idx[v] < aig->num_ands);
-  idx_queue[0] = var_to_idx[v];
-  idx_queue_size = 1;
-  idx_queue_pos = 0;
-  while (idx_queue_pos < idx_queue_size) {
-    int idx = idx_queue[idx_queue_pos++];
-    simpleaigand *and = aig->ands + idx;
-    if (!aig_is_const(and->rhs0) && aig_var_mapped[abs(and->rhs0)] == 0) {
-      aig_var_mapped[abs(and->rhs0)] = 1;
-      assert(var_to_idx[abs(and->rhs0)] < aig->num_ands);
-      idx_queue[idx_queue_size++] = var_to_idx[abs(and->rhs0)];
-    }
-    if (!aig_is_const(and->rhs1) && aig_var_mapped[abs(and->rhs1)] == 0) {
-      aig_var_mapped[abs(and->rhs1)] = 1;
-      assert(var_to_idx[abs(and->rhs1)] < aig->num_ands);
-      idx_queue[idx_queue_size++] = var_to_idx[abs(and->rhs1)];
-    }
-  }
-  qsort(idx_queue, idx_queue_size, sizeof(int), int_cmpfunc);
-}
-
-void aig_map_cone (int v) {
-  for (int i = 0; i < idx_queue_size; i++) {
-    int idx = idx_queue[i];
-    simpleaigand *and = aig->ands + idx;
-    int rhs0, rhs1;
-    if (aig_is_const(and->rhs0)) {
-      rhs0 = and->rhs0;
-    } else {
-      assert(aig_var_mapped[abs(and->rhs0)]);
-      int rhs0_mapped = lit_to_lit[abs(and->rhs0)];
-      rhs0 = and->rhs0 > 0 ? rhs0_mapped : simpleaig_not(rhs0_mapped);
-    }
-    if (aig_is_const(and->rhs1)) {
-      rhs1 = and->rhs1;
-    } else {
-      assert(aig_var_mapped[abs(and->rhs1)]);
-      int rhs1_mapped = lit_to_lit[abs(and->rhs1)];
-      rhs1 = and->rhs1 > 0 ? rhs1_mapped : simpleaig_not(rhs1_mapped);
-    }
-    if (and->lhs == v) {
-      lit_to_lit[and->lhs] = simpleaig_add_and(aig_out, v, rhs0, rhs1);
-    } else {
-      lit_to_lit[and->lhs] = simpleaig_add_and(aig_out, SIMPLEAIG_FALSE, rhs0, rhs1);
-    }
-    assert(aig_var_mapped[and->lhs]);
-  }
-}
-
 
 void init_outermost_univ () {
   //TODO assumption: only one empty clause,
@@ -274,18 +158,14 @@ void extract_leaf (P_Clause *cl) {
     cl->universals[i] = lits[i];
   }
   qsort(cl->universals, num_lits, sizeof(int), og_cmpfunc);
-  // Second, compute AIG labels for partial functions
+  // The partial functions simply correspond to the literals.
   cl->aig_labels = (int *) malloc (sizeof (int) * num_lits);
-  // This circuit checks whether the universals so far match the annotation
-  int annotation_match_aig = aiger_true;
 
   for (int i = 0; i < num_lits; i++) {
     if (cl->universals[i] > 0) {
       cl->aig_labels[i] = aiger_true;
-      annotation_match_aig = makeAND(annotation_match_aig, cl->universals[i]);
     } else {
-      cl->aig_labels[i] = makeITE(annotation_match_aig, aiger_false, aiger_true);
-      annotation_match_aig = makeAND(annotation_match_aig, simpleaig_not(abs(cl->universals[i])));
+      cl->aig_labels[i] = aiger_false;
     }
     // Forget the sign of the annotation literal
     // We only need to know which universal variables have partial functions
@@ -318,8 +198,13 @@ void extract_non_leaf (P_Clause *cl) {
   // Get pivot annotation
   qsort(a_vars [abs(pivot)].u_annotations, a_vars [abs(pivot)].ann_size, sizeof(int), og_cmpfunc);
 
-  int annotation_match_aig = aiger_true;
+  // Equiv and Diff circuits for Combine
+  int equiv1_aig = aiger_true;
+  int equiv2_aig = aiger_true;
+  int diff1_aig = aiger_false;
+  int diff2_aig = aiger_false;
 
+  // Make sure variables
   int i, j, k;
   num_lits = 0; // Reused from parser
   for (i = j = k = 0; i < p1->num_universals || j < p2->num_universals; ) {
@@ -351,34 +236,36 @@ void extract_non_leaf (P_Clause *cl) {
       j++;
     }
     push_literal(u);
-    // Update annotation match AIG with literals preceding u
+    // Update equiv and diff AIGs with literals preceding u. We assume that universals are set to true by default.
     for (; k < a_vars[abs(pivot)].ann_size && og_cmpfunc(&a_vars[abs(pivot)].u_annotations[k], &u) < 0; k++) {
       int annotation_lit = a_vars[abs(pivot)].u_annotations[k];
-      int lit_aig = annotation_lit > 0 ? annotation_lit : simpleaig_not(abs(annotation_lit));
-      annotation_match_aig = makeAND(annotation_match_aig, lit_aig);
+      int lit_equiv_aig = annotation_lit > 0 ? aiger_true : aiger_false;
+      diff1_aig = makeOR(diff1_aig, makeAND(equiv2_aig, simpleaig_not(lit_equiv_aig)));
+      diff2_aig = makeOR(diff2_aig, makeAND(equiv1_aig, simpleaig_not(lit_equiv_aig)));
+      equiv1_aig = makeAND(equiv1_aig, lit_equiv_aig);
+      equiv2_aig = makeAND(equiv2_aig, lit_equiv_aig);
     }
     if (og_cmpfunc(&pivot_og_var, &u) > 0) {
-      // Universal u precedes the pivot, u must appear in the pivot annotation
+      // Universal u precedes the pivot
       assert(k < a_vars[abs(pivot)].ann_size && og_cmpfunc(&a_vars[abs(pivot)].u_annotations[k], &u) == 0);
-      int annotation_lit = a_vars[abs(pivot)].u_annotations[k];
-      if (annotation_lit > 0) {
-        // Definitely in 1 part
-        aig_labels[nr_labels++] = makeAND(aig1, aig2);
-        annotation_match_aig = makeAND(annotation_match_aig, annotation_lit);
-      } else {
-        // Possibly in 0 part
-        aig_labels[nr_labels++] = makeITE(annotation_match_aig, makeOR(aig1, aig2), makeAND(aig1, aig2));
-        annotation_match_aig = makeAND(annotation_match_aig, simpleaig_not(abs(annotation_lit)));
-      }
+      // Update equiv and diff AIGs
+      int aig1_matches_annotation_lit = (a_vars[abs(pivot)].u_annotations[k] > 0) ? aig1 : simpleaig_not(aig1);
+      int aig2_matches_annotation_lit = (a_vars[abs(pivot)].u_annotations[k] > 0) ? aig2 : simpleaig_not(aig2);
+      diff1_aig = makeOR(diff1_aig, makeAND(equiv2_aig, simpleaig_not(aig1_matches_annotation_lit)));
+      diff2_aig = makeOR(diff2_aig, makeAND(equiv1_aig, simpleaig_not(aig2_matches_annotation_lit)));
+      equiv1_aig = makeAND(equiv1_aig, aig1_matches_annotation_lit);
+      equiv2_aig = makeAND(equiv2_aig, aig2_matches_annotation_lit);
+      k++;
+      // Apply combine definition
+      aig_labels[nr_labels++] = makeITE(diff1_aig, aig1, makeITE(diff2_aig, aig2, makeAND(aig1, aig2)));
     } else if (og_cmpfunc(&pivot_og_var, &u) < 0) {
-      // Universal u comes after the pivot, so this is either 1-local or shared
+      // Universal u comes after the pivot
       assert(k == a_vars[abs(pivot)].ann_size);
       int pivot_aig = pivot > 0 ? pivot_og_var : simpleaig_not(pivot_og_var);
-      int shared_aig = makeITE(pivot_aig, aig2, aig1);
-      int local_aig = makeAND(aig1, aig2);
-      aig_labels[nr_labels++] = makeITE(annotation_match_aig, shared_aig, local_aig);
+      int switch_aig = makeITE(pivot_aig, aig2, aig1);
+      aig_labels[nr_labels++] = makeITE(diff1_aig, aig1, makeITE(diff2_aig, aig2, switch_aig));
     } else {
-      // Pivot is existential and u is universal
+      // Pivot is existential and u is universal, so they cannot be the same.
       assert(0);
     }
   }
@@ -526,36 +413,12 @@ simpleaig * extract () {
     s = s->inner;
   }
 
-  init_output_aig();
-  init_aig_traversal();
-
   s = outer_most;
-
-  while (s) {
-  if (s->type == EXISTS) {
-    s = s->inner;
-    continue;
-  }
-  assert(s->type == FORALL);
-  Var *v = s->first;
-  while (v) {
-    aig_get_cone(v->name);
-    aig_map_cone(v->name);
-    v = v->next;
-  }
-  s = s->inner;
-}
-
-  ////aiger_prune (aig); 
-
-  release_aig_traversal();
 
   free(tmp_var_array);
   free(var_order);
 
-  simpleaig_reset(aig);
-
-  return aig_out; 
+  return aig; 
 }
 
 
